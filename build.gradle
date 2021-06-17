@@ -78,7 +78,7 @@ dependencies {
 
     componentTestCompile sourceSets.main.output
     componentTestCompile configurations.testCompile
-    componentTestCompile "ari-mock-http-server:ari-mock-http-server:$ariMockHttpServerVersion"
+    componentTestCompile "au.com.ausregistry:ari-mock-http-server:$ariMockHttpServerVersion"
 
     jacocoAgent "org.jacoco:org.jacoco.agent:${project.jacoco.toolVersion}"
 }
