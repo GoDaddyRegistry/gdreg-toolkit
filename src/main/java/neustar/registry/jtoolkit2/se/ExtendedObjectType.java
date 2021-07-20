@@ -43,6 +43,7 @@ public enum ExtendedObjectType implements ObjectType {
     FUND("fund", "urn:ar:params:xml:ns:fund-1.0", "fund-1.0.xsd"),
     /** References the Block XML namespace and schema file */
     BLOCK("block", "urn:ar:params:xml:ns:block-1.0", "block-1.0.xsd", "id"),
+    BLOCKV11("blockV1_1", "urn:gdreg:params:xml:ns:block-1.1", "block-1.1.xsd", "id"),
     /** References the Unspec XML namespace and schema file */
     UNSPEC("unspec", "urn:ietf:params:xml:ns:neulevel-1.0", "neulevel-1.0.xsd", "neulevel"),
     /** References the Launch XML namespace and schema file */
