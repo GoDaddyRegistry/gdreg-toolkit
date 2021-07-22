@@ -38,6 +38,7 @@ public class DomainInfoBlockResponseExtensionTest {
                             "<block:infData xmlns:block=\"urn:gdreg:params:xml:ns:block-1.1\" " +
                                 "xsi:schemaLocation=\"urn:gdreg:params:xml:ns:block-1.1 block-1.1.xsd\">" +
                             "<block:id>" + id + "</block:id>" +
+                            "<block:onExpiry action=\"custom\">Convert</block:onExpiry>" +
                             "</block:infData>" +
                         "</extension>" +
                         "<trID><clTRID>ABC-12345</clTRID><svTRID>54322-XYZ</svTRID></trID>" +
@@ -51,5 +52,6 @@ public class DomainInfoBlockResponseExtensionTest {
         assertThat(response.getResults()[0].getResultCode(), is(1000));
         assertThat(response.getResults()[0].getResultMessage(), is("Command completed successfully"));
         assertThat(blockExtension.getBlockId(), is(id));
+        assertThat(blockExtension.getOnExpiry(), is("Convert"));
     }
 }

@@ -97,6 +97,8 @@
     <complexType name="infDataType">
         <sequence>
             <element name="id" type="block:clIDType"/>
+            <element name="onExpiry" type="block:onExpiryType"
+                     minOccurs="0"/>
         </sequence>
     </complexType>
 
@@ -128,7 +130,25 @@
         </restriction>
     </simpleType>
 
+    <complexType name="onExpiryType">
+        <simpleContent>
+            <extension base="normalizedString">
+                <attribute name="action" type="block:actionType"
+                           use="required"/>
+                <attribute name="lang" type="language"
+                           default="en"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+
+    <simpleType name="actionType">
+        <restriction base="token">
+            <enumeration value="expire"/>
+            <enumeration value="custom"/>
+        </restriction>
+    </simpleType>
     <!--
         End of schema.
     -->
+
 </schema>

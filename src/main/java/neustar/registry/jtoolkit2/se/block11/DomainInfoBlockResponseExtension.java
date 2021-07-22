@@ -30,15 +30,22 @@ public class DomainInfoBlockResponseExtension extends ResponseExtension {
     private static final String BLO_XPATH_PREFIX = ResponseExtension.EXTENSION_EXPR + XPATH_SEP + BLO_PREFIX
             + ":RESPONSE_TYPE/" + BLO_PREFIX;
     private static final String ID = BLO_XPATH_PREFIX + ":id/text()";
+    private static final String ACTION = BLO_XPATH_PREFIX + ":onExpiry/text()";
+    private static final String ACTION_TYPE = BLO_XPATH_PREFIX + ":onExpiry/@action";
     private static final String RESPONSE_TYPE = ResponseExtension.INFO;
 
     private String blockId;
     private boolean initialised;
+    private String onExpiry;
 
     @Override
     public void fromXML(XMLDocument xmlDoc) throws XPathExpressionException {
         blockId = xmlDoc.getNodeValue(replaceResponseType(ID, RESPONSE_TYPE));
         initialised = blockId != null;
+        onExpiry = xmlDoc.getNodeValue(replaceResponseType(ACTION_TYPE, RESPONSE_TYPE));
+        if (onExpiry != null && onExpiry.equalsIgnoreCase(OnExpiryAction.CUSTOM.name())) {
+            onExpiry = xmlDoc.getNodeValue(replaceResponseType(ACTION, RESPONSE_TYPE));
+        }
     }
 
     @Override
@@ -48,5 +55,9 @@ public class DomainInfoBlockResponseExtension extends ResponseExtension {
 
     public String getBlockId() {
         return blockId;
+    }
+
+    public String getOnExpiry() {
+        return onExpiry;
     }
 }
