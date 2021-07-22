@@ -13,9 +13,9 @@ To build the nsr-toolkit, you must have the Java Development Kit (JDK) v7.0 or a
 
 ## Introduction
 
-These are client-side libraries that implement the core EPP specifications, the domain, host and contact mappings of the specifications, and mappings for extensions operated by Neustar.
+These are client-side libraries that implement the core EPP specifications, the domain, host and contact mappings of the specifications, and mappings for extensions operated by GoDaddy Registry.
 
-The Extensible Provisioning Protocol (EPP) was selected as the registry-registrar protocol for communication between Neustar Registry Services' Domain Name Registry System (DNRS) and the registrars licensed to interact with the registry.
+The Extensible Provisioning Protocol (EPP) was selected as the registry-registrar protocol for communication between GoDaddy Registry's Domain Name Registry System (DNRS) and the registrars licensed to interact with the registry.
 
 The core EPP specifications provide for management of domains, hosts (for DNS delegation), and contacts (for enabling communication with the entities responsible for a domain name registration). The protocol is extensible in various ways, including support for; extension to objects other than domains, hosts and contacts, extension of the commands defined on existing objects, and extension of the protocol to commands not defined in the core protocol.
 
@@ -28,7 +28,7 @@ These services are best bundled in a library which each registrar can utilise to
 
 ### Toolkit Overview
 
-The EPP toolkit developed and supplied by Neustar provides client-side libraries that implement the EPP specifications described in RFC 5730-5734, and extension mappings for published RFCs and proprietary extensions implemented in Registries developed by Neustar. These libraries are broken down into two key modules: an extensible set of EPP service element mappings to classes (object-oriented programming paradigm), and an EPP network transport module.
+The EPP toolkit developed and supplied by GoDaddy Registry provides client-side libraries that implement the EPP specifications described in RFC 5730-5734, and extension mappings for published RFCs and proprietary extensions implemented in Registries developed by GoDaddy Registry. These libraries are broken down into two key modules: an extensible set of EPP service element mappings to classes (object-oriented programming paradigm), and an EPP network transport module.
 
 The service element mapping module provides a simple means of translating between EPP service elements and their programmatic representation. The network transport module, which depends on session management service elements in the service element module, provides the following services; service information discovery, opening and closing EPP sessions, and sending and receiving EPP service elements.
 
@@ -116,7 +116,7 @@ The default configuration for log files contain XML sent to and received from th
 
 ## Quick Start Guide
 
-Neustar's EPP Toolkit allows you to send commands to an EPP service and receive back responses. To send commands it is necessary to create a session, which will handle socket connection, the EPP greeting, and logging in.
+GoDaddy Registry's EPP Toolkit allows you to send commands to an EPP service and receive back responses. To send commands it is necessary to create a session, which will handle socket connection, the EPP greeting, and logging in.
 
 **Create a session**
 
@@ -310,7 +310,7 @@ Alternatively, the user may implement custom handler classes and register those 
 
 ### Trademark Clearing House (TMCH)
 
-The toolkit provides an API to integrate with Registries to perform TMCH related functionality using Neustar TMCH extension.
+The toolkit provides an API to integrate with Registries to perform TMCH related functionality using GoDaddy Registry TMCH extension.
 It also provides an API to validate and parse SignedMarkData (SMD) file and access its contents,
 
 Given an input SMD file, the base64-encoded part of this file must be extracted:
