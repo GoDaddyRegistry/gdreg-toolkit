@@ -36,7 +36,7 @@ public class DomainUpdateBlockCommandExtension implements CommandExtension {
             xmlWriter.appendChild(createElement, "id", BLOCKV11.getURI()).setTextContent(id);
         }
 
-        if (onExpiryType != null ) {
+        if (onExpiryType != null) {
             Element chg = xmlWriter.appendChild(createElement, "chg");
             final Element chgElement = xmlWriter.appendChild(chg, "onExpiry", "action", onExpiryType.getCode());
             if (onExpiryType.equals(OnExpiryAction.CUSTOM)) {
