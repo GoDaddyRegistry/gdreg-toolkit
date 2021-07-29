@@ -70,6 +70,14 @@
     <complexType name="updateType">
         <sequence>
             <element name="id" type="block:clIDType"/>
+            <element name="chg" type="block:chgType"
+                     minOccurs="0"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="chgType">
+        <sequence>
+            <element name="onExpiry" type="block:onExpiryType"/>
         </sequence>
     </complexType>
 

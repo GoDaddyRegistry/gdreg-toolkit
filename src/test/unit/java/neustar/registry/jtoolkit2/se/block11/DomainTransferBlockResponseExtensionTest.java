@@ -9,7 +9,7 @@ import neustar.registry.jtoolkit2.se.DomainTransferResponse;
 import neustar.registry.jtoolkit2.xml.XMLDocument;
 import neustar.registry.jtoolkit2.xml.XMLParser;
 
-public class DomainTransferResponseBlockExtensionTest {
+public class DomainTransferBlockResponseExtensionTest {
 
     private static final XMLParser PARSER = new XMLParser();
 

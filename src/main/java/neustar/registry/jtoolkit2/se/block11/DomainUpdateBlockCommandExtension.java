@@ -24,6 +24,8 @@ public class DomainUpdateBlockCommandExtension implements CommandExtension {
     private static final long serialVersionUID = 4324879283895987704L;
 
     private String id;
+    private String onExpiryAction;
+    private OnExpiryAction onExpiryType;
 
     @Override
     public void addToCommand(Command command) {
@@ -33,9 +35,26 @@ public class DomainUpdateBlockCommandExtension implements CommandExtension {
         if (id != null) {
             xmlWriter.appendChild(createElement, "id", BLOCKV11.getURI()).setTextContent(id);
         }
+
+        if (onExpiryType != null ) {
+            Element chg = xmlWriter.appendChild(createElement, "chg");
+            final Element chgElement = xmlWriter.appendChild(chg, "onExpiry", "action", onExpiryType.getCode());
+            if (onExpiryType.equals(OnExpiryAction.CUSTOM)) {
+                chgElement.setTextContent(onExpiryAction);
+            }
+        }
+
     }
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public void setOnExpiryAction(String onExpiryAction) {
+        this.onExpiryAction = onExpiryAction;
+    }
+
+    public void setOnExpiryType(OnExpiryAction onExpiryType) {
+        this.onExpiryType = onExpiryType;
     }
 }

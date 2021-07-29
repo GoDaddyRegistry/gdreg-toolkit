@@ -15,7 +15,7 @@ import neustar.registry.jtoolkit2.se.Period;
 import neustar.registry.jtoolkit2.xml.XMLParser;
 
 
-public class DomainTransferCommandBlockExtensionTest {
+public class DomainTransferBlockCommandExtensionTest {
 
     private static final XMLParser PARSER = new XMLParser();
 
