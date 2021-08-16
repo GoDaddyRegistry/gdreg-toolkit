@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/NeustarRegistry/nsr-toolkit.png)](https://travis-ci.org/NeustarRegistry/nsr-toolkit)
+[![Build Status](https://travis-ci.com/GoDaddyRegistry/registrar-toolkit.png)](https://travis-ci.com/GoDaddyRegistry/registrar-toolkit)
 ## Downloads
 
 The latest nsr-toolkit is available for download. [nsr-toolkit v4.3.3](http://neustarregistry.github.io/repo/neustar/registry/nsrjtk/4.3.3/nsrjtk-4.3.3.jar) ([sources](http://neustarregistry.github.io/repo/neustar/registry/nsrjtk/4.3.3/nsrjtk-4.3.3-sources.jar) | [javadoc](http://neustarregistry.github.io/repo/neustar/registry/nsrjtk/4.3.3/nsrjtk-4.3.3-javadoc.jar))
@@ -74,7 +74,7 @@ For example (using Maven):
 
 #### Contribute
 
-You can view the source on [GitHub/NeustarRegistry](http://github.com/neustarregistry/nsr-toolkit). Contributions via pull requests are welcome.
+You can view the source on [GitHub/GoDaddyRegistry](http://github.com/godaddyregistry/registrar-toolkit). Contributions via pull requests are welcome.
 
 ### Development documentation
 
