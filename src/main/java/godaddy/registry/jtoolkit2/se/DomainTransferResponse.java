@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 import java.util.GregorianCalendar;
 
@@ -15,12 +15,12 @@ import javax.xml.xpath.XPathExpressionException;
  * transfer command, implemented by a subclass of the DomainTransferCommand
  * class.
  *
- * @see neustar.registry.jtoolkit2.se.DomainTransferCommand
- * @see neustar.registry.jtoolkit2.se.DomainTransferRequestCommand
- * @see neustar.registry.jtoolkit2.se.DomainTransferApproveCommand
- * @see neustar.registry.jtoolkit2.se.DomainTransferCancelCommand
- * @see neustar.registry.jtoolkit2.se.DomainTransferRejectCommand
- * @see neustar.registry.jtoolkit2.se.DomainTransferQueryCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainTransferCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainTransferRequestCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainTransferApproveCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainTransferCancelCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainTransferRejectCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainTransferQueryCommand
  */
 public class DomainTransferResponse extends TransferResponse {
     private static final long serialVersionUID = -3652461689615678734L;

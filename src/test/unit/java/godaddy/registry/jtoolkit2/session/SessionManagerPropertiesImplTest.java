@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 import org.junit.Before;
 import org.junit.Test;

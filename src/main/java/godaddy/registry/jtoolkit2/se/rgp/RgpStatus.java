@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.rgp;
+package godaddy.registry.jtoolkit2.se.rgp;
 
 public class RgpStatus {
     private final String status;

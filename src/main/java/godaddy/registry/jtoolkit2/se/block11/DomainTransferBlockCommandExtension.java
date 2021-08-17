@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.block11;
+package godaddy.registry.jtoolkit2.se.block11;
 
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.BLOCKV11;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.BLOCKV11;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * <p>Extension for the EPP Domain Create command, representing the Transfer Block aspects of the Block extension.</p>
@@ -15,7 +15,7 @@ import neustar.registry.jtoolkit2.xml.XMLWriter;
  * in as part of an EPP Domain Transfer command compliant with RFC5730 and RFC5731. The response expected from a
  * server should be handled by a Domain Transfer Response.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainTransferCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainTransferCommand
  * @see <a href="http://neustarregistry.github.io/doc/block-1.1/block-1.1.html">Block Extension Mapping for the
  * Extensible Provisioning Protocol (EPP)</a>
  */

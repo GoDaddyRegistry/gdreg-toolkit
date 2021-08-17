@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 /**
  * Configure the behaviour of a SessionPool.  {@link
- * neustar.registry.jtoolkit2.session.Session}s in the pool are configured from
- * the {@link neustar.registry.jtoolkit2.session.SessionProperties} extended by
+ * godaddy.registry.jtoolkit2.session.Session}s in the pool are configured from
+ * the {@link godaddy.registry.jtoolkit2.session.SessionProperties} extended by
  * this.
  */
 public interface SessionPoolProperties {

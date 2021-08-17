@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.xml;
+package godaddy.registry.jtoolkit2.xml;
 
 import java.util.logging.Logger;
 

@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se.extendedAvailability;
+package godaddy.registry.jtoolkit2.se.extendedAvailability;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.se.ReceiveSE;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.se.ReceiveSE;
 
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 import javax.xml.xpath.XPathExpressionException;
 import java.util.GregorianCalendar;
@@ -21,7 +21,7 @@ import java.util.Map;
  * <p>For flexibility, this implementation extracts the data from the response using XPath queries, the expressions
  * for which are defined statically.</p>
  *
- * @see neustar.registry.jtoolkit2.se.extendedAvailability.DomainCheckExtendedAvailabilityCommandExtension
+ * @see godaddy.registry.jtoolkit2.se.extendedAvailability.DomainCheckExtendedAvailabilityCommandExtension
  * @see <a href="http://neustarregistry.github.io/doc/exAvail-1.0/exAvail-1.0.html">Domain Name Check Extended
  * Availability Extension Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */

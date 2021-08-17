@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.extendedAvailability;
+package godaddy.registry.jtoolkit2.se.extendedAvailability;
 
 import java.util.GregorianCalendar;
 

@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 import javax.xml.xpath.XPathExpressionException;
 
@@ -11,7 +11,7 @@ import javax.xml.xpath.XPathExpressionException;
  * response to a valid domain info command requesting information about an ENUM
  * domain, as implemented by the DomainInfoCommand class.
  *
- * @see neustar.registry.jtoolkit2.se.DomainInfoCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainInfoCommand
  */
 public final class EnumDomainInfoResponse extends DomainInfoResponse {
     private static final long serialVersionUID = -7813953838538474917L;

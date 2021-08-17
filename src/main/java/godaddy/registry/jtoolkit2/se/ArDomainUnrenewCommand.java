@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import java.util.GregorianCalendar;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * Mapping of EPP urn:ar:params:xml:ns:arext-1.0 domainUnrenew command

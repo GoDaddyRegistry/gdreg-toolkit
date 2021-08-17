@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import java.io.Serializable;
 import java.util.GregorianCalendar;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Provides access to EPP server parameters as published in an EPP greeting

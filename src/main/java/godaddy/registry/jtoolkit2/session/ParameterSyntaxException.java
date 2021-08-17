@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 /**
  * There was a syntax error in the value of a parameter in the EPP command

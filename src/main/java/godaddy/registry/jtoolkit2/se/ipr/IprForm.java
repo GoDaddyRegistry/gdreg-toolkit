@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.ipr;
+package godaddy.registry.jtoolkit2.se.ipr;
 
 public enum IprForm {
 

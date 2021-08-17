@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
 public enum MzbType {
     standard,

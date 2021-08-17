@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.generic;
+package godaddy.registry.jtoolkit2.se.generic;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,11 +7,11 @@ import java.util.GregorianCalendar;
 import org.junit.Before;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.CLTRID;
-import neustar.registry.jtoolkit2.se.Period;
-import neustar.registry.jtoolkit2.se.PeriodUnit;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.se.Period;
+import godaddy.registry.jtoolkit2.se.PeriodUnit;
 
 public class DomainRegistrantTransferCommandTest {
     private static String registrantName = "AusRegistry";

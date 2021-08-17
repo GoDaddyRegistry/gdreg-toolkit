@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se.tmch.exception;
+package godaddy.registry.jtoolkit2.se.tmch.exception;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 public class SmdSignatureMissingException extends RuntimeException {
     @Override

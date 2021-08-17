@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.tmch.exception;
+package godaddy.registry.jtoolkit2.se.tmch.exception;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -8,7 +8,7 @@ import static org.powermock.api.mockito.PowerMockito.mockStatic;
 
 import java.util.Date;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;

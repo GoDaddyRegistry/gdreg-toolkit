@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import org.w3c.dom.Element;
 

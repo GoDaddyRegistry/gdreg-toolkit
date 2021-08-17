@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.Timer;
 
 import java.text.SimpleDateFormat;
 import java.text.FieldPosition;

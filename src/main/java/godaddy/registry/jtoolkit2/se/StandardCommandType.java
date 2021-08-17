@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 /**
  * An enumeration of the standard commands defined in RFC5730.

@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.unspec;
+package godaddy.registry.jtoolkit2.se.unspec;
 
 public enum WhoisType {
     LEGAL("Legal"),

@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**
  * Use this to set domain extension properties relating to variants for an EPP
  * Domain Info command.
  *
- * @see neustar.registry.jtoolkit2.se.DomainVariantResponseExtension
+ * @see godaddy.registry.jtoolkit2.se.DomainVariantResponseExtension
  */
 public final class DomainInfoVariantCommandExtension implements CommandExtension {
 

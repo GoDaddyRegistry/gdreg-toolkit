@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.se.fee;
+package godaddy.registry.jtoolkit2.se.fee;
 
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.CLTRID;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.DomainCheckCommand;
-import neustar.registry.jtoolkit2.se.Period;
-import neustar.registry.jtoolkit2.xml.XmlOutputConfig;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.DomainCheckCommand;
+import godaddy.registry.jtoolkit2.se.Period;
+import godaddy.registry.jtoolkit2.xml.XmlOutputConfig;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

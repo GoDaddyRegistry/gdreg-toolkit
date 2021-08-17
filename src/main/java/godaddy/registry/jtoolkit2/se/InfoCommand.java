@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.xml.Attribute;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.xml.Attribute;
 
 /**
  * Representation of the EPP info command, as defined in RFC5730.
@@ -10,7 +10,7 @@ import neustar.registry.jtoolkit2.xml.Attribute;
  * and specify the object-specific identifier of the object to request
  * information about.
  *
- * @see neustar.registry.jtoolkit2.se.InfoResponse
+ * @see godaddy.registry.jtoolkit2.se.InfoResponse
  */
 public abstract class InfoCommand extends ObjectCommand {
 

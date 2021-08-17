@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import static neustar.registry.jtoolkit2.se.Host.hostObjects;
+import static godaddy.registry.jtoolkit2.se.Host.hostObjects;
 
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**

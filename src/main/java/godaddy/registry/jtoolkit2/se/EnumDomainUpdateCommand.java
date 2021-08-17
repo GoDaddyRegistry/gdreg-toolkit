@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import org.w3c.dom.Element;
 
@@ -9,7 +9,7 @@ import org.w3c.dom.Element;
  * method.  The response expected from a server should be handled by a Response
  * object.
  *
- * @see neustar.registry.jtoolkit2.se.Response
+ * @see godaddy.registry.jtoolkit2.se.Response
  */
 public class EnumDomainUpdateCommand extends DomainUpdateCommand {
     private static final long serialVersionUID = 5215585614104019868L;

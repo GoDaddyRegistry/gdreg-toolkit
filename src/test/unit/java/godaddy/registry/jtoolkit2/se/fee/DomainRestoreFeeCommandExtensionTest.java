@@ -1,14 +1,14 @@
-package neustar.registry.jtoolkit2.se.fee;
+package godaddy.registry.jtoolkit2.se.fee;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.CLTRID;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.DomainRenewCommand;
-import neustar.registry.jtoolkit2.se.Period;
-import neustar.registry.jtoolkit2.se.unspec.DomainRenewCommandUnspecExtension;
-import neustar.registry.jtoolkit2.se.unspec.RestoreReasonCode;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.DomainRenewCommand;
+import godaddy.registry.jtoolkit2.se.Period;
+import godaddy.registry.jtoolkit2.se.unspec.DomainRenewCommandUnspecExtension;
+import godaddy.registry.jtoolkit2.se.unspec.RestoreReasonCode;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 import org.junit.Before;
 import org.junit.Test;
 import org.xml.sax.SAXException;

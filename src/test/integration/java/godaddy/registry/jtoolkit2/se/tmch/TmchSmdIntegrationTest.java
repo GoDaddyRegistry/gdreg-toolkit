@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.tmch;
+package godaddy.registry.jtoolkit2.se.tmch;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
@@ -9,14 +9,14 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.Date;
 
-import neustar.registry.jtoolkit2.se.tmch.exception.ExpiredSignedMarkDataException;
-import neustar.registry.jtoolkit2.se.tmch.exception.InvalidSignedMarkDataException;
-import neustar.registry.jtoolkit2.se.tmch.exception.NotYetValidSignedMarkDataException;
-import neustar.registry.jtoolkit2.se.tmch.exception.SmdSignatureInvalidException;
-import neustar.registry.jtoolkit2.se.tmch.exception.SmdSignatureMissingException;
-import neustar.registry.jtoolkit2.se.tmch.exception.TmchCertificateRevokedException;
-import neustar.registry.jtoolkit2.se.tmch.exception.TmchInvalidCertificateException;
-import neustar.registry.jtoolkit2.se.tmch.exception.TmchSmdRevokedException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.ExpiredSignedMarkDataException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.InvalidSignedMarkDataException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.NotYetValidSignedMarkDataException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.SmdSignatureInvalidException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.SmdSignatureMissingException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.TmchCertificateRevokedException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.TmchInvalidCertificateException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.TmchSmdRevokedException;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

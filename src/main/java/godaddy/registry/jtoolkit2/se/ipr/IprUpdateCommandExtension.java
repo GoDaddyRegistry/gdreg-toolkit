@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.ipr;
+package godaddy.registry.jtoolkit2.se.ipr;
 
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.IPR;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.IPR;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 
 /**
@@ -17,8 +17,8 @@ import neustar.registry.jtoolkit2.xml.XMLWriter;
  * compliant with RFC5730 and RFC5731. The response expected from a server should be
  * handled by a generic Response object.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainUpdateCommand
- * @see neustar.registry.jtoolkit2.se.Response
+ * @see godaddy.registry.jtoolkit2.se.DomainUpdateCommand
+ * @see godaddy.registry.jtoolkit2.se.Response
  */
 public class IprUpdateCommandExtension implements CommandExtension {
 

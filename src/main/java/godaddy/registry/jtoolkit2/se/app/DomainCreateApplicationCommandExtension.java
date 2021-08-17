@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se.app;
+package godaddy.registry.jtoolkit2.se.app;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**
@@ -14,8 +14,8 @@ import org.w3c.dom.Element;
  * in as part of an EPP Domain Create command compliant with RFC5730 and RFC5731. The response expected from a
  * server should be handled by a Domain Create Application Response.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainCreateCommand
- * @see neustar.registry.jtoolkit2.se.app.DomainCreateApplicationResponseExtension
+ * @see godaddy.registry.jtoolkit2.se.DomainCreateCommand
+ * @see godaddy.registry.jtoolkit2.se.app.DomainCreateApplicationResponseExtension
  * @see <a href="http://neustarregistry.github.io/doc/application-1.0/application-1.0.html">Domain Name Application
  * Extension Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */

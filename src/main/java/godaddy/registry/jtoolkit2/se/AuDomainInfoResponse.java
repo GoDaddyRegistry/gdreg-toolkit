@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Extension of the domain mapping of the EPP info response, as defined in

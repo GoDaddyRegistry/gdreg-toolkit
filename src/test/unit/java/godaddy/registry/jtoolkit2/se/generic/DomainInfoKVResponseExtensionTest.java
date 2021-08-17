@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.generic;
+package godaddy.registry.jtoolkit2.se.generic;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -8,10 +8,10 @@ import static org.junit.Assert.assertTrue;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.se.DomainInfoResponse;
-import neustar.registry.jtoolkit2.xml.ParsingException;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.DomainInfoResponse;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class DomainInfoKVResponseExtensionTest {
 

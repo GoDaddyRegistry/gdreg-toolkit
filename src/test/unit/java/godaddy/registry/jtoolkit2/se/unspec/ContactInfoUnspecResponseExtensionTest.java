@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.unspec;
+package godaddy.registry.jtoolkit2.se.unspec;
 
 import javax.xml.xpath.XPathExpressionException;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.xml.ParsingException;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;

@@ -1,15 +1,15 @@
-package neustar.registry.jtoolkit2;
+package godaddy.registry.jtoolkit2;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import neustar.registry.jtoolkit2.se.CommandType;
-import neustar.registry.jtoolkit2.se.StandardCommandType;
-import neustar.registry.jtoolkit2.session.SessionManagerProperties;
-import neustar.registry.jtoolkit2.session.SessionPoolProperties;
-import neustar.registry.jtoolkit2.session.SessionProperties;
+import godaddy.registry.jtoolkit2.se.CommandType;
+import godaddy.registry.jtoolkit2.se.StandardCommandType;
+import godaddy.registry.jtoolkit2.session.SessionManagerProperties;
+import godaddy.registry.jtoolkit2.session.SessionPoolProperties;
+import godaddy.registry.jtoolkit2.session.SessionProperties;
 import org.junit.Ignore;
 
 @Ignore

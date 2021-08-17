@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * The credentials supplied to the EPP login command were considered invalid

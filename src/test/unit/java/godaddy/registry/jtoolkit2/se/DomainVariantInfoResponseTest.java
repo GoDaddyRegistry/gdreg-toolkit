@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class DomainVariantInfoResponseTest {
     private static final String SINGLE_DOMAIN_RESPONSE_XML =

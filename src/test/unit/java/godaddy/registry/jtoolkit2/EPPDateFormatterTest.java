@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2;
+package godaddy.registry.jtoolkit2;
 
 import static org.junit.Assert.assertEquals;
 

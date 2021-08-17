@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se.price;
+package godaddy.registry.jtoolkit2.se.price;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-import neustar.registry.jtoolkit2.se.Period;
+import godaddy.registry.jtoolkit2.se.Period;
 
 /**
  * Contains the price information of a domain returned in a check response extension.

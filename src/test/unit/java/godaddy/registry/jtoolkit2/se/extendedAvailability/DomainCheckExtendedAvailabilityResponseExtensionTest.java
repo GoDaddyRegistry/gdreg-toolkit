@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se.extendedAvailability;
+package godaddy.registry.jtoolkit2.se.extendedAvailability;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 import org.junit.Before;
 import org.junit.Test;
 

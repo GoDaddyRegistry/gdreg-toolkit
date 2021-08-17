@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se.tmch;
+package godaddy.registry.jtoolkit2.se.tmch;
 
 import javax.xml.xpath.XPathExpressionException;
 
 import java.util.logging.Logger;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 

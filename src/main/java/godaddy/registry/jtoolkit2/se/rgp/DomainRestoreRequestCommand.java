@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se.rgp;
+package godaddy.registry.jtoolkit2.se.rgp;
 
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.StandardObjectType;
-import neustar.registry.jtoolkit2.se.UpdateCommand;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.StandardObjectType;
+import godaddy.registry.jtoolkit2.se.UpdateCommand;
 import org.w3c.dom.Element;
 
 /**

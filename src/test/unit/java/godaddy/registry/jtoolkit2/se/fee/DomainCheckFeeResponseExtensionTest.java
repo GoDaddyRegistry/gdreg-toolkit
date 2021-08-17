@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se.fee;
+package godaddy.registry.jtoolkit2.se.fee;
 
-import neustar.registry.jtoolkit2.se.DomainCheckResponse;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.DomainCheckResponse;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 import org.junit.Test;
 
 import java.math.BigDecimal;

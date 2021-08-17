@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.ObjectType;
-import neustar.registry.jtoolkit2.se.StandardCommandType;
-import neustar.registry.jtoolkit2.se.TransferOp;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.ObjectType;
+import godaddy.registry.jtoolkit2.se.StandardCommandType;
+import godaddy.registry.jtoolkit2.se.TransferOp;
 
 /**
  * The superclass of all MZB transfer command classes.  Subclasses are

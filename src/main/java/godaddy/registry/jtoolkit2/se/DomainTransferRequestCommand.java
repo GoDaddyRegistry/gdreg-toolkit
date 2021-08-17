@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 /**
  * Use this to request the transfer of a domain object from another client.
@@ -7,7 +7,7 @@ package neustar.registry.jtoolkit2.se;
  * compliant domain transfer EPP command service elements via the toXML method
  * with the transfer operation set to "request".
  *
- * @see neustar.registry.jtoolkit2.se.DomainTransferResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainTransferResponse
  */
 public class DomainTransferRequestCommand extends DomainTransferCommand {
     private static final long serialVersionUID = 4786406676232060462L;

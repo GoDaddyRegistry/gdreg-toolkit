@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.test.infrastructure;
+package godaddy.registry.jtoolkit2.test.infrastructure;
 
-import static neustar.registry.jtoolkit2.test.infrastructure.InetAddressMatcher.matchIpAddress;
+import static godaddy.registry.jtoolkit2.test.infrastructure.InetAddressMatcher.matchIpAddress;
 
 import java.util.Arrays;
 
-import neustar.registry.jtoolkit2.se.Host;
+import godaddy.registry.jtoolkit2.se.Host;
 import org.hamcrest.CustomTypeSafeMatcher;
 
 public class HostMatcher extends CustomTypeSafeMatcher<Host> {

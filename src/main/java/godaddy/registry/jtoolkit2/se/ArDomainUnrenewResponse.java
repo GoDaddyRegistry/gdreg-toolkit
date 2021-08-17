@@ -1,7 +1,7 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 import javax.xml.xpath.XPathExpressionException;
 import java.util.GregorianCalendar;
@@ -12,7 +12,7 @@ import java.util.GregorianCalendar;
  * is sent by a compliant EPP server in response to a valid domain unrenew
  * command, implemented by the ArDomainUnrenewCommand class.
  *
- * @see neustar.registry.jtoolkit2.se.ArDomainUnrenewCommand
+ * @see godaddy.registry.jtoolkit2.se.ArDomainUnrenewCommand
  */
 public class ArDomainUnrenewResponse extends Response {
     private static final long serialVersionUID = -5724827272682186647L;

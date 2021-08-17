@@ -1,16 +1,16 @@
-package neustar.registry.jtoolkit2.se.price;
+package godaddy.registry.jtoolkit2.se.price;
 
-import static neustar.registry.jtoolkit2.se.ReceiveSE.replaceIndex;
+import static godaddy.registry.jtoolkit2.se.ReceiveSE.replaceIndex;
 
 import javax.xml.xpath.XPathExpressionException;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-import neustar.registry.jtoolkit2.se.Period;
-import neustar.registry.jtoolkit2.se.PeriodUnit;
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.Period;
+import godaddy.registry.jtoolkit2.se.PeriodUnit;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * <p>Representation of the EPP Domain Check response extension for Pricing Check aspect of the Domain Name Check

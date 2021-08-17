@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.tmdb.xml;
+package godaddy.registry.jtoolkit2.tmdb.xml;
 
 public class TmNoticeXmlParseException extends Exception {
     private static final long serialVersionUID = -6116321023599481558L;

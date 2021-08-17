@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * A write operation was performed on a Session which had not yet been

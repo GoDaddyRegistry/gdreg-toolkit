@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * Superclass of all command classes which implement an object-mapped EPP

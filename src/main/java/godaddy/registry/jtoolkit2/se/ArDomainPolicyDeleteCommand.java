@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * Mapping of EPP urn:ar:params:xml:ns:arext-1.0 policyDelete command specified

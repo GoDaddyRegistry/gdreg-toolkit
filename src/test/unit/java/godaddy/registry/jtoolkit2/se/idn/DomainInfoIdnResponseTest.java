@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.idn;
+package godaddy.registry.jtoolkit2.se.idn;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.se.*;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.*;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class DomainInfoIdnResponseTest {
 

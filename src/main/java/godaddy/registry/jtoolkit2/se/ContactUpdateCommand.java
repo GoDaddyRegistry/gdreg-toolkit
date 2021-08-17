@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * Use this to request the update of a contact object provisioned in an EPP
@@ -10,7 +10,7 @@ import neustar.registry.jtoolkit2.ErrorPkg;
  * contact update EPP command service elements via the toXML method.  The
  * response expected from a server should be handled by a Response object.
  *
- * @see neustar.registry.jtoolkit2.se.Response
+ * @see godaddy.registry.jtoolkit2.se.Response
  */
 public class ContactUpdateCommand extends UpdateCommand {
     private static final long serialVersionUID = -8110771660904052882L;

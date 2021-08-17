@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se.fee;
+package godaddy.registry.jtoolkit2.se.fee;
 
-import neustar.registry.jtoolkit2.se.DomainRenewResponse;
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.DomainRenewResponse;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

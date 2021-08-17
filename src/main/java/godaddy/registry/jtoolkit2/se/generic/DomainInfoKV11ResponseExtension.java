@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.se.generic;
+package godaddy.registry.jtoolkit2.se.generic;
 
 import javax.xml.xpath.XPathExpressionException;
 import java.util.Set;
 import java.util.TreeMap;
 
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

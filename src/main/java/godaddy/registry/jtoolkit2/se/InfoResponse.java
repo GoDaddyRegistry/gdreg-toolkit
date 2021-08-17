@@ -1,22 +1,22 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import java.util.GregorianCalendar;
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Representation of the EPP info response, as defined in RFC5730.  Subclasses
  * of this must specify the object to which the command is mapped.  Instances
  * of this class provide an interface to access info response data for the
- * object identified in a {@link neustar.registry.jtoolkit2.se.InfoCommand}.
+ * object identified in a {@link godaddy.registry.jtoolkit2.se.InfoCommand}.
  * This relies on the instance first being initialised by a suitable EPP info
  * response using the method fromXML.  For flexibility, this implementation
  * extracts the data from the response using XPath queries, the expressions for
  * which are defined statically.
  *
- * @see neustar.registry.jtoolkit2.se.InfoCommand
+ * @see godaddy.registry.jtoolkit2.se.InfoCommand
  */
 public abstract class InfoResponse extends DataResponse {
 

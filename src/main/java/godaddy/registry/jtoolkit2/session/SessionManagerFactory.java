@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 import java.io.IOException;
 
 /**
  * This factory provides instances of SessionManager implementations.  The
  * default SessionManager implementation is
- * neustar.registry.jtoolkit2.session.SessionManagerImpl.  Alternative
+ * godaddy.registry.jtoolkit2.session.SessionManagerImpl.  Alternative
  * implementations may be loaded as described in the newInstance
  * descriptions.
  */
@@ -18,7 +18,7 @@ public final class SessionManagerFactory {
     /**
      * Create a new SessionManager instance.  The implementation defaults to
      * SessionManagerImpl but may be overridden by setting the system
-     * property neustar.registry.jtoolkit2.sessionManager.class to the full
+     * property godaddy.registry.jtoolkit2.sessionManager.class to the full
      * name of the alternative class.
      *
      * @param propertiesFile The location of a properties file to be used to
@@ -46,7 +46,7 @@ public final class SessionManagerFactory {
     /**
      * Create a new SessionManager instance.  The implementation defaults to
      * SessionManagerImpl but may be overridden by setting the system
-     * property neustar.registry.jtoolkit2.sessionManager.class to the full
+     * property godaddy.registry.jtoolkit2.sessionManager.class to the full
      * name of the alternative class.
      *
      * @param props SessionManager properties that have already been loaded.
@@ -60,7 +60,7 @@ public final class SessionManagerFactory {
     public static SessionManager newInstance(SessionManagerProperties props)
             throws ConfigurationException {
 
-        String managerClass = System.getProperty("neustar.registry.jtoolkit2.sessionManager.class");
+        String managerClass = System.getProperty("godaddy.registry.jtoolkit2.sessionManager.class");
         if (managerClass != null) {
             try {
                 return newInstance(props, managerClass);

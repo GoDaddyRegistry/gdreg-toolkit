@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
-import neustar.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.Timer;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * Use this to request the update of a domain object provisioned in an EPP
@@ -10,7 +10,7 @@ import neustar.registry.jtoolkit2.ErrorPkg;
  * domain update EPP command service elements via the toXML method.  The
  * response expected from a server should be handled by a Response object.
  *
- * @see neustar.registry.jtoolkit2.se.Response
+ * @see godaddy.registry.jtoolkit2.se.Response
  */
 public class DomainUpdateCommand extends UpdateCommand {
     private static final long serialVersionUID = 2409916920503111390L;

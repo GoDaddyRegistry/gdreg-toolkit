@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 import org.w3c.dom.Element;
 
@@ -10,10 +10,10 @@ import org.w3c.dom.Element;
  * the toXML method, login service elements compliant with the login
  * specification in RFC5730.
  *
- * @see neustar.registry.jtoolkit2.se.Greeting For services available to be used
+ * @see godaddy.registry.jtoolkit2.se.Greeting For services available to be used
  * in the login command on the chosen EPP server.
  *
- * @see neustar.registry.jtoolkit2.se.LogoutCommand To end a session opened
+ * @see godaddy.registry.jtoolkit2.se.LogoutCommand To end a session opened
  * using LoginCommand.
  */
 public final class LoginCommand extends Command {

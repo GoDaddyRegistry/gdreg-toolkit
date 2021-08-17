@@ -1,7 +1,7 @@
-package neustar.registry.jtoolkit2.se.maintenance;
+package godaddy.registry.jtoolkit2.se.maintenance;
 
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.InfoCommand;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.InfoCommand;
 
 /**
  * Use this class to generate a standards-compliant XML document, given simple

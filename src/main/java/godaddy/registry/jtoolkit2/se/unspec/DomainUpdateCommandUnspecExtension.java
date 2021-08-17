@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se.unspec;
+package godaddy.registry.jtoolkit2.se.unspec;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 
@@ -16,8 +16,8 @@ import org.w3c.dom.Element;
  * can be supplied depending on the usage.
  * The response expected from a server should be handled by a Domain Update Response.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainUpdateCommand
- * @see neustar.registry.jtoolkit2.se.Response
+ * @see godaddy.registry.jtoolkit2.se.DomainUpdateCommand
+ * @see godaddy.registry.jtoolkit2.se.Response
  */
 public class DomainUpdateCommandUnspecExtension implements CommandExtension {
 

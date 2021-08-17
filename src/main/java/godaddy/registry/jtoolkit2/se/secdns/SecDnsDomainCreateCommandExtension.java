@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se.secdns;
+package godaddy.registry.jtoolkit2.se.secdns;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * Processes the &lt;create&gt; element as documented in RFC5910.

@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se.price;
+package godaddy.registry.jtoolkit2.se.price;
 
 import java.math.BigDecimal;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * <p>Extension for the EPP Domain Renew command, representing the Renew Premium Domain aspect of the
@@ -18,8 +18,8 @@ import neustar.registry.jtoolkit2.xml.XMLWriter;
  * supplied, should match the renewal fee that is set for the domain name for the requested period.
  * The response expected from a server should be handled by a Domain Renew Response object.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainRenewCommand
- * @see neustar.registry.jtoolkit2.se.DomainRenewResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainRenewCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainRenewResponse
  * @see <a href="http://neustarregistry.github.io/doc/price-1.0/price-1.0.html">Domain Name Price Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */

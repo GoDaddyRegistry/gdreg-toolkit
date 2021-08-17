@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to access contact object information as provided in an EPP contact
@@ -10,7 +10,7 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * sent by a compliant EPP server in response to a valid contact info command,
  * implemented by the ContactInfoCommand class.
  *
- * @see neustar.registry.jtoolkit2.se.ContactInfoCommand
+ * @see godaddy.registry.jtoolkit2.se.ContactInfoCommand
  */
 public class ContactInfoResponse extends InfoResponse {
     private static final long serialVersionUID = 8856905477910465383L;

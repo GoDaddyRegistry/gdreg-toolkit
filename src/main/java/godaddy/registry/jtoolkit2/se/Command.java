@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
-import neustar.registry.jtoolkit2.xml.XmlOutputConfig;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XmlOutputConfig;
 
 /**
  * Standard and extension EPP command service elements are modelled by

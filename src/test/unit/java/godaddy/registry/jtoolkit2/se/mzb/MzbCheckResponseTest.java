@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,8 +6,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class MzbCheckResponseTest {
     private static final String XML =

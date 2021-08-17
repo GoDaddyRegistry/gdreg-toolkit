@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.xml;
+package godaddy.registry.jtoolkit2.xml;
 
 import java.io.ByteArrayOutputStream;
 import java.util.logging.Logger;
@@ -14,7 +14,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Text;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * A prefixless XML document builder implementation.  That is, a default

@@ -1,7 +1,7 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 import javax.xml.xpath.XPathExpressionException;
 import java.util.GregorianCalendar;
@@ -12,7 +12,7 @@ import java.util.GregorianCalendar;
  * compliant EPP server in response to a valid domain registrant transfer command,
  * implemented by the AuDomainTransferRegistrantCommand.
  *
- * @see neustar.registry.jtoolkit2.se.AuDomainTransferRegistrantCommand
+ * @see godaddy.registry.jtoolkit2.se.AuDomainTransferRegistrantCommand
  */
 public class AuDomainTransferRegistrantResponse extends Response {
     private static final long serialVersionUID = -5724827272682186647L;

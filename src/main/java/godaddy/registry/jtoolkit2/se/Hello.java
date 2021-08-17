@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.xml.XmlOutputConfig;
+import godaddy.registry.jtoolkit2.xml.XmlOutputConfig;
 
 /**
  * Use this to request service information in the form of an EPP greeting

@@ -1,7 +1,7 @@
-package neustar.registry.jtoolkit2.se.tmch;
+package godaddy.registry.jtoolkit2.se.tmch;
 
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.SIGNED_MARK_DATA;
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.XML_DSIG;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.SIGNED_MARK_DATA;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.XML_DSIG;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -44,17 +44,17 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import neustar.registry.jtoolkit2.se.tmch.exception.ExpiredSignedMarkDataException;
-import neustar.registry.jtoolkit2.se.tmch.exception.InvalidSignedMarkDataException;
-import neustar.registry.jtoolkit2.se.tmch.exception.NotYetValidSignedMarkDataException;
-import neustar.registry.jtoolkit2.se.tmch.exception.SmdSignatureInvalidException;
-import neustar.registry.jtoolkit2.se.tmch.exception.SmdSignatureMissingException;
-import neustar.registry.jtoolkit2.se.tmch.exception.TmchCertificateInvalidTypeException;
-import neustar.registry.jtoolkit2.se.tmch.exception.TmchCertificateRevokedException;
-import neustar.registry.jtoolkit2.se.tmch.exception.TmchInvalidCertificateException;
-import neustar.registry.jtoolkit2.se.tmch.exception.TmchSmdRevokedException;
-import neustar.registry.jtoolkit2.xml.NamespaceContextImpl;
-import neustar.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.ExpiredSignedMarkDataException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.InvalidSignedMarkDataException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.NotYetValidSignedMarkDataException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.SmdSignatureInvalidException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.SmdSignatureMissingException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.TmchCertificateInvalidTypeException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.TmchCertificateRevokedException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.TmchInvalidCertificateException;
+import godaddy.registry.jtoolkit2.se.tmch.exception.TmchSmdRevokedException;
+import godaddy.registry.jtoolkit2.xml.NamespaceContextImpl;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
 
 /**
  * This defines the operations to facilitate validation and parsing of signed mark data for TMCH.

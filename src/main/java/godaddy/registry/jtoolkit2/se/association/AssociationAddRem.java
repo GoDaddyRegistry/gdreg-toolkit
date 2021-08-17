@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se.association;
+package godaddy.registry.jtoolkit2.se.association;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.AddRemType;
-import neustar.registry.jtoolkit2.se.Appendable;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.AddRemType;
+import godaddy.registry.jtoolkit2.se.Appendable;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * Specification of how to write the add and rem elements to a domain update

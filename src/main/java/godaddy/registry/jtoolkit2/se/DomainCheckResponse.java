@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to access availability data for domains as provided in an EPP
@@ -10,7 +10,7 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * element is sent by a compliant EPP server in response to a valid domain
  * check command, implemented by the DomainCheckCommand class.
  *
- * @see neustar.registry.jtoolkit2.se.DomainCheckCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainCheckCommand
  */
 public class DomainCheckResponse extends CheckResponse<String> {
 

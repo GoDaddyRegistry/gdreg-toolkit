@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 import javax.xml.xpath.XPathExpressionException;
 
@@ -10,7 +10,7 @@ import javax.xml.xpath.XPathExpressionException;
  * is sent by a compliant EPP server in response to a valid contact create
  * command, implemented by the ContactCreateCommand.
  *
- * @see neustar.registry.jtoolkit2.se.ContactCreateCommand
+ * @see godaddy.registry.jtoolkit2.se.ContactCreateCommand
  */
 public class ContactCreateResponse extends CreateResponse {
     private static final long serialVersionUID = -5714257489160996356L;

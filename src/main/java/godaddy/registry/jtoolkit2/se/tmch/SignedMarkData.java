@@ -1,14 +1,14 @@
-package neustar.registry.jtoolkit2.se.tmch;
+package godaddy.registry.jtoolkit2.se.tmch;
 
 import javax.xml.bind.DatatypeConverter;
 import java.util.Date;
 import java.util.logging.Logger;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 import org.w3c.dom.Element;
 
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.SIGNED_MARK_DATA;
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.MARK;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.SIGNED_MARK_DATA;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.MARK;
 
 /**
  * Represents a signedMarkData from the Trademark Clearing House extension, represented by the "signedMark" element

@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.se.secdns;
+package godaddy.registry.jtoolkit2.se.secdns;
 
 import java.util.ArrayList;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Process the &lt;infData&gt; element as documented in RFC5910.

@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import java.util.GregorianCalendar;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * When offline processing of an action has been completed by the server
@@ -14,10 +14,10 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * informing the client of the completion of offline processing.  A
  * NotificationResponse is always specific to a particular object mapping, and
  * so a subclass of this models the specific object data - such an object is
- * returned by methods in {@link neustar.registry.jtoolkit2.se.PollResponse}.
+ * returned by methods in {@link godaddy.registry.jtoolkit2.se.PollResponse}.
  *
- * @see neustar.registry.jtoolkit2.se.PollRequestCommand
- * @see neustar.registry.jtoolkit2.se.PollResponse
+ * @see godaddy.registry.jtoolkit2.se.PollRequestCommand
+ * @see godaddy.registry.jtoolkit2.se.PollResponse
  */
 public abstract class NotificationResponse extends DataResponse {
 

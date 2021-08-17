@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
 import java.util.GregorianCalendar;
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.InfoResponse;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.InfoResponse;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Mapping of EPP mzb:info command response

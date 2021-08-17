@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -7,10 +7,10 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import neustar.registry.jtoolkit2.ConfigurationError;
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.se.CommandType;
-import neustar.registry.jtoolkit2.se.Greeting;
+import godaddy.registry.jtoolkit2.ConfigurationError;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.se.CommandType;
+import godaddy.registry.jtoolkit2.se.Greeting;
 
 /**
  * This defines the operations or actions for managing a SessionPool and a StatsViewer.

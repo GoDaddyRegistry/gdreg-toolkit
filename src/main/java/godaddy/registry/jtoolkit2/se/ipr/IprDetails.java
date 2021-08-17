@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.ipr;
+package godaddy.registry.jtoolkit2.se.ipr;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 public class IprDetails {
 

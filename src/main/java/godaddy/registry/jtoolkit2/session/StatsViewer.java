@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
-import neustar.registry.jtoolkit2.se.CommandType;
+import godaddy.registry.jtoolkit2.se.CommandType;
 
 /**
  * Provides the means to view individual or aggregate Session statistics.

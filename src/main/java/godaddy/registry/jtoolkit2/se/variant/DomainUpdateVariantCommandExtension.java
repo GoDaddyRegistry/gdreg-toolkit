@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se.variant;
+package godaddy.registry.jtoolkit2.se.variant;
 
 import java.util.ArrayList;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.IdnaDomainVariant;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.IdnaDomainVariant;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**
@@ -21,8 +21,8 @@ import org.w3c.dom.Element;
  * <p>This extension will throw an {@link IllegalArgumentException} if no variants
  * are added or removed as part of the "Update Variants" operation.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainUpdateCommand
- * @see neustar.registry.jtoolkit2.se.Response
+ * @see godaddy.registry.jtoolkit2.se.DomainUpdateCommand
+ * @see godaddy.registry.jtoolkit2.se.Response
  */
 public class DomainUpdateVariantCommandExtension implements CommandExtension {
 

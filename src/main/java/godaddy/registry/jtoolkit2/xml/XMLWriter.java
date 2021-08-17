@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.xml;
+package godaddy.registry.jtoolkit2.xml;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * An XMLWriter provides a simple interface to build a DOM tree and serialize it to XML format. XMLWriters are namespace
@@ -202,7 +202,7 @@ public abstract class XMLWriter {
      *
      * @return the string
      * @throws SAXException the SAX exception
-     * {@link neustar.registry.jtoolkit2.xml.HandlerFactory}. That handler will receive notification of
+     * {@link godaddy.registry.jtoolkit2.xml.HandlerFactory}. That handler will receive notification of
      * parsing/validation failures.
      */
     public String toXML(XmlOutputConfig xmlOutputConfig) throws SAXException {

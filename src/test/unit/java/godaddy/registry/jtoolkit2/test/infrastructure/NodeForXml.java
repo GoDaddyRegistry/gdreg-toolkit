@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.test.infrastructure;
+package godaddy.registry.jtoolkit2.test.infrastructure;
 
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;

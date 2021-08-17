@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.tmdb.xml;
+package godaddy.registry.jtoolkit2.tmdb.xml;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
-import neustar.registry.jtoolkit2.tmdb.model.TmAddress;
+import godaddy.registry.jtoolkit2.tmdb.model.TmAddress;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 

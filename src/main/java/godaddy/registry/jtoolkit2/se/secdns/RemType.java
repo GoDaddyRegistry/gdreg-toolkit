@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se.secdns;
+package godaddy.registry.jtoolkit2.se.secdns;
 
 import java.util.ArrayList;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * Models the &lt;rem&gt; element as documented in RFC5910.

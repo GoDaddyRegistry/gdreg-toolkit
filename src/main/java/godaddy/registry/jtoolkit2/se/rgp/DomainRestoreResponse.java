@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se.rgp;
+package godaddy.registry.jtoolkit2.se.rgp;
 
 import java.util.List;
 
-import neustar.registry.jtoolkit2.se.Response;
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.Response;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * <p>Representation of the EPP Domain Update response with the Redemption Status aspect of the

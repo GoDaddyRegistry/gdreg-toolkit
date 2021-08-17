@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 import java.io.IOException;
 
-import neustar.registry.jtoolkit2.se.Greeting;
-import neustar.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.se.Greeting;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
 
 /**
  * This defines the operations or actions required for a SessionManager.

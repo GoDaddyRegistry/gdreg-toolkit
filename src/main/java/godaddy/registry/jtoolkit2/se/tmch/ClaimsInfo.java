@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.tmch;
+package godaddy.registry.jtoolkit2.se.tmch;
 
 public class ClaimsInfo {
     private final Boolean exists;

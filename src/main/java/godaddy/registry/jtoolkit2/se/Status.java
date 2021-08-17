@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 /**
  * This class models EPP object statuses.  Instances of this class can be used
@@ -6,8 +6,8 @@ package neustar.registry.jtoolkit2.se;
  * InfoResponse to provide access to the attributes of status values of the
  * queried object.
  *
- * @see neustar.registry.jtoolkit2.se.UpdateCommand
- * @see neustar.registry.jtoolkit2.se.InfoResponse
+ * @see godaddy.registry.jtoolkit2.se.UpdateCommand
+ * @see godaddy.registry.jtoolkit2.se.InfoResponse
  */
 public class Status implements java.io.Serializable {
     private static final long serialVersionUID = -7773747306050766351L;

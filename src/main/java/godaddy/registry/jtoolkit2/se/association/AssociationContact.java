@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se.association;
+package godaddy.registry.jtoolkit2.se.association;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 public class AssociationContact {
 

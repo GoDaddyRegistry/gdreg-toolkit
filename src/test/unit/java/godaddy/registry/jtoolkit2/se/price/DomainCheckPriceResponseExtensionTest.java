@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.price;
+package godaddy.registry.jtoolkit2.se.price;
 
 import static org.junit.Assert.*;
 
@@ -7,9 +7,9 @@ import java.math.BigDecimal;
 import org.junit.Before;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.se.PeriodUnit;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.PeriodUnit;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class DomainCheckPriceResponseExtensionTest {
 

@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import java.util.GregorianCalendar;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * Use this to request the renewal of a domain object provisioned in an EPP
@@ -13,7 +13,7 @@ import neustar.registry.jtoolkit2.ErrorPkg;
  * response expected from a server should be handled by a DomainRenewResponse
  * object.
  *
- * @see neustar.registry.jtoolkit2.se.DomainRenewResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainRenewResponse
  */
 public class DomainRenewCommand extends ObjectCommand {
     private static final long serialVersionUID = 4860769492565708028L;

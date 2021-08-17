@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.tmdb.model;
+package godaddy.registry.jtoolkit2.tmdb.model;
 
 /**
  * Represents a TradeMark claim contact, represented by the "contact" element in the

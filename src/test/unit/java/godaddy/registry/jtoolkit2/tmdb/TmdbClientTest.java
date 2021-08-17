@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.tmdb;
+package godaddy.registry.jtoolkit2.tmdb;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -12,9 +12,9 @@ import javax.net.ssl.HttpsURLConnection;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-import neustar.registry.jtoolkit2.session.TLSContext;
-import neustar.registry.jtoolkit2.tmdb.model.TmNotice;
-import neustar.registry.jtoolkit2.tmdb.xml.TmNoticeXmlParser;
+import godaddy.registry.jtoolkit2.session.TLSContext;
+import godaddy.registry.jtoolkit2.tmdb.model.TmNotice;
+import godaddy.registry.jtoolkit2.tmdb.xml.TmNoticeXmlParser;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,17 +1,17 @@
-package neustar.registry.jtoolkit2.demo;
+package godaddy.registry.jtoolkit2.demo;
 
 import java.util.List;
 
-import neustar.registry.jtoolkit2.se.DomainInfoCommand;
-import neustar.registry.jtoolkit2.se.DomainInfoResponse;
-import neustar.registry.jtoolkit2.se.ResultCode;
-import neustar.registry.jtoolkit2.se.secdns.DSData;
-import neustar.registry.jtoolkit2.se.secdns.SecDnsDomainInfoResponseExtension;
-import neustar.registry.jtoolkit2.session.SessionManager;
-import neustar.registry.jtoolkit2.session.SessionManagerFactory;
-import neustar.registry.jtoolkit2.session.SessionManagerProperties;
-import neustar.registry.jtoolkit2.session.SessionManagerPropertiesImpl;
-import neustar.registry.jtoolkit2.session.Transaction;
+import godaddy.registry.jtoolkit2.se.DomainInfoCommand;
+import godaddy.registry.jtoolkit2.se.DomainInfoResponse;
+import godaddy.registry.jtoolkit2.se.ResultCode;
+import godaddy.registry.jtoolkit2.se.secdns.DSData;
+import godaddy.registry.jtoolkit2.se.secdns.SecDnsDomainInfoResponseExtension;
+import godaddy.registry.jtoolkit2.session.SessionManager;
+import godaddy.registry.jtoolkit2.session.SessionManagerFactory;
+import godaddy.registry.jtoolkit2.session.SessionManagerProperties;
+import godaddy.registry.jtoolkit2.session.SessionManagerPropertiesImpl;
+import godaddy.registry.jtoolkit2.session.Transaction;
 
 /**
  * A demonstration of the steps required to perform a domain info, with the response

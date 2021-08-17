@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 /**
  * Indicates that the keystore location specified did not refer to a readable

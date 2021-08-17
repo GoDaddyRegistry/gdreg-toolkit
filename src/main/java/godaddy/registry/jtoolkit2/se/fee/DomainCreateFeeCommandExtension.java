@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.fee;
+package godaddy.registry.jtoolkit2.se.fee;
 
 import java.math.BigDecimal;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**
@@ -18,8 +18,8 @@ import org.w3c.dom.Element;
  * values supplied, should match the fees that are set for the domain name for the requested period.
  * The response expected from a server should be handled by a Domain Create Response.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainCreateCommand
- * @see neustar.registry.jtoolkit2.se.DomainCreateResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainCreateCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainCreateResponse
  * @see <a href="https://tools.ietf.org/html/draft-brown-epp-fees-03">Domain Name Fee Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */

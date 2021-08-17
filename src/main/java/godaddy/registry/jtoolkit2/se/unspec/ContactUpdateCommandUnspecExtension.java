@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.se.unspec;
+package godaddy.registry.jtoolkit2.se.unspec;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * <p>Extension for the EPP Contact Update command, indicating the contact can be used as an EXTContact.  This will
@@ -14,7 +14,7 @@ import neustar.registry.jtoolkit2.xml.XMLWriter;
  * <p>Use this to command to mark a contact as an EXTContact which will cause NYC specific address validation
  * to be performed. </p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainRenewCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainRenewCommand
  */
 public class ContactUpdateCommandUnspecExtension implements CommandExtension {
 

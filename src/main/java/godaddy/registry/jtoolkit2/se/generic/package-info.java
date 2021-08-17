@@ -5,5 +5,5 @@
  * @see <a href="http://neustarregistry.github.io/doc/kv-1.0/kv-1.0.html">Key-Value Mapping for the Extensible
  * Provisioning Protocol (EPP)</a>
  */
-package neustar.registry.jtoolkit2.se.generic;
+package godaddy.registry.jtoolkit2.se.generic;
 

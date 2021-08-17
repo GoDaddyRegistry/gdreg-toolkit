@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.xml.Attribute;
+import godaddy.registry.jtoolkit2.xml.Attribute;
 
 /**
  * Use this to request information about a domain object provisioned in an EPP
  * Registry.  Instances of this class generate RFC5730 and RFC5731 compliant
  * domain info EPP command service elements via the toXML method.
  *
- * @see neustar.registry.jtoolkit2.se.DomainInfoResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainInfoResponse
  */
 public class DomainInfoCommand extends InfoCommand {
     private static final long serialVersionUID = -9129030981710943397L;

@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import java.util.Arrays;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * The Class Host are configured and it has name of host and ip addresses.

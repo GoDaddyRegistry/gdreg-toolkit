@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.rgp;
+package godaddy.registry.jtoolkit2.se.rgp;
 
 /**
  * Used to store an element for a domain restore report that has a text element

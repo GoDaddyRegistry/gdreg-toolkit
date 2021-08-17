@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 /**
  * Thrown when configuration of a SessionManager fails and a previous

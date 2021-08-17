@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se.maintenance;
+package godaddy.registry.jtoolkit2.se.maintenance;
 
-import static neustar.registry.jtoolkit2.se.maintenance.MaintenanceWindowInfoResponseBuilder.infoResponseBuilder;
+import static godaddy.registry.jtoolkit2.se.maintenance.MaintenanceWindowInfoResponseBuilder.infoResponseBuilder;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
@@ -12,9 +12,9 @@ import java.util.TimeZone;
 
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.xml.ParsingException;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class MaintenanceWindowListInfoResponseTest {
 

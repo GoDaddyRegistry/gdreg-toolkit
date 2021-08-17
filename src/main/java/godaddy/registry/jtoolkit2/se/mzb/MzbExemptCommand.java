@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.MZB;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.MZB;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.ObjectType;
-import neustar.registry.jtoolkit2.se.StandardCommandType;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.ObjectType;
+import godaddy.registry.jtoolkit2.se.StandardCommandType;
 
 /**
  * A EpsExemptCommand is used to locate the IPR Number and all the labels

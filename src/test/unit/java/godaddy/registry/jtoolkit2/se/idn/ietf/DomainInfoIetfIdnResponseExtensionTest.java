@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.se.idn.ietf;
+package godaddy.registry.jtoolkit2.se.idn.ietf;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import neustar.registry.jtoolkit2.se.DomainInfoResponse;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.DomainInfoResponse;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 import org.junit.Before;
 import org.junit.Test;
 

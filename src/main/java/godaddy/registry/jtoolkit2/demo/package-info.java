@@ -7,5 +7,5 @@
  * <li>Command Pipelining</li>
  * </ol>.
  */
-package neustar.registry.jtoolkit2.demo;
+package godaddy.registry.jtoolkit2.demo;
 

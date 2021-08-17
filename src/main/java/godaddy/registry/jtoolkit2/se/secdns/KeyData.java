@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.secdns;
+package godaddy.registry.jtoolkit2.se.secdns;
 
 import java.io.Serializable;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * Models the &lt;keyData&gt; element as documented in RFC5910.

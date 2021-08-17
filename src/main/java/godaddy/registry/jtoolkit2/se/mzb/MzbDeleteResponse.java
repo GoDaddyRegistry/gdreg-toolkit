@@ -1,7 +1,7 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
-import neustar.registry.jtoolkit2.se.Response;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.Response;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to access delete response data as provided in an

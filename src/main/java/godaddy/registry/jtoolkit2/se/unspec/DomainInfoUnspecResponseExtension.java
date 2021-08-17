@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se.unspec;
+package godaddy.registry.jtoolkit2.se.unspec;
 
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 import javax.xml.xpath.XPathExpressionException;
 
 /**

@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import static neustar.registry.jtoolkit2.se.Host.hostObjects;
+import static godaddy.registry.jtoolkit2.se.Host.hostObjects;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * Mapping of EPP urn:ietf:params:xml:ns:domain-1.0 create command specified in

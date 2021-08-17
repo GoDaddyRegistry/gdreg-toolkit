@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se.tmch.exception;
+package godaddy.registry.jtoolkit2.se.tmch.exception;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;

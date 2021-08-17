@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.xml;
+package godaddy.registry.jtoolkit2.xml;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -10,9 +10,9 @@ import java.util.logging.Logger;
 
 import javax.xml.namespace.NamespaceContext;
 
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.ExtensionImpl;
-import neustar.registry.jtoolkit2.se.StandardObjectType;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.ExtensionImpl;
+import godaddy.registry.jtoolkit2.se.StandardObjectType;
 
 /**
  * <p>

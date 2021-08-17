@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se.block11;
+package godaddy.registry.jtoolkit2.se.block11;
 
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.BLOCKV11;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.BLOCKV11;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.DomainCreateCommand;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.DomainCreateCommand;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * <p>Extension for the EPP Domain Create command, representing the Update Block aspects of the Block extension.</p>

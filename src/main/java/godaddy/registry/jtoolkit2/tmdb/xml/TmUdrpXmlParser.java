@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.tmdb.xml;
+package godaddy.registry.jtoolkit2.tmdb.xml;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
-import neustar.registry.jtoolkit2.tmdb.model.TmUdrp;
+import godaddy.registry.jtoolkit2.tmdb.model.TmUdrp;
 import org.w3c.dom.Node;
 
 public class TmUdrpXmlParser {

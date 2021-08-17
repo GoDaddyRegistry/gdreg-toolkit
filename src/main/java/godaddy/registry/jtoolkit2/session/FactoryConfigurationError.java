@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
-import neustar.registry.jtoolkit2.ConfigurationError;
+import godaddy.registry.jtoolkit2.ConfigurationError;
 
 /**
  * A fatal error occurred while trying to obtain an instance from a toolkit

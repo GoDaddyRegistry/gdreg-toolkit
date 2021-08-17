@@ -1,16 +1,16 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.Response;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.Response;
 
 /**
  * Each EPP command/response pair is modelled as a Transaction.  A Transaction
  * associates a Response with a Command to enable the user to determine the
  * effect of each command.  The {@link
- * neustar.registry.jtoolkit2.session.SessionManager} takes either a single
+ * godaddy.registry.jtoolkit2.session.SessionManager} takes either a single
  * Transaction or an array of Transactions as an argument to {@link
- * neustar.registry.jtoolkit2.session.SessionManager#execute}.
+ * godaddy.registry.jtoolkit2.session.SessionManager#execute}.
  */
 public class Transaction {
     private Command command;
@@ -40,8 +40,8 @@ public class Transaction {
     /**
      * Get the current state of this Transaction.
      *
-     * @see neustar.registry.jtoolkit2.session.SessionManagerImpl#execute(Transaction[])
-     * @see neustar.registry.jtoolkit2.session.TransactionState
+     * @see godaddy.registry.jtoolkit2.session.SessionManagerImpl#execute(Transaction[])
+     * @see godaddy.registry.jtoolkit2.session.TransactionState
      */
     public TransactionState getState() {
         return state;

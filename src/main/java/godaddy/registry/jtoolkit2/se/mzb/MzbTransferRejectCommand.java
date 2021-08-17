@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
-import neustar.registry.jtoolkit2.se.TransferOp;
+import godaddy.registry.jtoolkit2.se.TransferOp;
 
 /**
  * Use this to reject the transfer of a MZB object currently pending

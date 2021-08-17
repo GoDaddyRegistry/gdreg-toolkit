@@ -5,5 +5,5 @@
  * @see <a href="http://neustarregistry.github.io/doc/exAvail-1.0/exAvail-1.0.html">
  *     Domain Name Extended Availability Extension Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
-package neustar.registry.jtoolkit2.se.extendedAvailability;
+package godaddy.registry.jtoolkit2.se.extendedAvailability;
 

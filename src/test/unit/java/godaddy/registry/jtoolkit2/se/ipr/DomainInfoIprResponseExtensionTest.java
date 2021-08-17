@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.ipr;
+package godaddy.registry.jtoolkit2.se.ipr;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.se.DomainInfoResponse;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.DomainInfoResponse;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class DomainInfoIprResponseExtensionTest {
     private XMLParser parser = new XMLParser();

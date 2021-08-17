@@ -1,18 +1,18 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import javax.xml.xpath.XPathExpressionException;
 
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import neustar.registry.jtoolkit2.se.app.DomainInfoApplicationResponseExtension;
-import neustar.registry.jtoolkit2.se.generic.DomainInfoKVResponseExtension;
-import neustar.registry.jtoolkit2.se.idn.DomainInfoIdnResponseExtension;
-import neustar.registry.jtoolkit2.se.idn.ietf.DomainInfoIetfIdnResponseExtension;
-import neustar.registry.jtoolkit2.se.maintenance.MaintenanceWindowInfoResponse;
-import neustar.registry.jtoolkit2.se.rgp.DomainInfoRgpResponseExtension;
-import neustar.registry.jtoolkit2.se.secdns.SecDnsDomainInfoResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.app.DomainInfoApplicationResponseExtension;
+import godaddy.registry.jtoolkit2.se.generic.DomainInfoKVResponseExtension;
+import godaddy.registry.jtoolkit2.se.idn.DomainInfoIdnResponseExtension;
+import godaddy.registry.jtoolkit2.se.idn.ietf.DomainInfoIetfIdnResponseExtension;
+import godaddy.registry.jtoolkit2.se.maintenance.MaintenanceWindowInfoResponse;
+import godaddy.registry.jtoolkit2.se.rgp.DomainInfoRgpResponseExtension;
+import godaddy.registry.jtoolkit2.se.secdns.SecDnsDomainInfoResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to access poll response information, as provided in an EPP poll
@@ -22,11 +22,11 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * getDomainTransferResponse methods may return object-specific information,
  * which is in addition to any message queue data potentially available via the
  * {@code getMessage} and related methods in the {@link
- * neustar.registry.jtoolkit2.se.Response} class.
+ * godaddy.registry.jtoolkit2.se.Response} class.
  *
- * @see neustar.registry.jtoolkit2.se.PollCommand
- * @see neustar.registry.jtoolkit2.se.PollRequestCommand
- * @see neustar.registry.jtoolkit2.se.PollAckCommand
+ * @see godaddy.registry.jtoolkit2.se.PollCommand
+ * @see godaddy.registry.jtoolkit2.se.PollRequestCommand
+ * @see godaddy.registry.jtoolkit2.se.PollAckCommand
  */
 public class PollResponse extends Response {
     private static final long serialVersionUID = 8823883186209520812L;

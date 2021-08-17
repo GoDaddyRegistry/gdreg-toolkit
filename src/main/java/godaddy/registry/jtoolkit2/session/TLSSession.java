@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -15,24 +15,24 @@ import java.util.logging.Logger;
 import javax.net.ssl.SSLHandshakeException;
 import javax.net.ssl.SSLSocket;
 
-import neustar.registry.jtoolkit2.xml.XmlOutputConfig;
+import godaddy.registry.jtoolkit2.xml.XmlOutputConfig;
 import org.xml.sax.SAXException;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.CLTRID;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandType;
-import neustar.registry.jtoolkit2.se.Greeting;
-import neustar.registry.jtoolkit2.se.LoginCommand;
-import neustar.registry.jtoolkit2.se.LogoutCommand;
-import neustar.registry.jtoolkit2.se.PollRequestCommand;
-import neustar.registry.jtoolkit2.se.Response;
-import neustar.registry.jtoolkit2.se.Result;
-import neustar.registry.jtoolkit2.se.ResultCode;
-import neustar.registry.jtoolkit2.xml.ParsingException;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandType;
+import godaddy.registry.jtoolkit2.se.Greeting;
+import godaddy.registry.jtoolkit2.se.LoginCommand;
+import godaddy.registry.jtoolkit2.se.LogoutCommand;
+import godaddy.registry.jtoolkit2.se.PollRequestCommand;
+import godaddy.registry.jtoolkit2.se.Response;
+import godaddy.registry.jtoolkit2.se.Result;
+import godaddy.registry.jtoolkit2.se.ResultCode;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 /**
  * <p>

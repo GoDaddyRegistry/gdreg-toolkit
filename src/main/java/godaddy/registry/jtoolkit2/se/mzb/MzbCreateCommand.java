@@ -1,14 +1,14 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
 import java.util.List;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.ObjectCommand;
-import neustar.registry.jtoolkit2.se.Period;
-import neustar.registry.jtoolkit2.se.StandardCommandType;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.ObjectCommand;
+import godaddy.registry.jtoolkit2.se.Period;
+import godaddy.registry.jtoolkit2.se.StandardCommandType;
 
 /**
  * Mapping of EPP urn:X-gdreg:params:xml:ns:eps-2.0 create command

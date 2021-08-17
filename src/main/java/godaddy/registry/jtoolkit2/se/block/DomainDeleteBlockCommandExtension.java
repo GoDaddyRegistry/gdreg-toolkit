@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se.block;
+package godaddy.registry.jtoolkit2.se.block;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**
@@ -13,8 +13,8 @@ import org.w3c.dom.Element;
  * compliant with RFC5730 and RFC5731. The response expected from a server should be
  * handled by a generic Response.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainDeleteCommand
- * @see neustar.registry.jtoolkit2.se.Response
+ * @see godaddy.registry.jtoolkit2.se.DomainDeleteCommand
+ * @see godaddy.registry.jtoolkit2.se.Response
  * @see <a href="http://neustarregistry.github.io/doc/block-1.0/block-1.0.html">Block Extension Mapping for the
  * Extensible Provisioning Protocol (EPP)</a>
  */

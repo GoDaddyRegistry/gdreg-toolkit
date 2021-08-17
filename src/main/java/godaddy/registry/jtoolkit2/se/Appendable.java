@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import java.io.Serializable;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * Implementors of this interface provide a mechanism for building the part of

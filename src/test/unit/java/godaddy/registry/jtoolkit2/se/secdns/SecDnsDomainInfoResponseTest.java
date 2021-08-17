@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.secdns;
+package godaddy.registry.jtoolkit2.se.secdns;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -7,9 +7,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.se.DomainInfoResponse;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.DomainInfoResponse;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public final class SecDnsDomainInfoResponseTest {
 

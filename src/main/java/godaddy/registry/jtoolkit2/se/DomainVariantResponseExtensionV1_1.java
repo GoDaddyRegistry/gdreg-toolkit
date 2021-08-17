@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import javax.xml.xpath.XPathExpressionException;
 import java.util.ArrayList;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * <p>Extension for the EPP Domain Create and Domain Info response, representing the Variant Info
@@ -17,7 +17,7 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * <p>For flexibility, this implementation extracts the data from the response using XPath queries, the expressions
  * for which are defined statically.</p>
  *
- * @see neustar.registry.jtoolkit2.se.variant.DomainUpdateVariantCommandExtension
+ * @see godaddy.registry.jtoolkit2.se.variant.DomainUpdateVariantCommandExtension
  * @see <a href="http://neustarregistry.github.io/doc/variant-1.1/variant-1.1.html">Domain Name Variant Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
@@ -48,7 +48,7 @@ public final class DomainVariantResponseExtensionV1_1 extends
     }
 
     /**
-     * @see neustar.registry.jtoolkit2.se.ResponseExtension#fromXML(XMLDocument)
+     * @see godaddy.registry.jtoolkit2.se.ResponseExtension#fromXML(XMLDocument)
      */
     public void fromXML(final XMLDocument xmlDoc)
             throws XPathExpressionException {

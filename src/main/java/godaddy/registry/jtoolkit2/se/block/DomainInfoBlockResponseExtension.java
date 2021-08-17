@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se.block;
+package godaddy.registry.jtoolkit2.se.block;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * <p>Extension for the EPP Domain Info response, representing the Block Info aspects of the Block extension.</p>
@@ -16,8 +16,8 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * <p>For flexibility, this implementation extracts the data from the response using XPath queries, the expressions
  * for which are defined statically.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainInfoCommand
- * @see neustar.registry.jtoolkit2.se.block.DomainInfoBlockCommandExtension
+ * @see godaddy.registry.jtoolkit2.se.DomainInfoCommand
+ * @see godaddy.registry.jtoolkit2.se.block.DomainInfoBlockCommandExtension
  * @see <a href="http://neustarregistry.github.io/doc/block-1.0/block-1.0.html">Block Extension Mapping for the
  * Extensible Provisioning Protocol (EPP)</a>
  */

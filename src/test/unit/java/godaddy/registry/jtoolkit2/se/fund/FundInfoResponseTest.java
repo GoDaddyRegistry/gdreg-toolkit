@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.fund;
+package godaddy.registry.jtoolkit2.se.fund;
 
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 
 import java.math.BigDecimal;
 
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 import org.junit.Test;
 
 public class FundInfoResponseTest {

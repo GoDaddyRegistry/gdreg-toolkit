@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 /**
  * Representation of the EPP transfer command, as defined in RFC5730.
@@ -8,7 +8,7 @@ import neustar.registry.jtoolkit2.ErrorPkg;
  * the type of transfer operation and specify the object-specific identifier of
  * the object to create a transfer command for.
  *
- * @see neustar.registry.jtoolkit2.se.TransferResponse
+ * @see godaddy.registry.jtoolkit2.se.TransferResponse
  */
 public abstract class TransferCommand extends ObjectCommand {
 

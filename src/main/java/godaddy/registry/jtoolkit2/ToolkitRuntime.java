@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2;
+package godaddy.registry.jtoolkit2;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

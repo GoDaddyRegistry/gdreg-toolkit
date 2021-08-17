@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
-import neustar.registry.jtoolkit2.se.TransferOp;
+import godaddy.registry.jtoolkit2.se.TransferOp;
 
 /**
  * Use this to query the transfer state of a MZB object.  Instances of this

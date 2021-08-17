@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.fund;
+package godaddy.registry.jtoolkit2.se.fund;
 
 import java.math.BigDecimal;
 

@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.block11;
+package godaddy.registry.jtoolkit2.se.block11;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.se.DomainCreateResponse;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.DomainCreateResponse;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class DomainCreateBlockResponseExtensionTest {
     private XMLParser parser = new XMLParser();

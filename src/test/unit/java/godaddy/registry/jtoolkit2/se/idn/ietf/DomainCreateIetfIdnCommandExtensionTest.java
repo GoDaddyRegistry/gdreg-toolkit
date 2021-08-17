@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.idn.ietf;
+package godaddy.registry.jtoolkit2.se.idn.ietf;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.CLTRID;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.DomainCreateCommand;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.DomainCreateCommand;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

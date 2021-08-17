@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
-import neustar.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.Timer;
 
-import neustar.registry.jtoolkit2.se.CommandType;
+import godaddy.registry.jtoolkit2.se.CommandType;
 
 import java.util.List;
 import java.util.ListIterator;

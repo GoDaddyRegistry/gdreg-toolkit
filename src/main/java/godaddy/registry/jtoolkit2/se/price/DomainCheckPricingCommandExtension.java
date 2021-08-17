@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se.price;
+package godaddy.registry.jtoolkit2.se.price;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.se.*;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.*;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * <p>Extension for the EPP Domain Check command, representing the Pricing Check aspect of the Domain Name Pricing

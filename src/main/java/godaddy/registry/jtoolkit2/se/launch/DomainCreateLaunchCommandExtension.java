@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se.launch;
+package godaddy.registry.jtoolkit2.se.launch;
 
 import java.util.GregorianCalendar;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.NamespaceContextImpl;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.NamespaceContextImpl;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**
@@ -17,7 +17,7 @@ import org.w3c.dom.Element;
  * noticeID)</p>
  *
  *
- * @see neustar.registry.jtoolkit2.se.DomainCreateCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainCreateCommand
  * @see DomainCreateLaunchCommandExtension
  * @see <a href="https://tools.ietf.org/html/draft-ietf-eppext-launchphase-07">Domain Name Launch
  * Extension Mapping for the Extensible Provisioning Protocol (EPP)</a>

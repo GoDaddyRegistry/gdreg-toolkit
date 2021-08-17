@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 import static org.junit.Assert.*;
 
-import neustar.registry.jtoolkit2.TestEnvironment;
-import neustar.registry.jtoolkit2.se.StandardCommandType;
+import godaddy.registry.jtoolkit2.TestEnvironment;
+import godaddy.registry.jtoolkit2.se.StandardCommandType;
 
 import org.junit.After;
 import org.junit.Before;

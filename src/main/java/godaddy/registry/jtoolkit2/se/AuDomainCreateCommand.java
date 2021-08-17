@@ -1,19 +1,19 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 import org.w3c.dom.Element;
 
 /**
  * Extension of EPP urn:ietf:params:xml:ns:domain-1.0 create command specified
  * in RFC5731 to urn:X-au:params:xml:ns:auext-1.2.  .au domains must be
  * provisioned using this class rather than {@link
- * neustar.registry.jtoolkit2.se.DomainCreateCommand}, as the au extension data
+ * godaddy.registry.jtoolkit2.se.DomainCreateCommand}, as the au extension data
  * is mandatory.
  * Use this class to generate a standards-compliant XML document, given simple
  * input parameters.  The toXML method in Command serialises this object to
  * XML.
  * The response expected from a server should be handled by a {@link
- * neustar.registry.jtoolkit2.se.DomainCreateResponse} object.
+ * godaddy.registry.jtoolkit2.se.DomainCreateResponse} object.
  */
 public final class AuDomainCreateCommand extends DomainCreateCommand {
     private static final long serialVersionUID = -8632740108172182234L;

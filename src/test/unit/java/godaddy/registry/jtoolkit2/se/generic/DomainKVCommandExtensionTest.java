@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.generic;
+package godaddy.registry.jtoolkit2.se.generic;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -7,12 +7,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.xml.sax.SAXException;
 
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.CLTRID;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.DomainCreateCommand;
-import neustar.registry.jtoolkit2.se.DomainUpdateCommand;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.DomainCreateCommand;
+import godaddy.registry.jtoolkit2.se.DomainUpdateCommand;
 
 public class DomainKVCommandExtensionTest {
     private static String registrantName = "AusRegistry";

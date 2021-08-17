@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se.price;
+package godaddy.registry.jtoolkit2.se.price;
 
-import static neustar.registry.jtoolkit2.se.ReceiveSE.replaceIndex;
+import static godaddy.registry.jtoolkit2.se.ReceiveSE.replaceIndex;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -8,8 +8,8 @@ import java.util.Map;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.se.*;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.*;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * <p>Representation of the EPP Domain Check response extension for Pricing Check aspect of the Domain Name Check

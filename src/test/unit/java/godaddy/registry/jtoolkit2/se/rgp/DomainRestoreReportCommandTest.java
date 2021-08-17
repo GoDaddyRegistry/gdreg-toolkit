@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.rgp;
+package godaddy.registry.jtoolkit2.se.rgp;
 
 import static org.junit.Assert.assertEquals;
 
 import java.util.GregorianCalendar;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.tmch;
+package godaddy.registry.jtoolkit2.se.tmch;
 
 /**
  * Represents a holder's entitlement from the Trademark Clearing House extension,

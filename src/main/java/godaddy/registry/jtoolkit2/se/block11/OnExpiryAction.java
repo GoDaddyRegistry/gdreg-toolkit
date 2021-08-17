@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.block11;
+package godaddy.registry.jtoolkit2.se.block11;
 
 public enum OnExpiryAction {
     EXPIRE("expire"),

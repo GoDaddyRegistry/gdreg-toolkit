@@ -3,5 +3,5 @@
  * content from XML documents, and also for writing XML documents from a DOM
  * tree.
  */
-package neustar.registry.jtoolkit2.xml;
+package godaddy.registry.jtoolkit2.xml;
 

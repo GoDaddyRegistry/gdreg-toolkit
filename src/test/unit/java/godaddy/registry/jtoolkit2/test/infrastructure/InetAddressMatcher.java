@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.test.infrastructure;
+package godaddy.registry.jtoolkit2.test.infrastructure;
 
-import neustar.registry.jtoolkit2.se.InetAddress;
+import godaddy.registry.jtoolkit2.se.InetAddress;
 import org.hamcrest.CustomTypeSafeMatcher;
 
 public class InetAddressMatcher extends CustomTypeSafeMatcher<InetAddress> {

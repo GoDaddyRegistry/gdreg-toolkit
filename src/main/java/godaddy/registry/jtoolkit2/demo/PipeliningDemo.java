@@ -1,20 +1,20 @@
-package neustar.registry.jtoolkit2.demo;
+package godaddy.registry.jtoolkit2.demo;
 
-import neustar.registry.jtoolkit2.se.ContactCheckCommand;
-import neustar.registry.jtoolkit2.se.ContactCheckResponse;
-import neustar.registry.jtoolkit2.se.DomainCheckCommand;
-import neustar.registry.jtoolkit2.se.DomainCheckResponse;
-import neustar.registry.jtoolkit2.se.DomainInfoCommand;
-import neustar.registry.jtoolkit2.se.DomainInfoResponse;
-import neustar.registry.jtoolkit2.se.HostCheckCommand;
-import neustar.registry.jtoolkit2.se.HostCheckResponse;
-import neustar.registry.jtoolkit2.se.Result;
-import neustar.registry.jtoolkit2.se.ResultCode;
-import neustar.registry.jtoolkit2.session.SessionManager;
-import neustar.registry.jtoolkit2.session.SessionManagerFactory;
-import neustar.registry.jtoolkit2.session.SessionManagerProperties;
-import neustar.registry.jtoolkit2.session.SessionManagerPropertiesImpl;
-import neustar.registry.jtoolkit2.session.Transaction;
+import godaddy.registry.jtoolkit2.se.ContactCheckCommand;
+import godaddy.registry.jtoolkit2.se.ContactCheckResponse;
+import godaddy.registry.jtoolkit2.se.DomainCheckCommand;
+import godaddy.registry.jtoolkit2.se.DomainCheckResponse;
+import godaddy.registry.jtoolkit2.se.DomainInfoCommand;
+import godaddy.registry.jtoolkit2.se.DomainInfoResponse;
+import godaddy.registry.jtoolkit2.se.HostCheckCommand;
+import godaddy.registry.jtoolkit2.se.HostCheckResponse;
+import godaddy.registry.jtoolkit2.se.Result;
+import godaddy.registry.jtoolkit2.se.ResultCode;
+import godaddy.registry.jtoolkit2.session.SessionManager;
+import godaddy.registry.jtoolkit2.session.SessionManagerFactory;
+import godaddy.registry.jtoolkit2.session.SessionManagerProperties;
+import godaddy.registry.jtoolkit2.session.SessionManagerPropertiesImpl;
+import godaddy.registry.jtoolkit2.session.Transaction;
 
 /**
  * A demonstration of the steps required to pipeline a series of commands

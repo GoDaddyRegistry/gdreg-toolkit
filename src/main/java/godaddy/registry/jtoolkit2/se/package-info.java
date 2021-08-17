@@ -1,7 +1,7 @@
 /**
  * <p>Contains the full set of basic
- * {@link neustar.registry.jtoolkit2.se.Command}<code>s</code>
- * and {@link neustar.registry.jtoolkit2.se.Response}<code>s</code> for EPP
+ * {@link godaddy.registry.jtoolkit2.se.Command}<code>s</code>
+ * and {@link godaddy.registry.jtoolkit2.se.Response}<code>s</code> for EPP
  * service communication, as well as the classes required for sending and
  * receiving EPP messages.</p>
  *
@@ -11,12 +11,12 @@
  *
  * <p>The Extensible Provisioning Protocol (EPP) defines different services or
  * commands that must be mapped to and from Java objects. Each
- * {@link neustar.registry.jtoolkit2.se.SendSE} class has a corresponding XML
+ * {@link godaddy.registry.jtoolkit2.se.SendSE} class has a corresponding XML
  * representation which is an EPP service element that should be sent from the
- * client to the server. Each {@link neustar.registry.jtoolkit2.se.ReceiveSE}
+ * client to the server. Each {@link godaddy.registry.jtoolkit2.se.ReceiveSE}
  * class should be given the appropriate type of XML document, which is an EPP
  * service element received by the client from the server, from which the
  * object will make available the data in the service element.</p>
  */
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 

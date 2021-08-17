@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.tmdb;
+package godaddy.registry.jtoolkit2.tmdb;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;

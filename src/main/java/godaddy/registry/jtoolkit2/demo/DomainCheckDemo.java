@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.demo;
+package godaddy.registry.jtoolkit2.demo;
 
-import neustar.registry.jtoolkit2.se.DomainCheckCommand;
-import neustar.registry.jtoolkit2.se.DomainCheckResponse;
-import neustar.registry.jtoolkit2.session.SessionManager;
-import neustar.registry.jtoolkit2.session.SessionManagerFactory;
-import neustar.registry.jtoolkit2.session.SessionManagerProperties;
-import neustar.registry.jtoolkit2.session.SessionManagerPropertiesImpl;
-import neustar.registry.jtoolkit2.session.Transaction;
+import godaddy.registry.jtoolkit2.se.DomainCheckCommand;
+import godaddy.registry.jtoolkit2.se.DomainCheckResponse;
+import godaddy.registry.jtoolkit2.session.SessionManager;
+import godaddy.registry.jtoolkit2.session.SessionManagerFactory;
+import godaddy.registry.jtoolkit2.session.SessionManagerProperties;
+import godaddy.registry.jtoolkit2.session.SessionManagerPropertiesImpl;
+import godaddy.registry.jtoolkit2.session.Transaction;
 
 /**
  * A basic demonstration of the life cycle of a SessionManager using a Domain Check Command.

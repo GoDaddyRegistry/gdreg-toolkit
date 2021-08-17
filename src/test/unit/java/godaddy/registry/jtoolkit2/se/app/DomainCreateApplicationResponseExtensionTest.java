@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.app;
+package godaddy.registry.jtoolkit2.se.app;
 
 
 import static org.junit.Assert.assertEquals;
@@ -7,9 +7,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.se.DomainCreateResponse;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.se.DomainCreateResponse;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class DomainCreateApplicationResponseExtensionTest {
 

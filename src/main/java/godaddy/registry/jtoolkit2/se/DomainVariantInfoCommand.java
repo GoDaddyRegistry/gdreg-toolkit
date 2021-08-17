@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 /**
  * Used to check which variants of domain objects would be provisioned in a
@@ -8,7 +8,7 @@ package neustar.registry.jtoolkit2.se;
  * for the Extensible Provisioning Protocol' and 'Variant Extension for the
  * Extensible Provisioning Protocol'.
  *
- * @see neustar.registry.jtoolkit2.se.DomainVariantInfoResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainVariantInfoResponse
  */
 public class DomainVariantInfoCommand extends ProtocolExtensionCommand {
 

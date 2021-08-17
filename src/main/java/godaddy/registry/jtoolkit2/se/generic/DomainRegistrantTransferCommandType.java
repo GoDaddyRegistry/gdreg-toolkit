@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se.generic;
+package godaddy.registry.jtoolkit2.se.generic;
 
-import neustar.registry.jtoolkit2.se.CommandType;
+import godaddy.registry.jtoolkit2.se.CommandType;
 
 /**
  * The base class for the Domain Registrant Transfer Command.

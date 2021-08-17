@@ -1,14 +1,14 @@
-package neustar.registry.jtoolkit2.se.variant;
+package godaddy.registry.jtoolkit2.se.variant;
 
 import static org.junit.Assert.assertEquals;
 
-import neustar.registry.jtoolkit2.se.IdnDomainVariant;
+import godaddy.registry.jtoolkit2.se.IdnDomainVariant;
 import org.junit.Before;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.CLTRID;
-import neustar.registry.jtoolkit2.se.DomainUpdateCommand;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.se.DomainUpdateCommand;
 
 public class DomainUpdateVariantCommandExtensionV1_1Test {
 

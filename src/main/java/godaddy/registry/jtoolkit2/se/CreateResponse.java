@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 import java.util.GregorianCalendar;
 
@@ -12,13 +12,13 @@ import javax.xml.xpath.XPathExpressionException;
  * Representation of the EPP create response, as defined in RFC5730.
  * Subclasses of this must specify the object to which the command is mapped.
  * Instances of this class provide an interface to access create data for the
- * object identified in a {@link neustar.registry.jtoolkit2.se.CreateCommand}.
+ * object identified in a {@link godaddy.registry.jtoolkit2.se.CreateCommand}.
  * This relies on the instance first being initialised by a suitable EPP create
  * response using the method fromXML.  For flexibility, this implementation
  * extracts the data from the response using XPath queries, the expressions for
  * which are defined statically.
  *
- * @see neustar.registry.jtoolkit2.se.CreateCommand
+ * @see godaddy.registry.jtoolkit2.se.CreateCommand
  */
 public abstract class CreateResponse extends DataResponse {
 

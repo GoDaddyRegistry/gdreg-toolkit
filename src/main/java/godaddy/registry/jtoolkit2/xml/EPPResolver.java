@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.xml;
+package godaddy.registry.jtoolkit2.xml;
 
 import java.io.InputStream;
 import java.util.*;
@@ -9,11 +9,11 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.URIResolver;
 import javax.xml.transform.stream.StreamSource;
 
-import neustar.registry.jtoolkit2.ConfigurationError;
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.ExtensionImpl;
-import neustar.registry.jtoolkit2.se.StandardObjectType;
+import godaddy.registry.jtoolkit2.ConfigurationError;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.ExtensionImpl;
+import godaddy.registry.jtoolkit2.se.StandardObjectType;
 
 /**
  * Provides URI to Source resolution service as specified by the URIResolver interface.

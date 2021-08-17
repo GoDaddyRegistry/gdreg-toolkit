@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.app;
+package godaddy.registry.jtoolkit2.se.app;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,12 +6,12 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.se.*;
-import neustar.registry.jtoolkit2.se.tmch.TmchDomainInfoResponseExtension;
-import neustar.registry.jtoolkit2.xml.ParsingException;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.*;
+import godaddy.registry.jtoolkit2.se.tmch.TmchDomainInfoResponseExtension;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 import org.junit.Before;
 import org.junit.Test;
 import org.xml.sax.SAXException;

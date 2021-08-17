@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.tmch.exception;
+package godaddy.registry.jtoolkit2.se.tmch.exception;
 
 import org.junit.Test;
 

@@ -1,14 +1,14 @@
-package neustar.registry.jtoolkit2.se.launch;
+package godaddy.registry.jtoolkit2.se.launch;
 
-import static neustar.registry.jtoolkit2.se.ReceiveSE.replaceIndex;
+import static godaddy.registry.jtoolkit2.se.ReceiveSE.replaceIndex;
 
 import java.util.HashMap;
 import java.util.Map;
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.se.tmch.ClaimsInfo;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.se.tmch.ClaimsInfo;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * <p>Representation of the EPP Domain Check response Extension with the Claims key Check aspect of the

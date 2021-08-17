@@ -1,9 +1,9 @@
-package neustar.registry.jtoolkit2.se.idn;
+package godaddy.registry.jtoolkit2.se.idn;
 
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.CommandExtension;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.CommandExtension;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**
@@ -14,8 +14,8 @@ import org.w3c.dom.Element;
  * compliant with RFC5730 and RFC5731. The response expected from a server should be
  * handled by a Domain Create Response.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainCreateCommand
- * @see neustar.registry.jtoolkit2.se.DomainCreateResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainCreateCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainCreateResponse
  * @see <a href="http://neustarregistry.github.io/doc/idn-1.0/idn-1.0.html">Internationalized Domain Name Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */

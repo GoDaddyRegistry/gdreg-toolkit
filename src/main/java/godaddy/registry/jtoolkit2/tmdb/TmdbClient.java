@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.tmdb;
+package godaddy.registry.jtoolkit2.tmdb;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
@@ -10,10 +10,10 @@ import java.security.NoSuchAlgorithmException;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
 
-import neustar.registry.jtoolkit2.session.TLSContext;
-import neustar.registry.jtoolkit2.tmdb.model.TmNotice;
-import neustar.registry.jtoolkit2.tmdb.xml.TmNoticeXmlParseException;
-import neustar.registry.jtoolkit2.tmdb.xml.TmNoticeXmlParser;
+import godaddy.registry.jtoolkit2.session.TLSContext;
+import godaddy.registry.jtoolkit2.tmdb.model.TmNotice;
+import godaddy.registry.jtoolkit2.tmdb.xml.TmNoticeXmlParseException;
+import godaddy.registry.jtoolkit2.tmdb.xml.TmNoticeXmlParser;
 
 /**
  * Trade Mark notice for a lookup key from the configured TMDB server can be requested using this class.

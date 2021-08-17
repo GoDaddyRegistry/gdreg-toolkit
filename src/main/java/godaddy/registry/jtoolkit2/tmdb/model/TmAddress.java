@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.tmdb.model;
+package godaddy.registry.jtoolkit2.tmdb.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,11 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 /**
  * Representation of the EPP update command, as defined in RFC5730.
  * Subclasses of this must specify the object to which the command is mapped
  * and specify the object-specific identifier of the object to update.
  *
- * @see neustar.registry.jtoolkit2.se.Response
+ * @see godaddy.registry.jtoolkit2.se.Response
  */
 public abstract class UpdateCommand extends ObjectCommand {
 

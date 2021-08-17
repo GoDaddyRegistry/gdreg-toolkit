@@ -1,7 +1,7 @@
-package neustar.registry.jtoolkit2.se.fee;
+package godaddy.registry.jtoolkit2.se.fee;
 
 
-import neustar.registry.jtoolkit2.se.Period;
+import godaddy.registry.jtoolkit2.se.Period;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

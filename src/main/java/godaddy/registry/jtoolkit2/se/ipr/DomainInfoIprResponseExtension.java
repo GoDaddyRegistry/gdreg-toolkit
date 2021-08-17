@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se.ipr;
+package godaddy.registry.jtoolkit2.se.ipr;
 
 import java.util.Date;
 import javax.xml.xpath.XPathExpressionException;
 
 import org.w3c.dom.Node;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * <p>Extension for the EPP Domain Info response, representing the IPR Info aspect of the Intellectual Property Rights
@@ -20,8 +20,8 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * <p>For flexibility, this implementation extracts the data from the response using XPath queries, the expressions
  * for which are defined statically.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainInfoCommand
- * @see neustar.registry.jtoolkit2.se.DomainInfoResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainInfoCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainInfoResponse
  */
 public final class DomainInfoIprResponseExtension extends ResponseExtension {
 

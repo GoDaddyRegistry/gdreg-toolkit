@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.launch;
+package godaddy.registry.jtoolkit2.se.launch;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -6,8 +6,8 @@ import static org.junit.Assert.assertTrue;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.xml.ParsingException;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 import org.junit.Before;
 import org.junit.Test;
 

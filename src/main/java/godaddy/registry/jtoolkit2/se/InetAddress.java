@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import org.w3c.dom.Element;
 
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 
 /**
  * Host Internet addresses are configured and viewed via instances of this
@@ -38,7 +38,7 @@ public class InetAddress implements Appendable {
     /**
      * Get the Internet Protocol version of this address.
      *
-     * @see neustar.registry.jtoolkit2.se.IPVersion Enumerates possible return
+     * @see godaddy.registry.jtoolkit2.se.IPVersion Enumerates possible return
      * values.
      */
     public String getVersion() {

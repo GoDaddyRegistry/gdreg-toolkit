@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import static neustar.registry.jtoolkit2.se.maintenance.MaintenanceWindowInfoResponseBuilder.infoResponseBuilder;
+import static godaddy.registry.jtoolkit2.se.maintenance.MaintenanceWindowInfoResponseBuilder.infoResponseBuilder;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -9,16 +9,16 @@ import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.se.app.DomainInfoApplicationResponseExtension;
-import neustar.registry.jtoolkit2.se.generic.DomainInfoKVResponseExtension;
-import neustar.registry.jtoolkit2.se.idn.DomainInfoIdnResponseExtension;
-import neustar.registry.jtoolkit2.se.maintenance.MaintenanceWindowInfoResponse;
-import neustar.registry.jtoolkit2.se.rgp.DomainInfoRgpResponseExtension;
-import neustar.registry.jtoolkit2.se.secdns.SecDnsDomainInfoResponseExtension;
-import neustar.registry.jtoolkit2.xml.ParsingException;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
-import neustar.registry.jtoolkit2.xml.XMLParser;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.se.app.DomainInfoApplicationResponseExtension;
+import godaddy.registry.jtoolkit2.se.generic.DomainInfoKVResponseExtension;
+import godaddy.registry.jtoolkit2.se.idn.DomainInfoIdnResponseExtension;
+import godaddy.registry.jtoolkit2.se.maintenance.MaintenanceWindowInfoResponse;
+import godaddy.registry.jtoolkit2.se.rgp.DomainInfoRgpResponseExtension;
+import godaddy.registry.jtoolkit2.se.secdns.SecDnsDomainInfoResponseExtension;
+import godaddy.registry.jtoolkit2.xml.ParsingException;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class PollResponseTest {
     private static final String XML_1 = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><response><result code=\"1301\"><msg>Command completed successfully; ack to dequeue</msg></result><msgQ count=\"5\" id=\"12345\"><qDate>2000-06-08T22:00:00.0Z</qDate><msg>Transfer requested.</msg></msgQ><resData><domain:trnData xmlns:domain=\"urn:ietf:params:xml:ns:domain-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd\"><domain:name>example.com</domain:name><domain:trStatus>pending</domain:trStatus><domain:reID>ClientX</domain:reID><domain:reDate>2000-06-08T22:00:00.0Z</domain:reDate><domain:acID>ClientY</domain:acID><domain:acDate>2000-06-13T22:00:00.0Z</domain:acDate><domain:exDate>2002-09-08T22:00:00.0Z</domain:exDate></domain:trnData></resData><trID><clTRID>ABC-12345</clTRID><svTRID>54321-XYZ</svTRID></trID></response></epp>";

@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se.association;
+package godaddy.registry.jtoolkit2.se.association;
 
-import neustar.registry.jtoolkit2.se.AddRemType;
+import godaddy.registry.jtoolkit2.se.AddRemType;
 
 /**
  * Use this to specify attributes to add to a domain object in a domain update

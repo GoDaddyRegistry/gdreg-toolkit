@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -9,9 +9,9 @@ import javax.xml.xpath.XPathExpressionException;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.ErrorPkg;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to retrieve the values of attributes common to all EPP response service elements. Unless there is a specific
@@ -19,10 +19,10 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * The commands which result in a response that should be handled by this class are LoginCommand, LogoutCommand,
  * subclasses of DeleteCommand and subclasses of UpdateCommand.
  *
- * @see neustar.registry.jtoolkit2.se.LoginCommand
- * @see neustar.registry.jtoolkit2.se.LogoutCommand
- * @see neustar.registry.jtoolkit2.se.DeleteCommand
- * @see neustar.registry.jtoolkit2.se.UpdateCommand
+ * @see godaddy.registry.jtoolkit2.se.LoginCommand
+ * @see godaddy.registry.jtoolkit2.se.LogoutCommand
+ * @see godaddy.registry.jtoolkit2.se.DeleteCommand
+ * @see godaddy.registry.jtoolkit2.se.UpdateCommand
  */
 public class Response extends ReceiveSE {
 

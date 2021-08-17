@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.tmdb.xml;
+package godaddy.registry.jtoolkit2.tmdb.xml;
 
-import static neustar.registry.jtoolkit2.test.infrastructure.ToolkitMatchers.isNodeForXml;
+import static godaddy.registry.jtoolkit2.test.infrastructure.ToolkitMatchers.isNodeForXml;
 import static org.hamcrest.Matchers.sameInstance;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.*;
@@ -9,8 +9,8 @@ import static org.powermock.api.mockito.PowerMockito.whenNew;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.ByteArrayInputStream;
 
-import neustar.registry.jtoolkit2.tmdb.model.TmAddress;
-import neustar.registry.jtoolkit2.tmdb.model.TmContact;
+import godaddy.registry.jtoolkit2.tmdb.model.TmAddress;
+import godaddy.registry.jtoolkit2.tmdb.model.TmContact;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,13 +1,13 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 
 /**
  * Use this to set IDNA Domain extension properties for an EPP Domain Create
  * command.
  *
- * @see neustar.registry.jtoolkit2.se.DomainIdnaResponseExtension
+ * @see godaddy.registry.jtoolkit2.se.DomainIdnaResponseExtension
  */
 public final class DomainCreateIdnaCommandExtension implements CommandExtension {
     private static final long serialVersionUID = -8945007354471832288L;

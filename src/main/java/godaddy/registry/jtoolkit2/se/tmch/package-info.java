@@ -5,4 +5,4 @@
  * @see <a href="????">RFC????: Domain Name System (DNS) Trademark Clearing House Extensions Mapping
  * for the Extensible Provisioning Protocol (EPP)</a>
  */
-package neustar.registry.jtoolkit2.se.tmch;
+package godaddy.registry.jtoolkit2.se.tmch;

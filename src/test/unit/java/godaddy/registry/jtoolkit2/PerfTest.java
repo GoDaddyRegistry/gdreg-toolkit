@@ -1,7 +1,7 @@
-package neustar.registry.jtoolkit2;
+package godaddy.registry.jtoolkit2;
 
-import neustar.registry.jtoolkit2.se.*;
-import neustar.registry.jtoolkit2.session.*;
+import godaddy.registry.jtoolkit2.se.*;
+import godaddy.registry.jtoolkit2.session.*;
 
 public class PerfTest implements Runnable {
     private static final String PROPS_FILE = "/home2/anthony/etc/toolkit/perftest.props";

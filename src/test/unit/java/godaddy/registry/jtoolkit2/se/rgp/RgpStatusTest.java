@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.rgp;
+package godaddy.registry.jtoolkit2.se.rgp;
 
 import org.junit.Test;
 

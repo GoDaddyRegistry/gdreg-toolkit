@@ -1,7 +1,7 @@
-package neustar.registry.jtoolkit2.se.fee;
+package godaddy.registry.jtoolkit2.se.fee;
 
-import neustar.registry.jtoolkit2.se.*;
-import neustar.registry.jtoolkit2.xml.XMLWriter;
+import godaddy.registry.jtoolkit2.se.*;
+import godaddy.registry.jtoolkit2.xml.XMLWriter;
 import org.w3c.dom.Element;
 import java.math.BigDecimal;
 
@@ -14,8 +14,8 @@ import java.math.BigDecimal;
  * supplied, should match the fees that are set for the domain name for the requested period.
  * The response expected from a server should be handled by a Domain Renew Response.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainRenewCommand
- * @see neustar.registry.jtoolkit2.se.DomainRenewResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainRenewCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainRenewResponse
  * @see <a href="https://tools.ietf.org/html/draft-brown-epp-fees-03">Domain Name Fee Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */

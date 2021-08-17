@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.session;
+package godaddy.registry.jtoolkit2.session;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -9,14 +9,14 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import neustar.registry.jtoolkit2.Timer;
-import neustar.registry.jtoolkit2.TestEnvironment;
-import neustar.registry.jtoolkit2.se.Command;
-import neustar.registry.jtoolkit2.se.PollRequestCommand;
-import neustar.registry.jtoolkit2.se.PollResponse;
-import neustar.registry.jtoolkit2.se.Response;
-import neustar.registry.jtoolkit2.se.Result;
-import neustar.registry.jtoolkit2.se.StandardCommandType;
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.TestEnvironment;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.PollRequestCommand;
+import godaddy.registry.jtoolkit2.se.PollResponse;
+import godaddy.registry.jtoolkit2.se.Response;
+import godaddy.registry.jtoolkit2.se.Result;
+import godaddy.registry.jtoolkit2.se.StandardCommandType;
 
 public class SessionManagerTest {
     private static final int PARALLEL_DEGREE = 3;

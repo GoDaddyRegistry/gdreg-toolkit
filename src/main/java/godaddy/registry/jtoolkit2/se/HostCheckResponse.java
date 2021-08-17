@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to access availability data for hosts as provided in an EPP host
@@ -10,7 +10,7 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * sent by a compliant EPP server in response to a valid host check command,
  * implemented by the HostCheckCommand class.
  *
- * @see neustar.registry.jtoolkit2.se.HostCheckCommand
+ * @see godaddy.registry.jtoolkit2.se.HostCheckCommand
  */
 public class HostCheckResponse extends CheckResponse<String> {
 

@@ -1,12 +1,12 @@
-package neustar.registry.jtoolkit2.se.launch;
+package godaddy.registry.jtoolkit2.se.launch;
 
-import static neustar.registry.jtoolkit2.se.ExtendedObjectType.MARK;
+import static godaddy.registry.jtoolkit2.se.ExtendedObjectType.MARK;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.se.tmch.MarksList;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.se.tmch.MarksList;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 import org.w3c.dom.Element;
 
 /**

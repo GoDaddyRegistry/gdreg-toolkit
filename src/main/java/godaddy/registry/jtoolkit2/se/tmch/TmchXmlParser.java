@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.tmch;
+package godaddy.registry.jtoolkit2.se.tmch;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import org.apache.commons.codec.binary.Base64;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * This defines the operations to facilitate encoding / decoding signed mark data for tmch.

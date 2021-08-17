@@ -1,10 +1,10 @@
-package neustar.registry.jtoolkit2.se.idn;
+package godaddy.registry.jtoolkit2.se.idn;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.ResponseExtension;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.ResponseExtension;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * <p>Extension for the EPP Domain Info response, representing the IDN Info aspect of the Internationalized Domain
@@ -17,8 +17,8 @@ import neustar.registry.jtoolkit2.xml.XMLDocument;
  * <p>For flexibility, this implementation extracts the data from the response using XPath queries, the expressions
  * for which are defined statically.</p>
  *
- * @see neustar.registry.jtoolkit2.se.DomainInfoCommand
- * @see neustar.registry.jtoolkit2.se.DomainInfoResponse
+ * @see godaddy.registry.jtoolkit2.se.DomainInfoCommand
+ * @see godaddy.registry.jtoolkit2.se.DomainInfoResponse
  * @see <a href="http://neustarregistry.github.io/doc/idn-1.0/idn-1.0.html">Internationalized Domain Name Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
@@ -39,7 +39,7 @@ public final class DomainInfoIdnResponseExtension extends ResponseExtension {
     private boolean initialised;
 
     /**
-     * @see neustar.registry.jtoolkit2.se.ResponseExtension#fromXML(neustar.registry.jtoolkit2.xml.XMLDocument)
+     * @see godaddy.registry.jtoolkit2.se.ResponseExtension#fromXML(godaddy.registry.jtoolkit2.xml.XMLDocument)
      */
     public void fromXML(final XMLDocument xmlDoc)
             throws XPathExpressionException {

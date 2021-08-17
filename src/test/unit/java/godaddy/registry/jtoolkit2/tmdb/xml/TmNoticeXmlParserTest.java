@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.tmdb.xml;
+package godaddy.registry.jtoolkit2.tmdb.xml;
 
-import static neustar.registry.jtoolkit2.test.infrastructure.ToolkitMatchers.isNodeForXml;
+import static godaddy.registry.jtoolkit2.test.infrastructure.ToolkitMatchers.isNodeForXml;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.*;
@@ -9,9 +9,9 @@ import static org.powermock.api.mockito.PowerMockito.whenNew;
 
 import java.util.GregorianCalendar;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.tmdb.model.TmNotice;
-import neustar.registry.jtoolkit2.tmdb.model.TmClaim;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.tmdb.model.TmNotice;
+import godaddy.registry.jtoolkit2.tmdb.model.TmClaim;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se.secdns;
+package godaddy.registry.jtoolkit2.se.secdns;
 
 import static org.junit.Assert.assertTrue;
 

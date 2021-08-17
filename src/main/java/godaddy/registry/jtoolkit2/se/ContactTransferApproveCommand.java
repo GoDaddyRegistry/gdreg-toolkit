@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 /**
  * Use this to approve the transfer of a contact object currently pending
@@ -7,7 +7,7 @@ package neustar.registry.jtoolkit2.se;
  * compliant contact transfer EPP command service elements via the toXML method
  * with the transfer operation set to "approve".
  *
- * @see neustar.registry.jtoolkit2.se.ContactTransferResponse
+ * @see godaddy.registry.jtoolkit2.se.ContactTransferResponse
  */
 public class ContactTransferApproveCommand extends ContactTransferCommand {
     private static final long serialVersionUID = -8722539297610164487L;

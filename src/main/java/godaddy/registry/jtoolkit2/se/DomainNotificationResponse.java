@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 /**
  * Notification data specific to domain objects.  Refer to
- * {@link neustar.registry.jtoolkit2.se.NotificationResponse} for further
+ * {@link godaddy.registry.jtoolkit2.se.NotificationResponse} for further
  * details.
  */
 public class DomainNotificationResponse extends NotificationResponse {

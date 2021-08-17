@@ -1,14 +1,14 @@
-package neustar.registry.jtoolkit2.se.maintenance;
+package godaddy.registry.jtoolkit2.se.maintenance;
 
 import java.util.Date;
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.EPPDateFormatter;
-import neustar.registry.jtoolkit2.se.DataResponse;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.ReceiveSE;
-import neustar.registry.jtoolkit2.se.StandardCommandType;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.EPPDateFormatter;
+import godaddy.registry.jtoolkit2.se.DataResponse;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.ReceiveSE;
+import godaddy.registry.jtoolkit2.se.StandardCommandType;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to access domain object information as provided in an EPP maintenance

@@ -1,6 +1,6 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 import javax.xml.xpath.XPathExpressionException;
 
@@ -10,7 +10,7 @@ import javax.xml.xpath.XPathExpressionException;
  * sent by a compliant EPP server in response to a valid host info command,
  * implemented by the HostInfoCommand class.
  *
- * @see neustar.registry.jtoolkit2.se.HostInfoCommand
+ * @see godaddy.registry.jtoolkit2.se.HostInfoCommand
  */
 public class HostInfoResponse extends InfoResponse {
     private static final long serialVersionUID = 7217980955196329241L;

@@ -1,4 +1,4 @@
-package neustar.registry.jtoolkit2.se;
+package godaddy.registry.jtoolkit2.se;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.xml.sax.SAXException;
 
-import neustar.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.Timer;
 
 public class DomainTransferRejectCommandTest {
 

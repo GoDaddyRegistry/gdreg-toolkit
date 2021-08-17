@@ -1,8 +1,8 @@
-package neustar.registry.jtoolkit2.se.tmch.exception;
+package godaddy.registry.jtoolkit2.se.tmch.exception;
 
 import java.security.cert.X509Certificate;
 
-import neustar.registry.jtoolkit2.ErrorPkg;
+import godaddy.registry.jtoolkit2.ErrorPkg;
 
 public class TmchCertificateRevokedException extends RuntimeException {
 

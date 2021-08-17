@@ -1,14 +1,14 @@
-package neustar.registry.jtoolkit2.se.mzb;
+package godaddy.registry.jtoolkit2.se.mzb;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import javax.xml.xpath.XPathExpressionException;
 
-import neustar.registry.jtoolkit2.se.DataResponse;
-import neustar.registry.jtoolkit2.se.ExtendedObjectType;
-import neustar.registry.jtoolkit2.se.StandardCommandType;
-import neustar.registry.jtoolkit2.xml.XMLDocument;
+import godaddy.registry.jtoolkit2.se.DataResponse;
+import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
+import godaddy.registry.jtoolkit2.se.StandardCommandType;
+import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to access roid data for blocks as provided in an EPP
