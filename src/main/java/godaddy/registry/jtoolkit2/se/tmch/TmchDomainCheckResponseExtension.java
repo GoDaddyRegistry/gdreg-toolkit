@@ -23,7 +23,7 @@ import static godaddy.registry.jtoolkit2.se.ReceiveSE.replaceIndex;
  * for which are defined statically.</p>
  *
  * @see godaddy.registry.jtoolkit2.se.tmch.TmchDomainCheckCommandExtension
- * @see <a href="http://neustarregistry.github.io/doc/tmch-1.0/tmch-1.0.html">Trademark Clearinghouse Extension
+ * @see <a href="http://godaddyregistry.github.io/doc/tmch-1.0/tmch-1.0.html">Trademark Clearinghouse Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
 public class TmchDomainCheckResponseExtension extends ResponseExtension {

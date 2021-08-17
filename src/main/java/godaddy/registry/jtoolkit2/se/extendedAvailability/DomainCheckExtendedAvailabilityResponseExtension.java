@@ -22,7 +22,7 @@ import java.util.Map;
  * for which are defined statically.</p>
  *
  * @see godaddy.registry.jtoolkit2.se.extendedAvailability.DomainCheckExtendedAvailabilityCommandExtension
- * @see <a href="http://neustarregistry.github.io/doc/exAvail-1.0/exAvail-1.0.html">Domain Name Check Extended
+ * @see <a href="http://godaddyregistry.github.io/doc/exAvail-1.0/exAvail-1.0.html">Domain Name Check Extended
  * Availability Extension Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
 public class DomainCheckExtendedAvailabilityResponseExtension extends ResponseExtension {

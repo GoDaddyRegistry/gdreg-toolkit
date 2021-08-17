@@ -16,7 +16,7 @@ import org.w3c.dom.Element;
  *
  * @see godaddy.registry.jtoolkit2.se.DomainCheckCommand
  * @see godaddy.registry.jtoolkit2.se.price.DomainCheckPriceV1_1ResponseExtension
- * @see <a href="http://neustarregistry.github.io/doc/price-1.2/price-1.2.html">Domain Name Check Price Extension
+ * @see <a href="http://godaddyregistry.github.io/doc/price-1.2/price-1.2.html">Domain Name Check Price Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
 public class DomainCheckPriceV1_2CommandExtension implements CommandExtension {

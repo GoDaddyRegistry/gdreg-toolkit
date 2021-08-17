@@ -18,7 +18,7 @@ import godaddy.registry.jtoolkit2.xml.XMLWriter;
  *
  * @see DomainTransferRequestCommand
  * @see DomainTransferResponse
- * @see <a href="http://neustarregistry.github.io/doc/price-1.0/price-1.0.html">Domain Name Price Extension
+ * @see <a href="http://godaddyregistry.github.io/doc/price-1.0/price-1.0.html">Domain Name Price Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
 public class DomainTransferRequestPriceCommandExtension implements CommandExtension {

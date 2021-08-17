@@ -20,7 +20,7 @@ import godaddy.registry.jtoolkit2.xml.XMLDocument;
  *
  * @see godaddy.registry.jtoolkit2.se.DomainCreateCommand
  * @see DomainCreateApplicationCommandExtension
- * @see <a href="http://neustarregistry.github.io/doc/application-1.0/application-1.0.html">Domain Name Application
+ * @see <a href="http://godaddyregistry.github.io/doc/application-1.0/application-1.0.html">Domain Name Application
  * Extension Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
 public class DomainCreateApplicationResponseExtension extends ResponseExtension {

@@ -18,7 +18,7 @@ import godaddy.registry.jtoolkit2.xml.XMLDocument;
  * for which are defined statically.</p>
  *
  * @see godaddy.registry.jtoolkit2.se.variant.DomainUpdateVariantCommandExtension
- * @see <a href="http://neustarregistry.github.io/doc/variant-1.1/variant-1.1.html">Domain Name Variant Extension
+ * @see <a href="http://godaddyregistry.github.io/doc/variant-1.1/variant-1.1.html">Domain Name Variant Extension
  * Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
 public final class DomainVariantResponseExtensionV1_1 extends

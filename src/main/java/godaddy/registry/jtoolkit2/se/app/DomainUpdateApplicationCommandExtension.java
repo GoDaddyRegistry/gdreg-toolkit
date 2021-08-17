@@ -17,7 +17,7 @@ import org.w3c.dom.Element;
  *
  * @see godaddy.registry.jtoolkit2.se.DomainUpdateCommand
  * @see godaddy.registry.jtoolkit2.se.Response
- * @see <a href="http://neustarregistry.github.io/doc/application-1.0/application-1.0.html">Domain Name Application
+ * @see <a href="http://godaddyregistry.github.io/doc/application-1.0/application-1.0.html">Domain Name Application
  * Extension Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
 public class DomainUpdateApplicationCommandExtension implements CommandExtension {

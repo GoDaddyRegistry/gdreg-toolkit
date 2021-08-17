@@ -15,7 +15,7 @@ import org.w3c.dom.Element;
  *
  * @see godaddy.registry.jtoolkit2.se.DomainCheckCommand
  * @see godaddy.registry.jtoolkit2.se.extendedAvailability.DomainCheckExtendedAvailabilityResponseExtension
- * @see <a href="http://neustarregistry.github.io/doc/exAvail-1.0/exAvail-1.0.html">Domain Name Check Extended
+ * @see <a href="http://godaddyregistry.github.io/doc/exAvail-1.0/exAvail-1.0.html">Domain Name Check Extended
  * Availability Extension Mapping for the Extensible Provisioning Protocol (EPP)</a>
  */
 public class DomainCheckExtendedAvailabilityCommandExtension implements CommandExtension {

@@ -18,7 +18,7 @@ import godaddy.registry.jtoolkit2.xml.XMLDocument;
  *
  * @see godaddy.registry.jtoolkit2.se.DomainRenewCommand
  * @see godaddy.registry.jtoolkit2.se.block.DomainRenewBlockCommandExtension
- * @see <a href="http://neustarregistry.github.io/doc/block-1.0/block-1.0.html">Block Extension Mapping for the
+ * @see <a href="http://godaddyregistry.github.io/doc/block-1.0/block-1.0.html">Block Extension Mapping for the
  * Extensible Provisioning Protocol (EPP)</a>
  */
 public class DomainRenewBlockResponseExtension extends ResponseExtension {
