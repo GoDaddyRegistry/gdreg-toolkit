@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/GoDaddyRegistry/registrar-toolkit.png)](https://travis-ci.com/GoDaddyRegistry/registrar-toolkit)
 ## Downloads
 
-The latest gdreg-toolkit is available for download. [gdreg-toolkit v4.3.3](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/4.3.3/gdrjtk-4.3.3.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/4.3.3/gdrjtk-4.3.3-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/4.3.3/gdrjtk-4.3.3-javadoc.jar))
+The latest gdreg-toolkit is available for download. [gdreg-toolkit v5.0.0](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0-javadoc.jar))
 
 For more information, please read [Installation and Setup](#installation-and-setup).
 
@@ -43,7 +43,7 @@ This toolkit also provides a mechanism to perform the following Trademark Cleari
 
 #### Direct download
 
-Obtain the latest toolkit here: [Toolkit v4.3.3](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/4.3.3/gdrjtk-4.3.3.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/4.3.3/gdrjtk-4.3.3-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/4.3.3/gdrjtk-4.3.3-javadoc.jar))
+Obtain the latest toolkit here: [Toolkit v5.0.0](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0-javadoc.jar))
 
 #### Dependency Management
 
@@ -52,7 +52,7 @@ Use your build's dependency management tool to automatically download the toolki
 * Repository: `http://godaddyregistry.github.io/repo/`
 * groupId: `godaddy.registry`
 * artifactId: `gdrjtk`
-* version: `4.3.3`
+* version: `5.0.0`
 
 For example (using Maven):
 
@@ -67,7 +67,7 @@ For example (using Maven):
        <dependency>
           <groupId>godaddy.registry</groupId>
           <artifactId>gdrjtk</artifactId>
-          <version>4.3.3</version>
+          <version>5.0.0</version>
        </dependency>
     </dependencies>
 
@@ -237,9 +237,9 @@ Obtain the information from the response extension:
 
 ## Upgrading guide
 
-### Upgrading from 3.x to 4.0
+### Upgrading from 4.x to 5.0
 
-Since version 4.0 of the library, the package `"com.ausregistry"` has been renamed to `"godaddy.registry"`. Hence the Java applications that has been using any earlier version of this library will have to replace the `import` statements globally in source code, if they wish to use the version 4.x.
+Since version 5.0 of the library, the package has been renamed to `"godaddy.registry"`. Hence any Java application that has been using any earlier version of this library will have to replace the `import` statements globally in source code, if they wish to use the version 5.x.
 
 ## Implementation Notes
 
