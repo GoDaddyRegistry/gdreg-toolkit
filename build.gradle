@@ -18,9 +18,9 @@ apply plugin: 'jacoco'
 ext {
     junitVersion = '4.11'
     artifactsDir = "$projectDir/artifacts"
-    artifactGroupId = 'neustar.registry'
+    artifactGroupId = 'godaddy.registry'
     gradleWrapperVersion = '2.7'
-    pagesProjectDir = "$projectDir/../nsr-toolkit-gitpages"
+    pagesProjectDir = "$projectDir/../godaddyregistry.github.io"
     checkstyleConfDirPath = "$projectDir/checkstyle/"
 
     commonsCodecVersion          = '1.10'
@@ -142,7 +142,7 @@ task wrapper(type: Wrapper) {
 
 jar {
     manifest {
-        attributes('Specification-Title': 'gdreg jtk',
+        attributes('Specification-Title': 'gdreg java toolkit',
         'Specification-Version': "${version}",
         'Implementation-Version': "${version}",
         "Implementation-Timestamp": new Date())
@@ -217,7 +217,7 @@ uploadArchives << {
     if (!System.properties.keySet().containsAll('repoUrl', 'repoUsername', 'repoPassword')) {
         copy {
             from(javadoc.destinationDir)
-            into "$pagesProjectDir/javadoc/nsr-toolkit"
+            into "$pagesProjectDir/javadoc/gdreg-toolkit"
         }
     }
 }
