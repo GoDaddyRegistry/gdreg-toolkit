@@ -22,7 +22,6 @@ import org.w3c.dom.Element;
 public class DomainUpdateCommandUnspecExtension implements CommandExtension {
 
     private static final long serialVersionUID = 5982521830455586062L;
-    private static final String FIELD_IDENTIFIER = "<<field>>";
 
     private String extContactId;
     private WhoisType whoisType;
