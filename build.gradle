@@ -109,6 +109,10 @@ test {
     exclude '**/SessionManagerTest.class'
 }
 
+// Configure javadoc task not to generate timestamp in HTML comment
+tasks.withType(Javadoc) {
+    options.noTimestamp(true)
+}
 javadoc {
     destinationDir = file("$artifactsDir/javadoc")
 }
