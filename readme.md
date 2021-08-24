@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.com/GoDaddyRegistry/registrar-toolkit.png)](https://travis-ci.com/GoDaddyRegistry/registrar-toolkit)
+![Build Status](https://github.com/GoDaddyRegistry/registrar-toolkit/actions/workflows/gradle.yml/badge.svg)
+
 ## Downloads
 
 The latest gdreg-toolkit is available for download. [gdreg-toolkit v5.0.0](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.0/gdrjtk-5.0.0-javadoc.jar))
