@@ -92,7 +92,7 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Test) {
-    jvmArgs '-Dfile.encoding=UTF8'
+    jvmArgs += ['-Dfile.encoding=UTF8', '-Duser.timezone=UTC']
     jacoco {
         enabled = true
     }
