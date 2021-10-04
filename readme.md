@@ -85,6 +85,29 @@ The javadoc is available online: [Toolkit javadoc](https://godaddyregistry.githu
 
 The following environment specifics are required:
 
+#### Pre-commit setup
+
+If you wish to contribute to this project by creating pull requests, please make sure pre-commit and relevant tools are installed and configured properly, as this repository relies on git pre-commit hook to perform checks.
+
+The tooling and relevant files, which are already in the cloned repository, include:
+
+1. `Pipfile` and `Pipfile.lock`
+
+    Both files are used by Pipenv to manage pip dependencies. Pipenv is a tool that helps manage Python packages. It harnesses Pipfile, pip and virtualenv into one single command.
+    For MacOS users, you can install Pipenv using `brew install pipenv`. Otherwise, please refer to [their instructions](https://pipenv-fork.readthedocs.io/en/latest/install.html#installing-pipenv).
+    Once Pipenv is installed, please run `pipenv install` in the toolkit folder. It shall download all the required packages for you, based on the dependencies specified in `Pipfile.lock`, and configure a virutal environment correspondingly.
+    More details about Pipenv can be found [here](https://pipenv-fork.readthedocs.io/en/latest/basics.html).
+
+2. `.pre-commit-config.yaml` and `.pre-commit-hook.yaml`
+
+    The [pre-commit tool](https://pre-commit.com/#usage) is a multi-language package manager for git pre-commit hooks. A list of desired hooks have been specified in `.pre-commit-config.yaml`. The pre-commit tool manages the installation and execution of the specified hooks before every commit.
+    To setup pre-commit hooks, please run `pipenv run pre-commit install --install-hooks` once Pipenv is configured.
+
+3. `tartofu.toml`
+
+    Once pre-commit tool is installed and configured, every time before a new git commit can be made, the pre-commit tool will execute various checks based on its configuration. One of the checks is to run [tartufo](https://tartufo.readthedocs.io/en/stable/index.html) to make sure there is no secrets accidentally committed in the staged, uncommitted changes in your local repository.
+    The tool will scan the changes by both regex and by entropy. Sometime you may have to update `tartufo.toml` to exclude [certain entropy patterns](https://tartufo.readthedocs.io/en/stable/features.html#entropy-limiting) or [signature](https://tartufo.readthedocs.io/en/stable/features.html#limiting-by-signature), as there may be some false positives being reported by tartufo.
+
 #### Java Support
 
 The Toolkit has been developed against the standard Java API, and has no runtime dependencies on external libraries.

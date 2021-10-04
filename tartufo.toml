@@ -1,0 +1,36 @@
+[tool.tartufo]
+  repo-path = "."
+  json = false
+  regex = true
+  entropy = true
+  exclude_entropy_patterns = [
+    # format: "{file regex}::{entropy pattern}"
+    "readme.md$::49FD46E6C4B45C55D4AC49FD46E6C4B45C55D4AC",         # sample code in readme
+    ".*/main/.*/DomainCreateWithExtensionDemo.java::49FD46E6C4B45C55D4AC49FD46E6C4B45C55D4AC",
+                                                                    # sample code in readme
+    ".github/workflows/gradle.yml::^e6e38bacfdf1a337459f332974bb2327a31aaf4b$",
+                                                                    # exclude a hash used in GitHub git checkout Action
+    ".*/test/.*.java::^should",                                     # exclude all unit test method names
+    ".*/test/.*.java::^D604E5509E82DF9F3105B7E182BB4DF28",          # exclude a ROID literal used in tests
+    "src/test/.*/PollResponseTest.java$::^[A-Za-z0-9+/]{30,}$",     # exclude ROID, DNSSEC pubKey from a PollResponseTest
+    "src/test/.*/Tm.*Test.java$::^[A-Za-z0-9+/=]{44,}$",            # exclude SMD literal from TmchXMLUtilIntegrationTest and TmchValidatingParserTest
+    "src/test/.*/MarkAbstractTest.java$::^[A-Za-z0-9+/=]{44,}$",    # exclude SMD literal from MarkAbstractTest
+    ".*/test/.*/PerfTest.java$::^1207098411691033136503880218$",    # exclude client transaction ID in test
+    "src/test/.*/Domain.*ExtensionTest.java$::ACF7B10EBC3284E34B4A7C350DA27EA7B",
+                                                                    # exclude application ID in test
+    "src/test/.*/Tm.*Test.java$::370d0b7c9223372036854775807",      # exclude tmNotice ID in TmdbClientComponentTest and TmNoticeXmlParserTest
+    "src/test/component/resources/sample-tmNotice.xml::370d0b7c9223372036854775807",
+                                                                    # exclude tmNotice ID in XML file used by test
+  ]
+  exclude_path_patterns = [
+    "tartufo.toml",                                                 # exclude tartufo config itself
+    "Pipfile.lock",                                                 # exclude Pipfile lock as there are many git hash
+    "src/test/.*.smd",                                              # SMD file used in various tests
+    "src/test/integration/resources/tmch.cr[lt]",                   # CRL or CRT file used in integration test
+    "src/test/integration/resources/.*S(MD|md).*.txt",              # SMD file used in integration test
+    "docs/javadoc/.*.html",                                         # JavaDoc files that no longer exist
+    "cpp/se/DomainInfoKVResponseExtensionTest.cpp",                 # a CPP file that no longer exists
+    # A justification is REQUIRED, when a new file needs to be excluded in this section
+  ]
+  exclude_signatures = [
+  ]

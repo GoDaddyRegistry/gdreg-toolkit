@@ -1,0 +1,26 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: check-symlinks
+      - id: check-toml
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+        args:
+          - --fix=no
+      - id: end-of-file-fixer
+      - id: no-commit-to-branch
+        args: [--branch, main, --branch, master]
+      - id: check-json
+  - repo: https://github.com/pre-commit/pre-commit
+    rev: v2.14.1
+    hooks:
+      - id: validate_manifest
+  - repo: https://github.com/godaddy/tartufo
+    rev: v2.7.1
+    hooks:
+      - id: tartufo
