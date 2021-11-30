@@ -641,4 +641,8 @@ public class TLSSession implements Session, StatsManager {
             notify();
         }
     }
+
+    protected void setCtx(TLSContext ctx) {
+        this.ctx = ctx;
+    }
 }

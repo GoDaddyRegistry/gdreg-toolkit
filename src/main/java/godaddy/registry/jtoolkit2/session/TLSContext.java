@@ -27,9 +27,9 @@ import godaddy.registry.jtoolkit2.ErrorPkg;
  * </p>
  */
 public class TLSContext {
-    private static final String TLSV1 = "TLSv1";
+    protected static final String TLSV1 = "TLSv1";
 
-    private static final String TMF_ALGORITHM = TrustManagerFactory.getDefaultAlgorithm();
+    protected static final String TMF_ALGORITHM = TrustManagerFactory.getDefaultAlgorithm();
 
     private SSLContext ctx;
     private String commonName;
@@ -38,6 +38,14 @@ public class TLSContext {
     private final Logger supportLogger;
     private final Logger maintLogger;
     private final Logger debugLogger;
+
+    protected TLSContext() {
+        String pname = getClass().getPackage().getName();
+        userLogger = Logger.getLogger(pname + ".user");
+        supportLogger = Logger.getLogger(pname + ".support");
+        maintLogger = Logger.getLogger(pname + ".maint");
+        debugLogger = Logger.getLogger(pname + ".debug");
+    }
 
     /**
      * Instantiates a new TLS context.
@@ -362,5 +370,11 @@ public class TLSContext {
         return store;
     }
 
+    protected void setCtx(SSLContext ctx) {
+        this.ctx = ctx;
+    }
 
+    protected void setCommonName(String commonName) {
+        this.commonName = commonName;
+    }
 }

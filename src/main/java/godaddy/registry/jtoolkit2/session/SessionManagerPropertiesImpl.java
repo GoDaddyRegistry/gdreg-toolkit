@@ -215,6 +215,16 @@ public class SessionManagerPropertiesImpl implements SessionManagerProperties, S
         properties.setProperty("epp.client.clID", id);
     }
 
+    @Override
+    public byte[] getKeyStoreFileBytes() {
+        return null;
+    }
+
+    @Override
+    public byte[] getTrustStoreFileBytes() {
+        return null;
+    }
+
     private String[] getStringProperties(String start) {
         Vector<String> result = new Vector<String>(5);
 
