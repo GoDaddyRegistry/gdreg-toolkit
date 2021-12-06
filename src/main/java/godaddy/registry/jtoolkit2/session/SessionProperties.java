@@ -169,18 +169,4 @@ public interface SessionProperties {
      * @return a boolean flag where true means XML output will have namespace prefix
      */
     boolean needOutputNamespacePrefixInXml();
-
-    /**
-     * The bytes representation of the KeyStore file from which private key and public
-     * certificate data will be read in order to establish a connection with
-     * the EPP server.
-     */
-    byte[] getKeyStoreFileBytes();
-
-    /**
-     * The bytes representation of the KeyStore file from which Certification Authority
-     * data will be read in order to verify the authenticity of the key
-     * in the accompanying user keystore.
-     */
-    byte[] getTrustStoreFileBytes();
 }

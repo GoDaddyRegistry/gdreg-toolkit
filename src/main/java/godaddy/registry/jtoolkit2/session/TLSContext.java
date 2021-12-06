@@ -27,10 +27,9 @@ import godaddy.registry.jtoolkit2.ErrorPkg;
  * </p>
  */
 public class TLSContext {
-    protected static final String TLSV1 = "TLSv1";
-
     protected static final String TMF_ALGORITHM = TrustManagerFactory.getDefaultAlgorithm();
 
+    private static final String TLSV1 = "TLSv1";
     private SSLContext ctx;
     private String commonName;
 

@@ -236,14 +236,4 @@ public final class TestEnvironment implements SessionManagerProperties,
     public boolean enforceStrictValidation() {
         return true;
     }
-
-    @Override
-    public byte[] getKeyStoreFileBytes() {
-        return null;
-    }
-
-    @Override
-    public byte[] getTrustStoreFileBytes() {
-        return null;
-    }
 }
