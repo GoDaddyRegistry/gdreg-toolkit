@@ -27,10 +27,9 @@ import godaddy.registry.jtoolkit2.ErrorPkg;
  * </p>
  */
 public class TLSContext {
+    protected static final String TMF_ALGORITHM = TrustManagerFactory.getDefaultAlgorithm();
+
     private static final String TLSV1 = "TLSv1";
-
-    private static final String TMF_ALGORITHM = TrustManagerFactory.getDefaultAlgorithm();
-
     private SSLContext ctx;
     private String commonName;
 
@@ -38,6 +37,14 @@ public class TLSContext {
     private final Logger supportLogger;
     private final Logger maintLogger;
     private final Logger debugLogger;
+
+    protected TLSContext() {
+        String pname = getClass().getPackage().getName();
+        userLogger = Logger.getLogger(pname + ".user");
+        supportLogger = Logger.getLogger(pname + ".support");
+        maintLogger = Logger.getLogger(pname + ".maint");
+        debugLogger = Logger.getLogger(pname + ".debug");
+    }
 
     /**
      * Instantiates a new TLS context.
@@ -74,11 +81,7 @@ public class TLSContext {
             KeyStoreException, CertificateException,
             UnrecoverableKeyException, NoSuchAlgorithmException, KeyManagementException {
 
-        String pname = getClass().getPackage().getName();
-        userLogger = Logger.getLogger(pname + ".user");
-        supportLogger = Logger.getLogger(pname + ".support");
-        maintLogger = Logger.getLogger(pname + ".maint");
-        debugLogger = Logger.getLogger(pname + ".debug");
+        this();
 
         try {
             TrustManager[] trustManagers = loadTrustManagers(truststore, trustpass);
@@ -362,5 +365,23 @@ public class TLSContext {
         return store;
     }
 
+    /**
+     * Used to set SSLContext when keystore/truststore are loaded externally in subclass of TLSContext
+     * and doesn't rely on default TLSContext.
+     *
+     * @param ctx the new SSL context
+     */
+    protected void setSSLContext(SSLContext ctx) {
+        this.ctx = ctx;
+    }
 
+    /**
+     * Used to set certificate common name when keystore/truststore are loaded externally in subclass of TLSContext
+     * and doesn't rely on default TLSContext.
+     *
+     * @param commonName the new common name
+     */
+    protected void setCommonName(String commonName) {
+        this.commonName = commonName;
+    }
 }

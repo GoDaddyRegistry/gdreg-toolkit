@@ -641,4 +641,13 @@ public class TLSSession implements Session, StatsManager {
             notify();
         }
     }
+
+    /**
+     * Used to set TLSContext when its created externally out of toolkit in subclass of TLSSession.
+     *
+     * @param ctx the new TLS context
+     */
+    protected void setTLSContext(TLSContext ctx) {
+        this.ctx = ctx;
+    }
 }
