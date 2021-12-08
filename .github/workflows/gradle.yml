@@ -1,18 +1,29 @@
-# Refer to
-# https://docs.github.com/en/actions/guides/building-and-testing-java-with-gradle
+# This GitHub workflow will be invoked in below scenarios:
 #
-# This workflow uses actions that are not certified by GitHub.
+# Trigger the build on push or pull request, only for
+# the default branch.
+#
+# When there is a push to the default branch (could be
+# a result of PR merge), a release will be published to
+# GitHub Packages (GPR).
+#
+# This workflow uses actions that are certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
+#
 
 name: Java CI with Gradle
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - main
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
+      - main
 
 jobs:
   build:
@@ -38,8 +49,37 @@ jobs:
             ${{ runner.os }}-gradle-
       - name: Build with Gradle
         run: ./gradlew build
-      - name: Publish Test Report
-        uses: mikepenz/action-junit-report@v2
-        if: always() # always run even if the previous step fails
+
+  publish:
+    if: >
+      github.event_name == 'push' &&
+      (github.ref_name == 'master' || github.ref_name == 'main')
+    needs: [ build ]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579  # @v2.4.0
+      - uses: actions/setup-java@5f00602cd1b2819185d88dc7a1b1985f598c6705  # @v2.4.0
         with:
-          report_paths: '**/build/test-results/*/TEST-*.xml'
+          java-version: '8'
+          distribution: 'adopt'
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b  # @v1.0.4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      - name: Publish package
+        run: |
+          ./gradlew -DrepoUrl="$GPR_URL" \
+                    -DrepoUsername="$GPR_USER" \
+                    -DrepoPassword="$GPR_TOKEN" publish
+        env:
+          GPR_URL: "https://maven.pkg.github.com/${{ github.repository }}"
+          GPR_USER: "${{ env.GITHUB_ACTOR }}"
+          GPR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
