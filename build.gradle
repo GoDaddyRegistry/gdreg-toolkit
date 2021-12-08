@@ -19,7 +19,6 @@ ext {
     junitVersion = '4.11'
     artifactsDir = "$projectDir/artifacts"
     artifactGroupId = 'godaddy.registry'
-    gradleWrapperVersion = '2.7'
     pagesProjectDir = "$projectDir/../godaddyregistry.github.io"
     checkstyleConfDirPath = "$projectDir/checkstyle/"
 
@@ -122,8 +121,8 @@ clean.dependsOn cleanArtifacts
 test.dependsOn jar
 
 task integrationTest(type: Test) {
-    testClassesDir = sourceSets.integrationTest.output.classesDir
-    reports.junitXml.destination = "build/test-results/integration"
+    testClassesDirs = sourceSets.integrationTest.output.classesDirs
+    reports.junitXml.destination = file("$buildDir/test-results/integration")
     classpath += sourceSets.integrationTest.runtimeClasspath
 }
 
@@ -132,16 +131,10 @@ task componentTest(type: Test) {
         isJava7Compatible()
     }
 
-    testClassesDir = sourceSets.componentTest.output.classesDir
-    reports.junitXml.destination = "build/test-results/component"
+    testClassesDirs = sourceSets.componentTest.output.classesDirs
+    reports.junitXml.destination = file("$buildDir/test-results/component")
     classpath += sourceSets.componentTest.runtimeClasspath
     classpath += sourceSets.componentTest.runtimeClasspath
-}
-
-//Run this task to download the gradle wrapper corresponding to the gradleWrapperVersion number
-
-task wrapper(type: Wrapper) {
-    gradleVersion = "$gradleWrapperVersion"
 }
 
 jar {
@@ -163,7 +156,9 @@ task javadocJar(type: Jar, dependsOn:javadoc) {
     from javadoc.destinationDir
 }
 
-task checkVersionNumbersInReadme << {
+task checkVersionNumbersInReadme {
+
+  doLast {
     def readme = file("readme.md")
     def looksLikeVersionNumber = ~/\d+\.\d+\.\d+/
     def textNeedFixedVersion = 'Since version 3.7.6 the toolkit no longer support Java SE 6.'
@@ -184,6 +179,7 @@ task checkVersionNumbersInReadme << {
 
     assert versionNumbersInReadmeFile.isEmpty()
     assert decommissionJava6LineWithFixedVersion != null
+  }
 }
 
 artifacts {
@@ -217,13 +213,15 @@ uploadArchives {
     }
 }
 
-uploadArchives << {
+uploadArchives {
+  doLast {
     if (!System.properties.keySet().containsAll('repoUrl', 'repoUsername', 'repoPassword')) {
         copy {
             from(javadoc.destinationDir)
             into "$pagesProjectDir/javadoc/gdreg-toolkit"
         }
     }
+  }
 }
 
 uploadArchives.dependsOn checkVersionNumbersInReadme, javadoc
