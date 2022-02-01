@@ -59,10 +59,7 @@ public enum ExtendedObjectType implements ObjectType {
             "id"),
     IPR("ipr", "urn:afilias:params:xml:ns:ipr-1.1", "ipr-1.1.xsd", "name"),
     MAINT("maint", "urn:ietf:params:xml:ns:maintenance-0.2", "maintenance-0.2.xsd",
-            "id"),
-    CDN("cdn", "urn:ietf:params:xml:ns:cdn-1.0", "cdn-1.0.xsd", "cdn"),
-    CNNIC_CONTACT("cnnic-contact", "urn:ietf:params:xml:ns:cnnic-contact-1.0",
-        "cnnic-contact-1.0.xsd", "cnnic-contact");
+            "id");
 
     private final String prefix;
     private final String uri;
