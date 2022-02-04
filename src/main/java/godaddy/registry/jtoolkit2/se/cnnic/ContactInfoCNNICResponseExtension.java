@@ -41,6 +41,15 @@ public final class ContactInfoCNNICResponseExtension extends ResponseExtension {
     /** The cn contact DTO. */
     private CNContact cnContactDTO;
 
+    /**
+     * Instantiates a new contact info CNNIC response extension.
+     *
+     * @param cnContact the cn contact
+     */
+    public ContactInfoCNNICResponseExtension(CNContact cnContact) {
+        this.cnContactDTO = cnContact;
+    }
+
     /*
      * (non-Javadoc)
      *

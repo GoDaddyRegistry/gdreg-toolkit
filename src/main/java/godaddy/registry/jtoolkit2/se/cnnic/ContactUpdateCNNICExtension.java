@@ -38,6 +38,21 @@ public class ContactUpdateCNNICExtension implements CommandExtension {
     }
 
     /**
+     * Instantiates a new contact update CNNIC extension.
+     *
+     * @param type the type
+     * @param contactTypeId the contact type id
+     * @param contactTypeName the contact type name
+     * @param mobile the mobile
+     */
+    public ContactUpdateCNNICExtension(String type, String contactTypeId, String contactTypeName, String mobile) {
+        this.type = type;
+        this.contactTypeId = contactTypeId;
+        this.contactTypeName = contactTypeName;
+        this.mobile = mobile;
+    }
+
+    /**
      * Gets the contact id.
      *
      * @return the contact id
