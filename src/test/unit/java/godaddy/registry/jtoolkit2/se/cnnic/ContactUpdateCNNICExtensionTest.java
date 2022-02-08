@@ -15,7 +15,7 @@ import godaddy.registry.jtoolkit2.se.ContactUpdateCommand;
 import godaddy.registry.jtoolkit2.se.IntPostalInfo;
 import godaddy.registry.jtoolkit2.se.Status;
 
-public class ContactUpdateCNNICExtensionUnitTest {
+public class ContactUpdateCNNICExtensionTest {
 
     private CNContact cnContact;
 

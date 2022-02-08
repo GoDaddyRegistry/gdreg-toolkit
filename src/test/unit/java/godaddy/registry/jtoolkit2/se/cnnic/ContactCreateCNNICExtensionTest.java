@@ -17,7 +17,7 @@ import godaddy.registry.jtoolkit2.se.ContactCreateCommand;
 import godaddy.registry.jtoolkit2.se.Disclose;
 import godaddy.registry.jtoolkit2.se.IntPostalInfo;
 
-public class ContactCreateCNNICExtensionUnitTest {
+public class ContactCreateCNNICExtensionTest {
 
     private static IntPostalInfo commonPostalInfo1, commonPostalInfo2;
     private static String email;

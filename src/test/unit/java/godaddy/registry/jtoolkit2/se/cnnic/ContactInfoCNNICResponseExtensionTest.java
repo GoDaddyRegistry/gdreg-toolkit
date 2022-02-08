@@ -16,7 +16,7 @@ import godaddy.registry.jtoolkit2.xml.ParsingException;
 import godaddy.registry.jtoolkit2.xml.XMLDocument;
 import godaddy.registry.jtoolkit2.xml.XMLParser;
 
-public class ContactInfoCNNICResponseExtensionUnitTest {
+public class ContactInfoCNNICResponseExtensionTest {
     private static final String XML_1 =
         "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><response><result code=\"1000\"><msg>Command completed successfully</msg></result><resData><contact:infData xmlns:contact=\"urn:ietf:params:xml:ns:contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd\"><contact:id>sh8013</contact:id><contact:roid>SH8013-REP</contact:roid><contact:status s=\"linked\"/><contact:status s=\"clientDeleteProhibited\"/><contact:postalInfo type=\"int\"><contact:name>John Doe</contact:name><contact:org>Example Inc.</contact:org><contact:addr><contact:street>123 Example Dr.</contact:street><contact:street>Suite 100</contact:street><contact:city>Dulles</contact:city><contact:sp>VA</contact:sp><contact:pc>20166-6503</contact:pc><contact:cc>US</contact:cc></contact:addr></contact:postalInfo><contact:voice x=\"1234\">+1.7035555555</contact:voice><contact:fax>+1.7035555556</contact:fax><contact:email>jdoe@example.com</contact:email><contact:clID>ClientY</contact:clID><contact:crID>ClientX</contact:crID><contact:crDate>1999-04-03T22:00:00.0Z</contact:crDate><contact:upID>ClientX</contact:upID><contact:upDate>1999-12-03T09:00:00.0Z</contact:upDate><contact:trDate>2000-04-08T09:00:00.0Z</contact:trDate><contact:authInfo><contact:pw>2fooBAR</contact:pw></contact:authInfo><contact:disclose flag=\"0\"><contact:voice/><contact:email/></contact:disclose></contact:infData></resData><extension><cnnic-contact:infData xmlns=\"urn:ietf:params:xml:ns:cnnic-contact-1.0\" xmlns:cnnic-contact=\"urn:ietf:params:xml:ns:cnnic-contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:cnnic-contact-1.0 cnnic-contact-1.0.xsd\"><cnnic-contact:type>E</cnnic-contact:type><cnnic-contact:contact type=\"QT\">testid</cnnic-contact:contact><cnnic-contact:mobile>+1.5777777778</cnnic-contact:mobile></cnnic-contact:infData></extension><trID><clTRID>ABC-12345</clTRID><svTRID>54322-XYZ</svTRID></trID></response></epp>";
     private static final String XML_2 =
@@ -35,7 +35,7 @@ public class ContactInfoCNNICResponseExtensionUnitTest {
         cnContact.setMobile("+1.5777777778");
         cnContact.setType("E");
         contactInfoCNNICResponseExtension =
-        new ContactInfoCNNICResponseExtension(cnContact);
+            new ContactInfoCNNICResponseExtension(cnContact);
         response.registerExtension(contactInfoCNNICResponseExtension);
         parser = new XMLParser();
         XMLDocument doc = parser.parse(XML_1);
@@ -48,9 +48,9 @@ public class ContactInfoCNNICResponseExtensionUnitTest {
         try {
             tmpDoc = parser.parse(XML_2);
             ContactInfoResponse tmpResponse = new ContactInfoResponse();
-            ContactInfoCNNICResponseExtension contactInfoCNNICResponseExtension =
+            ContactInfoCNNICResponseExtension contactExtension =
                 new ContactInfoCNNICResponseExtension(cnContact);
-            tmpResponse.registerExtension(contactInfoCNNICResponseExtension);
+            tmpResponse.registerExtension(contactExtension);
             tmpResponse.fromXML(tmpDoc);
         } catch (ParsingException e) {
             fail(e.getMessage());
