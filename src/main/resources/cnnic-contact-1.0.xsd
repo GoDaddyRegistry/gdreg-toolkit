@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema targetNamespace="urn:ietf:params:xml:ns:cnnic-contact-1.0"        
+        xmlns:cnnic-contact="urn:ietf:params:xml:ns:cnnic-contact-1.0"
+        xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
+        xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
+        xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+<!--
+Import common EPP namespaces
+-->
+
+  <import namespace="urn:ietf:params:xml:ns:eppcom-1.0"
+          schemaLocation="eppcom-1.0.xsd"/>
+  <import namespace="urn:ietf:params:xml:ns:epp-1.0"
+          schemaLocation="epp-1.0.xsd"/>
+  <import namespace="urn:ietf:params:xml:ns:contact-1.0"
+          schemaLocation="contact-1.0.xsd"/>
+          
+  <annotation>
+    <documentation>
+      Extensible Provisioning Protocol v1.0
+      CNNIC Contact Extension Schema v1.0
+    </documentation>
+  </annotation>
+
+<!--
+Types used within an EPP greeting.
+-->
+  <element name="svc" />
+  
+  
+<!--
+Child element find in <epp> command
+-->  
+
+  <element name="create" type="cnnic-contact:createType"/>
+  <element name="update" type="cnnic-contact:updateType"/>
+  
+<!--
+Child Element of <cnnic-contact:create> command
+-->
+  <complexType name="createType">
+    <sequence>
+      <element name="type" type="cnnic-contact:contactType"
+       minOccurs="0"/>
+      <element name="contact" type="cnnic-contact:contactID"
+       minOccurs="0" maxOccurs="1"/>
+      <element name="purveyor" type="eppcom:clIDType"
+       minOccurs="0"/>
+      <element name="mobile" type="contact:e164StringType"
+         minOccurs="0"/>
+    </sequence>
+  </complexType>
+
+<!--
+contactType
+        I: domestic individual contact
+        E: domestic enterprise contact
+-->
+
+  <simpleType name="contactType">
+    <restriction base="token">
+      <enumeration value="I"/>
+      <enumeration value="E"/>
+    </restriction>
+  </simpleType>
+
+
+ <!-- contact ID for contact -->
+  <complexType name="contactID">
+    <simpleContent>
+      <extension base="cnnic-contact:idString">
+        <attribute name="type" type="cnnic-contact:contactIDType" use="required"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+<!--
+idString
+-->
+  <simpleType name="idString">
+    <restriction base="token">
+      <minLength value="1"/>
+      <maxLength value="50"/>
+    </restriction>
+  </simpleType>
+
+
+<!--
+
+    The following types apply to I type contact:
+    SFZ     ;   ID
+    HZ      ;   Passport
+    GAJMTX  ;   Exit-Entry Permit for Travelling to and from Hong Kong and Macao
+    TWJMTX  ;   Travel passes for Taiwan Residents to Enter or Leave the Mainland
+    WJLSFZ  ;   Foreign Permanent Resident ID Card
+    GAJZZ   ;   Residence permit for Hong Kong, Macao residents
+    TWJZZ   ;   Residence permit for Taiwan residents
+    JGZ     ;   Officer’s identity card
+    QT      ;   Others
+
+    The following types apply to E type contact:
+    ORG     ;   Organization Code Certificate
+    YYZZ    ;   Business License
+    TYDM    ;   Certificate for Uniform Social Credit Code
+    BDDM    ;   Military Code Designation
+    JDDWFW  ;   Military Paid External Service License
+    SYDWFR  ;   Public Institution Legal Person Certificate
+    WGCZJG  ;   Resident Representative Offices of Foreign Enterprises Registration Form
+    SHTTFR  ;   Social Organization Legal Person Registration Certificate
+    ZJCS    ;   Religion Activity Site Registration Certificate
+    MBFQY   ;   Private Non-Enterprise Entity Registration Certificate
+    JJHFR   ;   Fund Legal Person Registration Certificate
+    LSZY    ;   Practicing License of Law Firm
+    WGZHWH  ;   Registration Certificate of Foreign Cultural Center in China
+    WLCZJG  ;   Resident Representative Office of Tourism Departments of Foreign Government Approval Registration Certificate
+    SFJD    ;   Judicial Expertise License
+    JWJG    ;   Overseas Organization Certificate
+    SHFWJG  ;   Social Service Agency Registration Certificate
+    MBXXBX  ;   Private School Permit
+    YLJGZY  ;   Medical Institution Practicing License
+    GZJGZY  ;   Notary Organization Practicing License
+    BJWSXX  ;   Beijing School for Children of Foreign Embassy Staff in China Permit
+    QT      ;   Others
+
+ -->
+  <!-- contact ID Type -->
+  <simpleType name="contactIDType">
+    <restriction base="token">
+        <enumeration value="SFZ"/>
+        <enumeration value="HZ"/>
+        <enumeration value="GAJMTX"/>
+        <enumeration value="TWJMTX"/>
+        <enumeration value="WJLSFZ"/>
+        <enumeration value="GAJZZ"/>
+        <enumeration value="TWJZZ"/>
+        <enumeration value="JGZ"/>
+        <enumeration value="QT"/>
+
+        <enumeration value="ORG"/>
+        <enumeration value="YYZZ"/>
+        <enumeration value="TYDM"/>
+        <enumeration value="BDDM"/>
+        <enumeration value="JDDWFW"/>
+        <enumeration value="SYDWFR"/>
+        <enumeration value="WGCZJG"/>
+        <enumeration value="SHTTFR"/>
+        <enumeration value="ZJCS"/>
+        <enumeration value="MBFQY"/>
+        <enumeration value="JJHFR"/>
+        <enumeration value="LSZY"/>
+        <enumeration value="WGZHWH"/>
+        <enumeration value="WLCZJG"/>
+        <enumeration value="SFJD"/>
+        <enumeration value="JWJG"/>
+        <enumeration value="SHFWJG"/>
+        <enumeration value="MBXXBX"/>
+        <enumeration value="YLJGZY"/>
+        <enumeration value="GZJGZY"/>
+        <enumeration value="BJWSXX"/>
+    </restriction>
+  </simpleType>
+
+
+
+<!--
+Child element of <cnnic-contact:update> command
+-->
+  <complexType name="updateType">
+    <sequence>
+      <element name="add" type="cnnic-contact:addRemChgType" minOccurs="0" maxOccurs="1"/>
+      <element name="rem" type="cnnic-contact:addRemChgType" minOccurs="0" maxOccurs="1"/>
+      <element name="chg" type="cnnic-contact:addRemChgType" minOccurs="0" maxOccurs="1"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="addRemChgType">
+    <sequence>
+      <element name="type" type="cnnic-contact:contactType"
+       minOccurs="0"/>
+      <element name="contact" type="cnnic-contact:contactID"
+       minOccurs="0" />
+      <element name="purveyor" type="eppcom:clIDType"
+       minOccurs="0"/>
+      <element name="mobile" type="contact:e164StringType"
+         minOccurs="0"/>
+    </sequence>
+  </complexType>
+
+<!--
+child element in <info> response
+-->
+
+  <element name="infData" type="cnnic-contact:infDataType"/>
+
+<!--
+infDataType
+-->
+
+  <complexType name="infDataType">
+    <sequence>
+      <element name="type" type="cnnic-contact:contactType"
+       minOccurs="0"/>
+      <element name="contact" type="cnnic-contact:contactID"
+       minOccurs="0" maxOccurs="1"/>
+      <element name="purveyor" type="eppcom:clIDType"
+       minOccurs="0"/>
+      <element name="mobile" type="contact:e164StringType"
+       minOccurs="0"/>
+    </sequence>
+  </complexType>
+  
+<!--
+END of schema
+-->
+
+</schema>  
+
+

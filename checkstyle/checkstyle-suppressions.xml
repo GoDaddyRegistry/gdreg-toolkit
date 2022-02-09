@@ -138,6 +138,9 @@
     <suppress checks="LineLengthCheck" files="SessionTest\.java" />
     <suppress checks="LineLengthCheck" files="DomainTransferRequestPriceCommandExtensionTest\.java" />
     <suppress checks="LineLengthCheck" files="SecDnsDomainUpdateCommandExtensionChangeTest\.java" />
+    <suppress checks="LineLengthCheck" files="ContactCreateCNNICExtensionTest" />
+    <suppress checks="LineLengthCheck" files="ContactInfoCNNICResponseExtensionTest" />
+    <suppress checks="LineLengthCheck" files="ContactUpdateCNNICExtensionTest" />
 
     <!-- Ignore the problem caused by XML indentation used in test -->
     <suppress checks="ParenPadCheck" files="DomainCreateResponseTest\.java" />
