@@ -50,10 +50,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-  publish:
-    if: >
-      github.event_name == 'push' &&
-      (github.ref_name == 'master' || github.ref_name == 'main')
+  publish-snapshot:
     needs: [ build ]
     runs-on: ubuntu-latest
     permissions:
@@ -74,6 +71,9 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
+      - name: Change version from 'major.minor.patch' to 'major.minor-SNAPSHOT'
+        run: |
+          sed -i -E 's/([0-9]+).([0-9]+).([0-9]+)$/\1.\2-SNAPSHOT/' $GITHUB_WORKSPACE/gradle.properties
       - name: Publish package
         run: |
           ./gradlew -DrepoUrl="$GPR_URL" \

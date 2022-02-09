@@ -10,6 +10,7 @@
                                                                     # sample code in readme
     ".github/workflows/gradle.yml::^[a-z0-9]{40}$",                 # exclude a hash used in GitHub git checkout Action
     ".github/workflows/tartufo.yml::^[a-z0-9]{40}$",                # exclude a hash used in GitHub git checkout Action
+    ".github/workflows/release.yml::^[a-z0-9]{40}$",                # exclude a hash used in GitHub git checkout Action
     ".*/test/.*.java::^should",                                     # exclude all unit test method names
     ".*/test/.*.java::^D604E5509E82DF9F3105B7E182BB4DF28",          # exclude a ROID literal used in tests
     "src/test/.*/PollResponseTest.java$::^[A-Za-z0-9+/]{30,}$",     # exclude ROID, DNSSEC pubKey from a PollResponseTest
