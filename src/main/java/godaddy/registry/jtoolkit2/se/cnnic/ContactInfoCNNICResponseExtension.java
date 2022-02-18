@@ -43,6 +43,13 @@ public final class ContactInfoCNNICResponseExtension extends ResponseExtension {
 
     /**
      * Instantiates a new contact info CNNIC response extension.
+     */
+    public ContactInfoCNNICResponseExtension() {
+        // intentionally do nothing
+    }
+
+    /**
+     * Instantiates a new contact info CNNIC response extension.
      *
      * @param cnContact the cn contact
      */
