@@ -1,6 +1,5 @@
 package godaddy.registry.jtoolkit2.se.cnnic;
 
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -9,11 +8,9 @@ import java.util.Vector;
 import org.junit.Before;
 import org.junit.Test;
 
-import godaddy.registry.jtoolkit2.EPPDateFormatter;
 import godaddy.registry.jtoolkit2.Timer;
 import godaddy.registry.jtoolkit2.se.CLTRID;
 import godaddy.registry.jtoolkit2.se.DomainInfoResponse;
-import godaddy.registry.jtoolkit2.se.Status;
 import godaddy.registry.jtoolkit2.xml.ParsingException;
 import godaddy.registry.jtoolkit2.xml.XMLDocument;
 import godaddy.registry.jtoolkit2.xml.XMLParser;
@@ -26,7 +23,7 @@ public class DomainInfoCDNResponseExtensionTest {
     private DomainInfoResponse response;
     private XMLParser parser;
     private CDN cdn;
-    private DomainInfoCDNResponseExtension cnnicCdnExtension;
+    private DomainInfoCDNResponseExtension cdnExtension;
 
     @Before
     public void setUp() throws Exception {
@@ -49,9 +46,9 @@ public class DomainInfoCDNResponseExtensionTest {
         Timer.setTime("20070101.010101");
         CLTRID.setClID("ABC-12345");
 
-        cnnicCdnExtension =
+        cdnExtension =
             new DomainInfoCDNResponseExtension(cdn);
-        response.registerExtension(cnnicCdnExtension);
+        response.registerExtension(cdnExtension);
         parser = new XMLParser();
         XMLDocument doc = parser.parse(XML_1);
         response.fromXML(doc);
@@ -59,61 +56,20 @@ public class DomainInfoCDNResponseExtensionTest {
 
     @Test
     public void testGetCdn() {
-        assertEquals(cdn, cnnicCdnExtension.getCDN());
+        assertEquals(cdn, cdnExtension.getCDN());
     }
 
     @Test
-    public void testMissingDiscloseCNNICContact() {
+    public void testDomainInfoCDNResponseExtension() {
         XMLDocument tmpDoc;
         try {
             tmpDoc = parser.parse(XML_1);
             DomainInfoResponse tmpResponse = new DomainInfoResponse();
-            tmpResponse.registerExtension(cnnicCdnExtension);
+            tmpResponse.registerExtension(cdnExtension);
             tmpResponse.fromXML(tmpDoc);
         } catch (ParsingException e) {
             fail(e.getMessage());
         }
-    }
-
-    @Test
-    public void testGetPW() {
-        assertEquals("0192pqow", response.getPW());
-    }
-
-    @Test
-    public void testGetName() {
-        assertEquals("example.cn", response.getName());
-    }
-
-    @Test
-    public void testGetCLTRID() {
-        assertEquals("ABC-12345", response.getCLTRID());
-    }
-
-    @Test
-    public void testGetSVTRID() {
-        assertEquals("54321-XYZ", response.getSVTRID());
-    }
-
-    @Test
-    public void testGetRegistrantID() {
-        assertEquals("EXAMPLE", response.getRegistrantID());
-    }
-
-    @Test
-    public void testGetCreateDate() {
-        assertEquals(
-            EPPDateFormatter.fromXSDateTime("2006-02-09T15:44:58.0Z"),
-            response.getCreateDate());
-    }
-
-    @Test
-    public void testGetStatuses() {
-        assertArrayEquals(
-            new Status[] {
-                new Status("ok"),
-            },
-            response.getStatuses());
     }
 
 }
