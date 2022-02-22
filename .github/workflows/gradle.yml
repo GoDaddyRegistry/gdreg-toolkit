@@ -51,6 +51,7 @@ jobs:
         run: ./gradlew build
 
   publish-snapshot:
+    if: github.event.pull_request.head.repo.full_name == github.repository
     needs: [ build ]
     runs-on: ubuntu-latest
     permissions:
