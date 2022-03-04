@@ -30,6 +30,7 @@ public class DomainCreateFeeCommandExtension implements CommandExtension {
     private static final String FIELD_IDENTIFIER = "<<field>>";
     private BigDecimal registrationFee;
     private String currency;
+    private boolean descriptionRequired = true;
 
     public DomainCreateFeeCommandExtension(BigDecimal registrationFee, String currency) {
         if (registrationFee != null) {
@@ -40,6 +41,11 @@ public class DomainCreateFeeCommandExtension implements CommandExtension {
         }
         this.currency = currency;
 
+    }
+
+    public DomainCreateFeeCommandExtension(BigDecimal registrationFee, String currency, boolean descriptionRequired) {
+        this(registrationFee, currency);
+        this.descriptionRequired = descriptionRequired;
     }
 
     @Override
@@ -54,7 +60,9 @@ public class DomainCreateFeeCommandExtension implements CommandExtension {
 
         Element registrationFeeTag = xmlWriter.appendChild(createElement, "fee");
         registrationFeeTag.setTextContent(registrationFee.toPlainString());
-        registrationFeeTag.setAttribute("description", "Registration Fee");
+        if (descriptionRequired) {
+            registrationFeeTag.setAttribute("description", "Registration Fee");
+        }
     }
 
 }

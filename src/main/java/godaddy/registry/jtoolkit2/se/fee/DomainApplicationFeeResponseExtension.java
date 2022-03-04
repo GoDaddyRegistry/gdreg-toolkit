@@ -55,16 +55,17 @@ public final class DomainApplicationFeeResponseExtension extends ResponseExtensi
             int nodeLength = feeNodeList.getLength();
             for (int i = 0; i < nodeLength; i++) {
                 Node node = feeNodeList.item(i);
-                String description = node.getAttributes().getNamedItem("description").getNodeValue();
-                if (description.equals("Application Fee")) {
-                    applicationFee = new BigDecimal(node.getTextContent());
+                if (node.getAttributes().getNamedItem("description") != null) {
+                    String description = node.getAttributes().getNamedItem("description").getNodeValue();
+                    if (description.equals("Application Fee")) {
+                        applicationFee = new BigDecimal(node.getTextContent());
 
-                } else if (description.equals("Allocation Fee")) {
-                    allocationFee = new BigDecimal(node.getTextContent());
+                    } else if (description.equals("Allocation Fee")) {
+                        allocationFee = new BigDecimal(node.getTextContent());
 
-                } else if (description.equals("Registration Fee")) {
-                    registrationFee = new BigDecimal(node.getTextContent());
-
+                    } else if (description.equals("Registration Fee")) {
+                        registrationFee = new BigDecimal(node.getTextContent());
+                    }
                 }
             }
         }
