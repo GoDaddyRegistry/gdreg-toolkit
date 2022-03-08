@@ -30,9 +30,14 @@ public class DomainCreateFeeCommandExtension implements CommandExtension {
     private static final String FIELD_IDENTIFIER = "<<field>>";
     private BigDecimal registrationFee;
     private String currency;
-    private boolean descriptionRequired = true;
+    private final boolean descriptionRequired;
 
     public DomainCreateFeeCommandExtension(BigDecimal registrationFee, String currency) {
+        this(registrationFee, currency, true);
+    }
+
+    public DomainCreateFeeCommandExtension(BigDecimal registrationFee, String currency, boolean descriptionRequired) {
+        this.descriptionRequired = descriptionRequired;
         if (registrationFee != null) {
             this.registrationFee = registrationFee;
         } else {
@@ -40,12 +45,6 @@ public class DomainCreateFeeCommandExtension implements CommandExtension {
                     "registrationFee"));
         }
         this.currency = currency;
-
-    }
-
-    public DomainCreateFeeCommandExtension(BigDecimal registrationFee, String currency, boolean descriptionRequired) {
-        this(registrationFee, currency);
-        this.descriptionRequired = descriptionRequired;
     }
 
     @Override
