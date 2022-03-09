@@ -46,6 +46,32 @@ public class DomainCheckFeeResponseExtensionTest {
 
     }
 
+    @Test
+    public void shouldAcceptDomainCheckFeeExtensionWithoutDescription() throws Exception {
+
+        final DomainCheckResponse response = new DomainCheckResponse();
+        final DomainCheckFeeResponseExtension feeCheckExtension =  new DomainCheckFeeResponseExtension();
+        final XMLDocument doc = PARSER.parse(getCreateResponseExpectedXmlWithoutDescription());
+        response.registerExtension(feeCheckExtension);
+        response.fromXML(doc);
+
+        List<FeeCheckData> feeDomains = feeCheckExtension.getFeeDomains();
+        assertThat(feeDomains, hasSize(1));
+
+        FeeCheckData fee = feeDomains.get(0);
+        assertThat(fee.getName(), is(DOMAIN_NAME));
+        assertThat(fee.getCurrency(), is("USD"));
+        assertThat(fee.getCommand().getName(), is("create"));
+        assertThat(fee.getCommand().getPhase(), is("sunrise"));
+        assertThat(fee.getPeriod().getPeriod(), is(1));
+        assertThat(fee.getPeriod().getUnit().toString(), is("y"));
+        assertThat(fee.getFees(), hasSize(1));
+        assertThat(fee.getFees().get(0).getFee(), is(new BigDecimal("5.00")));
+        assertThat(fee.getFees().get(0).getRefundable(), is(true));
+        assertThat(fee.getFeeClass(), is("premium-tier1"));
+
+    }
+
     private String generateExpectedXml(String fee) {
         return "<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
                 "<epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\">" +
@@ -83,6 +109,12 @@ public class DomainCheckFeeResponseExtensionTest {
     private String getCreateResponseExpectedXml() {
         String fee = "<fee description=\"Application Fee\" refundable=\"0\">5.00</fee>" +
                 "<fee description=\"Registration Fee\" refundable=\"1\">5.00</fee>";
+        return generateExpectedXml(fee);
+    }
+
+
+    private String getCreateResponseExpectedXmlWithoutDescription() {
+        String fee = "<fee refundable=\"1\">5.00</fee>";
         return generateExpectedXml(fee);
     }
 

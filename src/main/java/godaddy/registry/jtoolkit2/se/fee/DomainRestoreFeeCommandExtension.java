@@ -26,6 +26,7 @@ public class DomainRestoreFeeCommandExtension implements CommandExtension {
     private BigDecimal renewFee;
     private BigDecimal restoreFee;
     private String currency;
+    private String restoreDescription;
 
     public DomainRestoreFeeCommandExtension(BigDecimal renewFee, BigDecimal restoreFee, String currency) {
         this.renewFee = renewFee;
@@ -44,7 +45,11 @@ public class DomainRestoreFeeCommandExtension implements CommandExtension {
         if (restoreFee != null) {
             final Element restoreElement = xmlWriter.appendChild(createElement, "fee");
             restoreFee = restoreFee.setScale(2);
-            restoreElement.setAttribute("description", "Restore Fee");
+            if (restoreDescription != null) {
+                restoreElement.setAttribute("description", restoreDescription);
+            } else {
+                restoreElement.setAttribute("description", "Restore Fee");
+            }
             restoreElement.setTextContent(restoreFee.toPlainString());
         }
 
@@ -55,6 +60,10 @@ public class DomainRestoreFeeCommandExtension implements CommandExtension {
             renewElement.setTextContent(renewFee.toPlainString());
         }
 
+    }
+
+    public void setDescriptionForRestoreFee(String restoreDescription) {
+        this.restoreDescription = restoreDescription;
     }
 
 }

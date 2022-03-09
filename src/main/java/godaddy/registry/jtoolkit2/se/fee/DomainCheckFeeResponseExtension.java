@@ -109,7 +109,11 @@ public class DomainCheckFeeResponseExtension extends ResponseExtension {
 
     private FeeCheckData.Fee parseFee(Node feeNode) {
         BigDecimal feeValue = new BigDecimal(feeNode.getTextContent());
-        String description = feeNode.getAttributes().getNamedItem("description").getTextContent();
+        String description = null;
+        Node descriptionNode = feeNode.getAttributes().getNamedItem("description");
+        if (descriptionNode != null) {
+            description = descriptionNode.getTextContent();
+        }
         FeeCheckData.Fee fee = new FeeCheckData.Fee(feeValue, description);
         String refundable = feeNode.getAttributes().getNamedItem("refundable") != null
                 ? feeNode.getAttributes().getNamedItem("refundable").getTextContent() : null;

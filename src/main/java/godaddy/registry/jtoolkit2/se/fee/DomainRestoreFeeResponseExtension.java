@@ -51,13 +51,16 @@ public final class DomainRestoreFeeResponseExtension extends ResponseExtension {
             for (int feeNodeIndex = 0; feeNodeIndex < feeNodes.getLength(); feeNodeIndex++) {
                 Node feeNode = feeNodes.item(feeNodeIndex);
                 String feeNodeValue = feeNode.getTextContent();
-                String feetype = feeNode.getAttributes().getNamedItem("description").getTextContent();
+                Node descriptionNode = feeNode.getAttributes().getNamedItem("description");
+                if (descriptionNode != null) {
+                    String feetype = descriptionNode.getTextContent();
 
-                if (feetype.equalsIgnoreCase("Restore Fee")) {
-                    restoreFee = new BigDecimal(feeNodeValue);
-                }
-                if (feetype.equalsIgnoreCase("Renewal Fee")) {
-                    renewFee = new BigDecimal(feeNodeValue);
+                    if (feetype.equalsIgnoreCase("Restore Fee")) {
+                        restoreFee = new BigDecimal(feeNodeValue);
+                    }
+                    if (feetype.equalsIgnoreCase("Renewal Fee")) {
+                        renewFee = new BigDecimal(feeNodeValue);
+                    }
                 }
             }
         }
