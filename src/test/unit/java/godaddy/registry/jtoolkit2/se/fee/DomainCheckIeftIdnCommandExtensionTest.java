@@ -20,11 +20,6 @@ import godaddy.registry.jtoolkit2.se.idn.ietf.DomainCheckIeftIdnEPPCommandExtens
 public class DomainCheckIeftIdnCommandExtensionTest {
 
     public static final String DOMAIN_NAME = "jtkutest.com.au";
-    public static final String CURRENCY = "AUD";
-    public static final String COMMAND = "CREATE";
-    public static final String PHASE = "claims";
-    public static final int NUMBER_OF_YEARS = 1;
-    public static final String SUBPHASE = "landrush";
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();
