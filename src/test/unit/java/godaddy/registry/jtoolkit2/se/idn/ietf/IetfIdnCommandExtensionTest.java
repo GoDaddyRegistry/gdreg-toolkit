@@ -16,7 +16,7 @@ import org.xml.sax.SAXException;
 
 public class IetfIdnCommandExtensionTest {
 
-    public static final String DOMAIN_NAME = "jtkutest.com.au";
+    private static final String DOMAIN_NAME = "jtkutest.com.au";
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();
@@ -64,16 +64,6 @@ public class IetfIdnCommandExtensionTest {
     }
 
     @Test
-    public void failCreateCommandWhenTableNotProvided() throws SAXException {
-        thrown.expect(IllegalArgumentException.class);
-        thrown.expectMessage("Table must not be null or empty.");
-        Command cmd = new DomainCreateCommand(DOMAIN_NAME, "jtkUT3st");
-        IetfIdnCommandExtension idnExt = new IetfIdnCommandExtension(null, null);
-        cmd.appendExtension(idnExt);
-        cmd.toXML();
-    }
-
-    @Test
     public void testDomainCheckIdnCommandWithTableAndUname() {
         Command cmd = new DomainCheckCommand(DOMAIN_NAME);
         IetfIdnCommandExtension idnExt = new IetfIdnCommandExtension("es", "uname");
@@ -111,14 +101,12 @@ public class IetfIdnCommandExtensionTest {
     }
 
     @Test
-    public void failCheckCommandWhenTableNotProvided() throws SAXException {
+    public void failIetfIdnExtensionWhenTableNotProvided() throws SAXException {
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("Table must not be null or empty.");
-        Command cmd = new DomainCheckCommand(DOMAIN_NAME);
-        IetfIdnCommandExtension idnExt = new IetfIdnCommandExtension(null, null);
-        cmd.appendExtension(idnExt);
-        cmd.toXML();
+        new IetfIdnCommandExtension(null, null);
     }
+
     private String expectedDomainCreateXmlWithExtension(String extensionSection) {
         return new StringBuilder("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
                 .append("<epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\"")
