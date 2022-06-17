@@ -2,7 +2,7 @@
 
 ## Downloads
 
-The latest gdreg-toolkit is available for download. [gdreg-toolkit v5.0.4](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.4/gdrjtk-5.0.4.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.4/gdrjtk-5.0.4-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.4/gdrjtk-5.0.4-javadoc.jar))
+The latest gdreg-toolkit is available for download. [gdreg-toolkit v5.1.0](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.1.0/gdrjtk-5.1.0.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.1.0/gdrjtk-5.1.0-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.1.0/gdrjtk-5.1.0-javadoc.jar))
 
 For more information, please read [Installation and Setup](#installation-and-setup).
 
@@ -44,18 +44,16 @@ This toolkit also provides a mechanism to perform the following Trademark Cleari
 
 #### Direct download
 
-Obtain the latest toolkit here: [Toolkit v5.0.4](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.4/gdrjtk-5.0.4.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.4/gdrjtk-5.0.4-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.0.4/gdrjtk-5.0.4-javadoc.jar))
+Obtain the latest toolkit here: [Toolkit v5.1.0](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.1.0/gdrjtk-5.1.0.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.1.0/gdrjtk-5.1.0-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.1.0/gdrjtk-5.1.0-javadoc.jar))
 
 #### Dependency Management
 
 Use your build's dependency management tool to automatically download the toolkit from our repository.
 
-* Repository:
-    1. `https://maven.pkg.github.com/GoDaddyRegistry/registrar-toolkit` (preferred),
-    2. or, `http://godaddyregistry.github.io/repo/`
+* Repository: `https://maven.pkg.github.com/GoDaddyRegistry/registrar-toolkit`
 * groupId: `godaddy.registry`
 * artifactId: `gdrjtk`
-* version: `5.0.4`
+* version: `5.1.0`
 
 For example (using Maven):
 
@@ -70,7 +68,7 @@ For example (using Maven):
        <dependency>
           <groupId>godaddy.registry</groupId>
           <artifactId>gdrjtk</artifactId>
-          <version>5.0.4</version>
+          <version>5.1.0</version>
        </dependency>
     </dependencies>
 
@@ -262,6 +260,10 @@ Obtain the information from the response extension:
     if (idnResponse.isInitialised()) {String languageTag = idnResponse.getLanguageTag();}
 
 ## Upgrading guide
+
+### Upgrading from 5.0 to 5.1
+
+The class `DomainCreateIetfIdnCommandExtension` has been renamed to `IetfIdnCommandExtension` since 5.1. As the `ietf-idn` extension can be used by both domain-create and domain-check commands.
 
 ### Upgrading from 4.x to 5.0
 
