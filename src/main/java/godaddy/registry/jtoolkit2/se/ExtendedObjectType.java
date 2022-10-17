@@ -50,6 +50,7 @@ public enum ExtendedObjectType implements ObjectType {
     LAUNCH("launch", "urn:ietf:params:xml:ns:launch-1.0", "launch-1.0.xsd", "name"),
     /** References the Fee XML namespace and schema file */
     FEE("fee", "urn:ietf:params:xml:ns:fee-0.6", "fee-0.6.xsd", "fee"),
+    FEEV10("feeV1_0", "urn:ietf:params:xml:ns:epp:fee-1.0", "fee-1.0.xsd", "fee"),
     /** References the IETF IDN XML namespace and schema file */
     IETF_IDN("ietfIdn", "urn:ietf:params:xml:ns:idn-1.0", "ietf-idn-1.0.xsd", "ietfIdn"),
     /** References the Allocation Token XML namespace and schema file */

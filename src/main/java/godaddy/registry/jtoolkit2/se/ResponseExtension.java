@@ -1,5 +1,6 @@
 package godaddy.registry.jtoolkit2.se;
 
+import java.io.Serializable;
 import javax.xml.xpath.XPathExpressionException;
 
 import godaddy.registry.jtoolkit2.xml.XMLDocument;
@@ -7,13 +8,13 @@ import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Extension of the response mapping of the EPP response. Instances of this
- * class provide an interface to access all of the information available through
+ * class provide an interface to access all the information available through
  * EPP response extension. This relies on the instance first being initialised
  * by a suitable EPP response using the method fromXML. For flexibility, this
  * implementation extracts the data from the response using XPath queries, the
  * expressions for which are defined statically.
  */
-public abstract class ResponseExtension implements java.io.Serializable {
+public abstract class ResponseExtension implements Serializable {
 
     public static final String CREATE = "creData";
     public static final String INFO = "infData";
@@ -37,7 +38,7 @@ public abstract class ResponseExtension implements java.io.Serializable {
     /**
      * Initialises the instance from the given XML document.
      * @param xmlDoc EPP Response XML
-     * @throws XPathExpressionException
+     * @throws XPathExpressionException Xpath expression is invalid
      */
     public abstract void fromXML(XMLDocument xmlDoc) throws XPathExpressionException;
 
