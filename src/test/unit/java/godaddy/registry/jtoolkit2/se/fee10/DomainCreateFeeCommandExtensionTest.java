@@ -59,6 +59,36 @@ public class DomainCreateFeeCommandExtensionTest {
     }
 
     @Test
+    public void shouldCreateValidXmlWhenSupplyFeeExtensionWithDescription() throws SAXException {
+
+        final Command cmd = new DomainCreateCommand("jtkutest.com.au", "jtkUT3st");
+        final DomainCreateFeeCommandExtension ext =
+                new DomainCreateFeeCommandExtension(BigDecimal.valueOf(30.00), "USD", "Fee");
+
+        try {
+            cmd.appendExtension(ext);
+            String expectedXml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+                    + "<epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\""
+                    + " xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\""
+                    + " xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\">"
+                    + "<command><create><create xmlns=\"urn:ietf:params:xml:ns:domain-1.0\" "
+                    + "xsi:schemaLocation=\"urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd\">"
+                    + "<name>jtkutest.com.au</name><authInfo><pw>jtkUT3st</pw></authInfo></create></create>"
+                    + "<extension><create xmlns=\"urn:ietf:params:xml:ns:epp:fee-1.0\">"
+                    + "<currency>USD</currency>"
+                    + "<fee description=\"Fee\">30.00</fee>"
+                    + "</create>"
+                    + "</extension><clTRID>JTKUTEST.20070101.010101.0</clTRID></command></epp>";
+
+            assertEquals(expectedXml, cmd.toXML());
+
+        } catch (SAXException saxe) {
+            fail(saxe.getMessage());
+        }
+
+    }
+
+    @Test
     public void shouldFailWhenRegistrationFeeIsMissing() throws SAXException {
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("Field 'registrationFee' is required.");
