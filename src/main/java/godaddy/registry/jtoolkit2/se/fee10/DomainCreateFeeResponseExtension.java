@@ -1,5 +1,7 @@
 package godaddy.registry.jtoolkit2.se.fee10;
 
+import java.math.BigDecimal;
+
 /**
  * <p>Extension for the EPP Domain Create response, representing the Fee
  * extension.</p>
@@ -22,4 +24,11 @@ public class DomainCreateFeeResponseExtension extends FeeTransformResultType {
         super(CREATE);
     }
 
+    public BigDecimal getRegistrationFee() {
+        return getRegistrationFee("Default");
+    }
+
+    public BigDecimal getRegistrationFee(String feeDescription) {
+        return getFeeType().computeIfAbsent(feeDescription, k -> new FeeType()).getFee();
+    }
 }

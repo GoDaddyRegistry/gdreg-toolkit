@@ -85,8 +85,8 @@ dependencies {
 }
 
 tasks.withType(JavaCompile) {
-    sourceCompatibility = '1.7'
-    targetCompatibility = '1.7'
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
 
     options.encoding = "UTF-8"
     options.compilerArgs << "-Xlint:-options"
@@ -130,7 +130,7 @@ task integrationTest(type: Test) {
 
 task componentTest(type: Test) {
     onlyIf { // on Travis if runtime is JDK6 it would complain about major.minor version of MockHttpServer
-        isJava7Compatible()
+        isJava8Compatible()
     }
 
     testClassesDirs = sourceSets.componentTest.output.classesDirs
@@ -265,7 +265,7 @@ checkstyle {
 
 tasks.withType(Checkstyle) {
     onlyIf { // on Travis if runtime is JDK6 it would complain about major.minor version of Checkstyle tool
-        isJava7Compatible()
+        isJava8Compatible()
     }
 
     classpath = project.sourceSets.main.output
@@ -278,8 +278,8 @@ check.dependsOn test
 check.dependsOn integrationTest
 check.dependsOn componentTest
 
-boolean isJava7Compatible() {
-    JavaVersion.current().java7Compatible
+boolean isJava8Compatible() {
+    JavaVersion.current().java8Compatible
 }
 
 jacoco {
