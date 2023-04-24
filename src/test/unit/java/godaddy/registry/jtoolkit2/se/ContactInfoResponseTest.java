@@ -28,9 +28,6 @@ public class ContactInfoResponseTest {
         parser = new XMLParser();
         XMLDocument doc = parser.parse(XML_1);
         response.fromXML(doc);
-
-        System.out.println(response);
-
     }
 
     @Test
