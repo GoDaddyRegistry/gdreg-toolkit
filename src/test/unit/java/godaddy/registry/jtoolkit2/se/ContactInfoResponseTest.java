@@ -145,32 +145,34 @@ public class ContactInfoResponseTest {
 
         assertFalse(response.isDisclosed());
 
-        assertEquals(response.getDiscloseItems()[0].getElementName(), "name");
-        assertEquals(response.getDiscloseItems()[0].getType(), "int");
+        assertEquals(9, response.getDiscloseItems().length);
 
-        assertEquals(response.getDiscloseItems()[1].getElementName(), "name");
-        assertEquals(response.getDiscloseItems()[1].getType(), "loc");
+        assertEquals("name", response.getDiscloseItems()[0].getElementName());
+        assertEquals("int", response.getDiscloseItems()[0].getType());
 
-        assertEquals(response.getDiscloseItems()[2].getElementName(), "org");
-        assertEquals(response.getDiscloseItems()[2].getType(), "int");
+        assertEquals("name", response.getDiscloseItems()[1].getElementName(), "name");
+        assertEquals("local", response.getDiscloseItems()[1].getType(), "loc");
 
-        assertEquals(response.getDiscloseItems()[3].getElementName(), "org");
-        assertEquals(response.getDiscloseItems()[3].getType(), "loc");
+        assertEquals("org", response.getDiscloseItems()[2].getElementName(), "org");
+        assertEquals("int", response.getDiscloseItems()[2].getType(), "int");
 
-        assertEquals(response.getDiscloseItems()[4].getElementName(), "addr");
-        assertEquals(response.getDiscloseItems()[4].getType(), "int");
+        assertEquals("org", response.getDiscloseItems()[3].getElementName(), "org");
+        assertEquals("loc", response.getDiscloseItems()[3].getType(), "loc");
 
-        assertEquals(response.getDiscloseItems()[5].getElementName(), "addr");
-        assertEquals(response.getDiscloseItems()[5].getType(), "loc");
+        assertEquals("addr", response.getDiscloseItems()[4].getElementName(), "addr");
+        assertEquals("int", response.getDiscloseItems()[4].getType(), "int");
 
-        assertEquals(response.getDiscloseItems()[6].getElementName(), "voice");
-        assertEquals(response.getDiscloseItems()[6].getType(), null);
+        assertEquals("addr", response.getDiscloseItems()[5].getElementName(), "addr");
+        assertEquals("loc", response.getDiscloseItems()[5].getType(), "loc");
 
-        assertEquals(response.getDiscloseItems()[7].getElementName(), "fax");
-        assertEquals(response.getDiscloseItems()[7].getType(), null);
+        assertEquals("voice", response.getDiscloseItems()[6].getElementName(), "voice");
+        assertNull(response.getDiscloseItems()[6].getType());
 
-        assertEquals(response.getDiscloseItems()[8].getElementName(), "email");
-        assertEquals(response.getDiscloseItems()[8].getType(), null);
+        assertEquals("fax", response.getDiscloseItems()[7].getElementName());
+        assertNull(response.getDiscloseItems()[7].getType());
+
+        assertEquals("email", response.getDiscloseItems()[8].getElementName());
+        assertNull(response.getDiscloseItems()[8].getType());
 
     }
 
