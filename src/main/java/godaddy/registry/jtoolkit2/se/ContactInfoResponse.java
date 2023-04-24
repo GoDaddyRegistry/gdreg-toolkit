@@ -6,7 +6,7 @@ import godaddy.registry.jtoolkit2.xml.XMLDocument;
 
 /**
  * Use this to access contact object information as provided in an EPP contact
- * info response compliant with RFC5730 and RFC5733.  Such a service element is
+ * info response compliant with RFC5730 and RFC5733. Such a service element is
  * sent by a compliant EPP server in response to a valid contact info command,
  * implemented by the ContactInfoCommand class.
  *
@@ -84,7 +84,6 @@ public class ContactInfoResponse extends InfoResponse {
         CON_DISCLOSE_EXPR + "/@flag";
     private static final String CON_DISCLOSE_CHILD_EXPR =
         CON_DISCLOSE_EXPR + "/*[IDX]";
-    private static final String CON_DISCLOSE_NAME_EXPR = "/local-name()";
     private static final String CON_DISCLOSE_TYPE_EXPR = "/@type";
 
     private String id;
@@ -163,7 +162,7 @@ public class ContactInfoResponse extends InfoResponse {
     }
 
     @Override
-    public void fromXML(XMLDocument xmlDoc) {
+    public void fromXML(final XMLDocument xmlDoc) {
         debugLogger.finest("enter");
         super.fromXML(xmlDoc);
 
@@ -183,7 +182,7 @@ public class ContactInfoResponse extends InfoResponse {
             String iCC = xmlDoc.getNodeValue(CON_PINFO_INT_CC_EXPR);
 
             intPostalInfo = new IntPostalInfo(iName, iOrg, iStreet, iCity,
-                    iSP, iPC, iCC);
+                iSP, iPC, iCC);
 
             String lName = xmlDoc.getNodeValue(CON_PINFO_LOC_NAME_EXPR);
 
@@ -196,7 +195,7 @@ public class ContactInfoResponse extends InfoResponse {
                 String lCC = xmlDoc.getNodeValue(CON_PINFO_LOC_CC_EXPR);
 
                 locPostalInfo = new LocalPostalInfo(lName, lOrg, lStreet, lCity,
-                        lSP, lPC, lCC);
+                    lSP, lPC, lCC);
             }
 
             voice = xmlDoc.getNodeValue(CON_VOICE_EXPR);
@@ -221,8 +220,9 @@ public class ContactInfoResponse extends InfoResponse {
 
                 for (int i = 0; i < count; i++) {
                     String qry = ReceiveSE.replaceIndex(CON_DISCLOSE_CHILD_EXPR, i + 1);
+
                     String childName =
-                        xmlDoc.getNodeValue(qry + CON_DISCLOSE_NAME_EXPR);
+                        xmlDoc.getNodeName(qry);
                     String childType =
                         xmlDoc.getNodeValue(qry + CON_DISCLOSE_TYPE_EXPR);
 
@@ -242,45 +242,53 @@ public class ContactInfoResponse extends InfoResponse {
         debugLogger.finest("exit");
     }
 
+    @Override
     protected String roidExpr() {
         return CON_ROID_EXPR;
     }
 
+    @Override
     protected String crIDExpr() {
         return CON_CR_ID_EXPR;
     }
 
+    @Override
     protected String upIDExpr() {
         return CON_UP_ID_EXPR;
     }
 
+    @Override
     protected String clIDExpr() {
         return CON_CL_ID_EXPR;
     }
 
+    @Override
     protected String crDateExpr() {
         return CON_CR_DATE_EXPR;
     }
 
+    @Override
     protected String upDateExpr() {
         return CON_UP_DATE_EXPR;
     }
 
+    @Override
     protected String trDateExpr() {
         return CON_TR_DATE_EXPR;
     }
 
+    @Override
     protected String statusExpr() {
         return CON_STATUS_EXPR;
     }
 
+    @Override
     protected String statusCountExpr() {
         return CON_STATUS_COUNT_EXPR;
     }
 
-    protected static String exprReplace(String expr) {
+    protected static String exprReplace(final String expr) {
         return expr.replaceAll(OBJ,
-                StandardObjectType.CONTACT.getName());
+            StandardObjectType.CONTACT.getName());
     }
 }
-
