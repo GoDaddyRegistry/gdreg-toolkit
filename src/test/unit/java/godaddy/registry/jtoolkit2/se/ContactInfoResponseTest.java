@@ -53,8 +53,8 @@ public class ContactInfoResponseTest {
         assertEquals("John Doe", pi.getName());
         assertEquals("Example Inc.", pi.getOrganisation());
         assertArrayEquals(
-            new String[] {"123 Example Dr.", "Suite 100"},
-            pi.getStreet());
+                new String[] {"123 Example Dr.", "Suite 100"},
+                pi.getStreet());
         assertEquals("Dulles", pi.getCity());
         assertEquals("VA", pi.getSp());
         assertEquals("20166-6503", pi.getPostcode());
@@ -111,8 +111,8 @@ public class ContactInfoResponseTest {
     @Test
     public void testGetUpdateDate() {
         assertEquals(
-            EPPDateFormatter.fromXSDateTime("1999-12-03T09:00:00.0Z"),
-            response.getUpdateDate());
+                EPPDateFormatter.fromXSDateTime("1999-12-03T09:00:00.0Z"),
+                response.getUpdateDate());
     }
 
     @Test
@@ -133,11 +133,11 @@ public class ContactInfoResponseTest {
     @Test
     public void testGetStatuses() {
         assertArrayEquals(
-            new Status[] {
-                new Status("linked"),
-                new Status("clientDeleteProhibited")
-            },
-            response.getStatuses());
+                new Status[] {
+                        new Status("linked"),
+                        new Status("clientDeleteProhibited")
+                },
+                response.getStatuses());
     }
 
     @Test

@@ -182,7 +182,7 @@ public class ContactInfoResponse extends InfoResponse {
             String iCC = xmlDoc.getNodeValue(CON_PINFO_INT_CC_EXPR);
 
             intPostalInfo = new IntPostalInfo(iName, iOrg, iStreet, iCity,
-                iSP, iPC, iCC);
+                    iSP, iPC, iCC);
 
             String lName = xmlDoc.getNodeValue(CON_PINFO_LOC_NAME_EXPR);
 
@@ -195,7 +195,7 @@ public class ContactInfoResponse extends InfoResponse {
                 String lCC = xmlDoc.getNodeValue(CON_PINFO_LOC_CC_EXPR);
 
                 locPostalInfo = new LocalPostalInfo(lName, lOrg, lStreet, lCity,
-                    lSP, lPC, lCC);
+                        lSP, lPC, lCC);
             }
 
             voice = xmlDoc.getNodeValue(CON_VOICE_EXPR);
@@ -289,6 +289,7 @@ public class ContactInfoResponse extends InfoResponse {
 
     protected static String exprReplace(final String expr) {
         return expr.replaceAll(OBJ,
-            StandardObjectType.CONTACT.getName());
+                StandardObjectType.CONTACT.getName());
     }
 }
+
