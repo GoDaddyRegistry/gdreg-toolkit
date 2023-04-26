@@ -104,8 +104,8 @@ public class ContactInfoResponseTest {
     @Test
     public void testGetCreateDate() {
         assertEquals(
-            EPPDateFormatter.fromXSDateTime("1999-04-03T22:00:00.0Z"),
-            response.getCreateDate());
+                EPPDateFormatter.fromXSDateTime("1999-04-03T22:00:00.0Z"),
+                response.getCreateDate());
     }
 
     @Test
