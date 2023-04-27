@@ -7,6 +7,9 @@ import static org.junit.Assert.assertThat;
 import javax.xml.bind.DatatypeConverter;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Calendar;
 import java.util.Date;
 
 import godaddy.registry.jtoolkit2.se.tmch.exception.ExpiredSignedMarkDataException;
@@ -53,7 +56,7 @@ public class TmchSmdIntegrationTest {
     }
 
     @Test
-    public void shouldFailValidationIfCertificateIsRevoked() throws Exception {
+    public void shouldFailValidationIfCertificateIsRevoked() throws Throwable {
         InputStream inputStream =
                 Thread.currentThread().getContextClassLoader().getResourceAsStream("RevokedCertificateSMDData.txt");
 
@@ -62,7 +65,22 @@ public class TmchSmdIntegrationTest {
                 + "Certificate of serial number '7'";
         thrown.expect(TmchCertificateRevokedException.class);
         thrown.expectMessage(expectedMessage);
-        tmchValidatingParser.validateAndParseEncodedSignedMarkData(inputStream);
+
+        /* Below invocation failed due to expired certificate.
+         * Temporarily change to the other method which accepts a 2nd param for Date.
+         */
+        // tmchValidatingParser.validateAndParseEncodedSignedMarkData(inputStream);
+
+        final Method validateEncodedSmdForDateMethod = TmchValidatingParser.class.getDeclaredMethod(
+                "validateEncodedSignedMarkDataForDate", InputStream.class, Date.class);
+        validateEncodedSmdForDateMethod.setAccessible(true);
+        final Calendar calendar = Calendar.getInstance();
+        calendar.set(2023, 01, 01);
+        try {
+            validateEncodedSmdForDateMethod.invoke(tmchValidatingParser, inputStream, calendar.getTime());
+        } catch (InvocationTargetException e) {
+            throw e.getTargetException();
+        }
     }
 
     @Test
