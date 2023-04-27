@@ -2,7 +2,7 @@
 
 ## Downloads
 
-The latest gdreg-toolkit is available for download. [gdreg-toolkit v5.2.2](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.2/gdrjtk-5.2.2.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.2/gdrjtk-5.2.2-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.2/gdrjtk-5.2.2-javadoc.jar))
+The latest gdreg-toolkit is available for download. [gdreg-toolkit v5.2.3](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.3/gdrjtk-5.2.3.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.3/gdrjtk-5.2.3-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.3/gdrjtk-5.2.3-javadoc.jar))
 
 For more information, please read [Installation and Setup](#installation-and-setup).
 
@@ -44,7 +44,7 @@ This toolkit also provides a mechanism to perform the following Trademark Cleari
 
 #### Direct download
 
-Obtain the latest toolkit here: [Toolkit v5.2.2](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.2/gdrjtk-5.2.2.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.2/gdrjtk-5.2.2-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.2/gdrjtk-5.2.2-javadoc.jar))
+Obtain the latest toolkit here: [Toolkit v5.2.3](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.3/gdrjtk-5.2.3.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.3/gdrjtk-5.2.3-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.2.3/gdrjtk-5.2.3-javadoc.jar))
 
 #### Dependency Management
 
@@ -53,7 +53,7 @@ Use your build's dependency management tool to automatically download the toolki
 * Repository: `https://maven.pkg.github.com/GoDaddyRegistry/registrar-toolkit`
 * groupId: `godaddy.registry`
 * artifactId: `gdrjtk`
-* version: `5.2.2`
+* version: `5.2.3`
 
 For example (using Maven):
 
@@ -68,7 +68,7 @@ For example (using Maven):
        <dependency>
           <groupId>godaddy.registry</groupId>
           <artifactId>gdrjtk</artifactId>
-          <version>5.2.2</version>
+          <version>5.2.3</version>
        </dependency>
     </dependencies>
 
