@@ -1,6 +1,10 @@
 package godaddy.registry.jtoolkit2.se;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +16,7 @@ import godaddy.registry.jtoolkit2.xml.XMLParser;
 
 public class ContactInfoResponseTest {
     private static final String XML_1 =
-        "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><response><result code=\"1000\"><msg>Command completed successfully</msg></result><resData><contact:infData xmlns:contact=\"urn:ietf:params:xml:ns:contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd\"><contact:id>sh8013</contact:id><contact:roid>SH8013-REP</contact:roid><contact:status s=\"linked\"/><contact:status s=\"clientDeleteProhibited\"/><contact:postalInfo type=\"int\"><contact:name>John Doe</contact:name><contact:org>Example Inc.</contact:org><contact:addr><contact:street>123 Example Dr.</contact:street><contact:street>Suite 100</contact:street><contact:city>Dulles</contact:city><contact:sp>VA</contact:sp><contact:pc>20166-6503</contact:pc><contact:cc>US</contact:cc></contact:addr></contact:postalInfo><contact:voice x=\"1234\">+1.7035555555</contact:voice><contact:fax>+1.7035555556</contact:fax><contact:email>jdoe@example.com</contact:email><contact:clID>ClientY</contact:clID><contact:crID>ClientX</contact:crID><contact:crDate>1999-04-03T22:00:00.0Z</contact:crDate><contact:upID>ClientX</contact:upID><contact:upDate>1999-12-03T09:00:00.0Z</contact:upDate><contact:trDate>2000-04-08T09:00:00.0Z</contact:trDate><contact:authInfo><contact:pw>2fooBAR</contact:pw></contact:authInfo><contact:disclose flag=\"0\"><contact:voice/><contact:email/></contact:disclose></contact:infData></resData><trID><clTRID>ABC-12345</clTRID><svTRID>54322-XYZ</svTRID></trID></response></epp>";
+        "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><response><result code=\"1000\"><msg>Command completed successfully</msg></result><resData><contact:infData xmlns:contact=\"urn:ietf:params:xml:ns:contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd\"><contact:id>sh8013</contact:id><contact:roid>SH8013-REP</contact:roid><contact:status s=\"linked\"/><contact:status s=\"clientDeleteProhibited\"/><contact:postalInfo type=\"int\"><contact:name>John Doe</contact:name><contact:org>Example Inc.</contact:org><contact:addr><contact:street>123 Example Dr.</contact:street><contact:street>Suite 100</contact:street><contact:city>Dulles</contact:city><contact:sp>VA</contact:sp><contact:pc>20166-6503</contact:pc><contact:cc>US</contact:cc></contact:addr></contact:postalInfo><contact:voice x=\"1234\">+1.7035555555</contact:voice><contact:fax>+1.7035555556</contact:fax><contact:email>jdoe@example.com</contact:email><contact:clID>ClientY</contact:clID><contact:crID>ClientX</contact:crID><contact:crDate>1999-04-03T22:00:00.0Z</contact:crDate><contact:upID>ClientX</contact:upID><contact:upDate>1999-12-03T09:00:00.0Z</contact:upDate><contact:trDate>2000-04-08T09:00:00.0Z</contact:trDate><contact:authInfo><contact:pw>2fooBAR</contact:pw></contact:authInfo><contact:disclose flag=\"0\"><contact:name type=\"int\"/><contact:name type=\"loc\"/><contact:org type=\"int\"/><contact:org type=\"loc\"/><contact:addr type=\"int\"/><contact:addr type=\"loc\"/><contact:voice/><contact:fax/><contact:email/></contact:disclose></contact:infData></resData><trID><clTRID>ABC-12345</clTRID><svTRID>54322-XYZ</svTRID></trID></response></epp>";
     private static final String XML_2 =
         "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><response><result code=\"1000\"><msg lang=\"en\">Command completed successfully</msg></result><resData><contact:infData xmlns:contact=\"urn:ietf:params:xml:ns:contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd\"><contact:id>C0573762-AR</contact:id><contact:roid>C0573762-AR</contact:roid><contact:status s=\"linked\"/><contact:status s=\"ok\"/><contact:postalInfo type=\"int\"><contact:name>Dominic Main</contact:name><contact:org>NetRegistry Ltd</contact:org><contact:addr><contact:street>97 Rose Street</contact:street><contact:street>Chippendale</contact:street><contact:city>Chippendale</contact:city><contact:sp>NSW</contact:sp><contact:pc>2008</contact:pc><contact:cc>au</contact:cc></contact:addr></contact:postalInfo><contact:voice>+61.296996099</contact:voice><contact:fax>+61.296996088</contact:fax><contact:email>unknown@ausregistry.com.au</contact:email><contact:clID>NetRegistry</contact:clID><contact:crID>auDA</contact:crID><contact:crDate>1998-12-01T00:00:00.0Z</contact:crDate><contact:upID>NetRegistry</contact:upID><contact:upDate>2002-08-06T02:10:27.0Z</contact:upDate><contact:authInfo><contact:pw>A00799</contact:pw></contact:authInfo></contact:infData></resData><trID><clTRID>NETREGISTRY.20070717.152924.4</clTRID><svTRID>109802</svTRID></trID></response></epp>";
     private ContactInfoResponse response;
@@ -135,4 +139,41 @@ public class ContactInfoResponseTest {
                 },
                 response.getStatuses());
     }
+
+    @Test
+    public void testGetDisclose() {
+
+        assertFalse(response.isDisclosed());
+
+        assertEquals(9, response.getDiscloseItems().length);
+
+        assertEquals("name", response.getDiscloseItems()[0].getElementName());
+        assertEquals("int", response.getDiscloseItems()[0].getType());
+
+        assertEquals("name", response.getDiscloseItems()[1].getElementName(), "name");
+        assertEquals("local", response.getDiscloseItems()[1].getType(), "loc");
+
+        assertEquals("org", response.getDiscloseItems()[2].getElementName(), "org");
+        assertEquals("int", response.getDiscloseItems()[2].getType(), "int");
+
+        assertEquals("org", response.getDiscloseItems()[3].getElementName(), "org");
+        assertEquals("loc", response.getDiscloseItems()[3].getType(), "loc");
+
+        assertEquals("addr", response.getDiscloseItems()[4].getElementName(), "addr");
+        assertEquals("int", response.getDiscloseItems()[4].getType(), "int");
+
+        assertEquals("addr", response.getDiscloseItems()[5].getElementName(), "addr");
+        assertEquals("loc", response.getDiscloseItems()[5].getType(), "loc");
+
+        assertEquals("voice", response.getDiscloseItems()[6].getElementName(), "voice");
+        assertNull(response.getDiscloseItems()[6].getType());
+
+        assertEquals("fax", response.getDiscloseItems()[7].getElementName());
+        assertNull(response.getDiscloseItems()[7].getType());
+
+        assertEquals("email", response.getDiscloseItems()[8].getElementName());
+        assertNull(response.getDiscloseItems()[8].getType());
+
+    }
+
 }
