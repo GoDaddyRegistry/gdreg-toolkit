@@ -113,10 +113,6 @@ public class Disclose implements Appendable {
 
         @SuppressWarnings("unused")
             Element e;
-        if (noneSet) {
-            xmlWriter.appendChild(disclose, "voice");
-            return disclose;
-        }
         e = nameIntSet ? xmlWriter.appendChild(disclose, "name", "type", "int") : null;
         e = nameLocSet ? xmlWriter.appendChild(disclose, "name", "type", "loc") : null;
         e = orgIntSet ? xmlWriter.appendChild(disclose, "org", "type", "int") : null;
