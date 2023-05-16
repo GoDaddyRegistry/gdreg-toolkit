@@ -27,7 +27,6 @@ public class Disclose implements Appendable {
     private boolean voiceSet;
     private boolean faxSet;
     private boolean emailSet;
-    private boolean noneSet = true;
 
     /**
      * Construct a Disclose object with all items not yet set.  This is an invalid
@@ -59,47 +58,38 @@ public class Disclose implements Appendable {
 
     public void setVoice() {
         voiceSet = true;
-        noneSet = false;
     }
 
     public void setFax() {
         faxSet = true;
-        noneSet = false;
     }
 
     public void setEmail() {
         emailSet = true;
-        noneSet = false;
     }
 
     public void setNameInt() {
         nameIntSet = true;
-        noneSet = false;
     }
 
     public void setNameLoc() {
         nameLocSet = true;
-        noneSet = false;
     }
 
     public void setOrgInt() {
         orgIntSet = true;
-        noneSet = false;
     }
 
     public void setOrgLoc() {
         orgLocSet = true;
-        noneSet = false;
     }
 
     public void setAddrInt() {
         addrIntSet = true;
-        noneSet = false;
     }
 
     public void setAddrLoc() {
         addrLocSet = true;
-        noneSet = false;
     }
 
     /**
