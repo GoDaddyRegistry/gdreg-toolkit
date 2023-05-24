@@ -63,7 +63,7 @@ public class ContactCreateCommandTest {
                 email, new Disclose(false));
         try {
             String xml = cmd.toXML();
-            assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><command><create><create xmlns=\"urn:ietf:params:xml:ns:contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd\"><id>JTKUTEST</id><postalInfo type=\"int\"><name>JTK Unit Test</name><addr><city>Melbourne</city><cc>au</cc></addr></postalInfo><voice>+61.398663710</voice><fax>+61.398661970</fax><email>jtktest@ausregistry.com.au</email><authInfo><pw>jtkUt3st</pw></authInfo><disclose flag=\"0\"><voice/></disclose></create></create><clTRID>JTKUTEST.20070101.010101.0</clTRID></command></epp>", xml);
+            assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><command><create><create xmlns=\"urn:ietf:params:xml:ns:contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd\"><id>JTKUTEST</id><postalInfo type=\"int\"><name>JTK Unit Test</name><addr><city>Melbourne</city><cc>au</cc></addr></postalInfo><voice>+61.398663710</voice><fax>+61.398661970</fax><email>jtktest@ausregistry.com.au</email><authInfo><pw>jtkUt3st</pw></authInfo><disclose flag=\"0\"/></create></create><clTRID>JTKUTEST.20070101.010101.0</clTRID></command></epp>", xml);
         } catch (SAXException saxe) {
             fail(saxe.getMessage());
         }
@@ -92,7 +92,7 @@ public class ContactCreateCommandTest {
                 email, new Disclose(false));
         try {
             String xml = cmd.toXML();
-            assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><command><create><create xmlns=\"urn:ietf:params:xml:ns:contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd\"><id>JTKUTEST</id><postalInfo type=\"int\"><name>JTK Unit Test</name><addr><city>Melbourne</city><cc>au</cc></addr></postalInfo><voice>+61.398663710</voice><fax>+61.398661970</fax><email>jtktest@ausregistry.com.au</email><authInfo><pw/></authInfo><disclose flag=\"0\"><voice/></disclose></create></create><clTRID>JTKUTEST.20070101.010101.0</clTRID></command></epp>", xml);
+            assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?><epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd\"><command><create><create xmlns=\"urn:ietf:params:xml:ns:contact-1.0\" xsi:schemaLocation=\"urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd\"><id>JTKUTEST</id><postalInfo type=\"int\"><name>JTK Unit Test</name><addr><city>Melbourne</city><cc>au</cc></addr></postalInfo><voice>+61.398663710</voice><fax>+61.398661970</fax><email>jtktest@ausregistry.com.au</email><authInfo><pw/></authInfo><disclose flag=\"0\"/></create></create><clTRID>JTKUTEST.20070101.010101.0</clTRID></command></epp>", xml);
         } catch (SAXException saxe) {
             fail(saxe.getMessage());
         }
