@@ -46,7 +46,9 @@ public class DomainRenewFeeCommandExtension implements CommandExtension {
 
         final Element createElement = xmlWriter.appendChild(extensionElement, "renew", FEEV10.getURI());
 
-        xmlWriter.appendChild(createElement, "currency").setTextContent(currency);
+        if (currency != null) {
+            xmlWriter.appendChild(createElement, "currency").setTextContent(currency);
+        }
         xmlWriter.appendChild(createElement, "fee").setTextContent(fee.toPlainString());
     }
 

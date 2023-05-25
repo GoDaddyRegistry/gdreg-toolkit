@@ -119,7 +119,33 @@ public class DomainRestoreFeeCommandExtensionTest {
         try {
             cmd.appendExtension(restoreExt);
             cmd.appendExtension(feeExt);
-            String expectedXml = getRestoreResponseWithDescriptionExpectedXml(domainName, true, true, true);
+            String expectedXml = getRestoreResponseWithDescriptionExpectedXml(domainName, true, true, true, true);
+
+            assertEquals(expectedXml, cmd.toXML());
+        } catch (SAXException saxe) {
+            fail(saxe.getMessage());
+        }
+    }
+
+    @Test
+    public void shouldCreateValidXmlWhenSupplyFeeExtensionWithRestoreAndRenewFeesWithoutDescriptionAndCurrency() {
+        String domainName = "domain.example";
+        Command cmd = new DomainRenewCommand(domainName,
+                EPPDateFormatter.fromXSDateTime("2016-02-14T00:00:02.0Z"),
+                new Period(1));
+
+        DomainRenewCommandUnspecExtension restoreExt =
+                new DomainRenewCommandUnspecExtension(RestoreReasonCode.RegistrantError,
+                        "_My_Comment_", true, true);
+
+        final DomainRestoreFeeCommandExtension feeExt =
+                new DomainRestoreFeeCommandExtension(BigDecimal.valueOf(10.00), BigDecimal.valueOf(60.00),
+                        null, "Restore Grace 1 Fee", "Renewal Fee");
+
+        try {
+            cmd.appendExtension(restoreExt);
+            cmd.appendExtension(feeExt);
+            String expectedXml = getRestoreResponseWithDescriptionExpectedXml(domainName, true, true, true, false);
 
             assertEquals(expectedXml, cmd.toXML());
         } catch (SAXException saxe) {
@@ -170,7 +196,7 @@ public class DomainRestoreFeeCommandExtensionTest {
     }
 
     private static String getRestoreResponseWithDescriptionExpectedXml(final String domainName, boolean feeExtension,
-            boolean withRestore, boolean withRenew) {
+            boolean withRestore, boolean withRenew, boolean withCurrency) {
         final StringBuilder result = new StringBuilder();
         result.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
         result.append("<epp xmlns=\"urn:ietf:params:xml:ns:epp-1.0\"");
@@ -193,7 +219,9 @@ public class DomainRestoreFeeCommandExtensionTest {
         result.append("</extension>");
         if (feeExtension) {
             result.append("<renew xmlns=\"urn:ietf:params:xml:ns:epp:fee-1.0\">");
-            result.append("<currency>USD</currency>");
+            if (withCurrency) {
+                result.append("<currency>USD</currency>");
+            }
             if (withRestore) {
                 result.append("<fee description=\"Restore Grace 1 Fee\">60.00</fee>");
             }

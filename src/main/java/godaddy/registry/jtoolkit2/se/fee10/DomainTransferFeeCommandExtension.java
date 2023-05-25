@@ -43,7 +43,9 @@ public class DomainTransferFeeCommandExtension implements CommandExtension {
         final Element extensionElement = command.getExtensionElement();
 
         final Element createElement = xmlWriter.appendChild(extensionElement, "transfer", FEEV10.getURI());
-        xmlWriter.appendChild(createElement, "currency").setTextContent(currency);
+        if (currency != null) {
+            xmlWriter.appendChild(createElement, "currency").setTextContent(currency);
+        }
         xmlWriter.appendChild(createElement, "fee").setTextContent(fee.toPlainString());
     }
 

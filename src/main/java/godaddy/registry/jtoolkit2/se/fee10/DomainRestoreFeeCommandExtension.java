@@ -53,7 +53,9 @@ public class DomainRestoreFeeCommandExtension implements CommandExtension {
         final XMLWriter xmlWriter = command.getXmlWriter();
         final Element extensionElement = command.getExtensionElement();
         final Element createElement = xmlWriter.appendChild(extensionElement, "renew", FEEV10.getURI());
-        xmlWriter.appendChild(createElement, "currency").setTextContent(currency);
+        if (currency != null) {
+            xmlWriter.appendChild(createElement, "currency").setTextContent(currency);
+        }
 
         if (restoreFee != null) {
             final Element restoreElement = xmlWriter.appendChild(createElement, "fee");
