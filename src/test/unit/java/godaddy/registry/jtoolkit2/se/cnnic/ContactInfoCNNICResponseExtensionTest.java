@@ -93,7 +93,7 @@ public class ContactInfoCNNICResponseExtensionTest {
 
     @Test
     public void testGetVoiceExtension() {
-        assertEquals(9876543210L, response.getVoiceExtension());
+        assertEquals("9876543210", response.getVoiceExtension());
     }
 
     @Test
@@ -103,7 +103,7 @@ public class ContactInfoCNNICResponseExtensionTest {
 
     @Test
     public void testGetFaxExtension() {
-        assertEquals(-9876543210L, response.getFaxExtension());
+        assertEquals("-9876543210", response.getFaxExtension());
     }
 
     @Test
