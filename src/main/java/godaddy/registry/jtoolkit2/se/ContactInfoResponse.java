@@ -90,9 +90,9 @@ public class ContactInfoResponse extends InfoResponse {
     private IntPostalInfo intPostalInfo;
     private LocalPostalInfo locPostalInfo;
     private String voice;
-    private int voiceX;
+    private String voiceX;
     private String fax;
-    private int faxX;
+    private String faxX;
     private String email;
     private String pw;
     private boolean discloseFlag;
@@ -100,8 +100,6 @@ public class ContactInfoResponse extends InfoResponse {
 
     public ContactInfoResponse() {
         super(StandardObjectType.CONTACT);
-        voiceX = -1;
-        faxX = -1;
     }
 
     public String getID() {
@@ -120,7 +118,12 @@ public class ContactInfoResponse extends InfoResponse {
         return voice;
     }
 
-    public int getVoiceExtension() {
+    /**
+     * Gets the voice extension.
+     *
+     * @return a null value can be returned when not set.
+     */
+    public String getVoiceExtension() {
         return voiceX;
     }
 
@@ -128,7 +131,12 @@ public class ContactInfoResponse extends InfoResponse {
         return fax;
     }
 
-    public int getFaxExtension() {
+    /**
+     * Gets the fax extension.
+     *
+     * @return a null value can be returned when not set.
+     */
+    public String getFaxExtension() {
         return faxX;
     }
 
@@ -199,15 +207,9 @@ public class ContactInfoResponse extends InfoResponse {
             }
 
             voice = xmlDoc.getNodeValue(CON_VOICE_EXPR);
-            String voiceXStr = xmlDoc.getNodeValue(CON_VOICEX_EXPR);
-            if (voiceXStr != null && voiceXStr.length() > 0) {
-                voiceX = Integer.parseInt(voiceXStr);
-            }
+            voiceX = xmlDoc.getNodeValue(CON_VOICEX_EXPR);
             fax = xmlDoc.getNodeValue(CON_FAX_EXPR);
-            String faxXStr = xmlDoc.getNodeValue(CON_FAXX_EXPR);
-            if (faxXStr != null && faxXStr.length() > 0) {
-                faxX = Integer.parseInt(faxXStr);
-            }
+            faxX = xmlDoc.getNodeValue(CON_FAXX_EXPR);
             email = xmlDoc.getNodeValue(CON_EMAIL_EXPR);
             pw = xmlDoc.getNodeValue(CON_PW_EXPR);
             String flagStr = xmlDoc.getNodeValue(CON_DISCLOSE_FLAG_EXPR);
