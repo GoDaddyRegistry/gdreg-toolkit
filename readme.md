@@ -2,7 +2,9 @@
 
 ## Downloads
 
-The latest gdreg-toolkit is available for download. [gdreg-toolkit v5.4.0](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.4.0/gdrjtk-5.4.0.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.4.0/gdrjtk-5.4.0-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.4.0/gdrjtk-5.4.0-javadoc.jar))
+The latest gdreg-toolkit is available for download: [gdreg-toolkit v5.4.0](https://github.com/GoDaddyRegistry/registrar-toolkit/packages/1203889?version=5.4.0)
+
+The download URLs for sources and javadoc can also be found in this page.
 
 For more information, please read [Installation and Setup](#installation-and-setup).
 
@@ -44,7 +46,7 @@ This toolkit also provides a mechanism to perform the following Trademark Cleari
 
 #### Direct download
 
-Obtain the latest toolkit here: [Toolkit v5.4.0](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.4.0/gdrjtk-5.4.0.jar) ([sources](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.4.0/gdrjtk-5.4.0-sources.jar) | [javadoc](http://godaddyregistry.github.io/repo/godaddy/registry/gdrjtk/5.4.0/gdrjtk-5.4.0-javadoc.jar))
+Obtain the latest toolkit here: [Toolkit release v5.4.0](https://github.com/GoDaddyRegistry/registrar-toolkit/releases/tag/5.4.0)
 
 #### Dependency Management
 
