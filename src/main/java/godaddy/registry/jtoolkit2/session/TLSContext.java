@@ -29,7 +29,7 @@ import godaddy.registry.jtoolkit2.ErrorPkg;
 public class TLSContext {
     protected static final String TMF_ALGORITHM = TrustManagerFactory.getDefaultAlgorithm();
 
-    private static final String TLSV1 = "TLSv1";
+    private static final String DEFAULT_TLS_VERSION = "TLSv1.3";
     private SSLContext ctx;
     private String commonName;
 
@@ -93,7 +93,7 @@ public class TLSContext {
             if (protocol != null) {
                 ctx = SSLContext.getInstance(protocol);
             } else {
-                ctx = SSLContext.getInstance(TLSV1);
+                ctx = SSLContext.getInstance(DEFAULT_TLS_VERSION);
             }
             ctx.init(keyManagers, trustManagers, null);
         } catch (UnrecoverableKeyException uke) {
@@ -149,7 +149,7 @@ public class TLSContext {
                                                                   KeyManagementException,
                                                                   KeyStoreReadException,
                                                                   KeyStoreNotFoundException {
-        this(null, null, truststore, trustpass, null, null, TLSV1);
+        this(null, null, truststore, trustpass, null, null, DEFAULT_TLS_VERSION);
     }
 
 

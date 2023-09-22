@@ -120,7 +120,7 @@ public final class TestEnvironment implements SessionManagerProperties,
     }
 
     public String getSSLVersion() {
-        return "TLSv1";
+        return "TLSv1.3";
     }
 
     public String getSSLAlgorithm() {

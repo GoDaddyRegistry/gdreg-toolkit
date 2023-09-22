@@ -130,7 +130,7 @@ public class SessionManagerPropertiesImpl implements SessionManagerProperties, S
 
     @Override
     public String getSSLVersion() {
-        return getStringProperty("ssl.protocol", "TLSv1");
+        return getStringProperty("ssl.protocol", "TLSv1.3");
     }
 
     @Override
