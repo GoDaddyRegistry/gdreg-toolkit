@@ -1,10 +1,11 @@
 package godaddy.registry.jtoolkit2.se.unspec;
 
+import org.w3c.dom.Element;
+
 import godaddy.registry.jtoolkit2.se.Command;
 import godaddy.registry.jtoolkit2.se.CommandExtension;
 import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
 import godaddy.registry.jtoolkit2.xml.XMLWriter;
-import org.w3c.dom.Element;
 
 
 /**
@@ -23,6 +24,7 @@ public class DomainCreateCommandUnspecExtension implements CommandExtension {
 
     private static final long serialVersionUID = 5982521830455586062L;
 
+    private String domainManagerId;
     private String extContactId;
     private WhoisType whoisType;
     private Boolean publish;
@@ -50,36 +52,15 @@ public class DomainCreateCommandUnspecExtension implements CommandExtension {
                 ExtendedObjectType.UNSPEC.getURI());
 
         StringBuilder unspecValue = new StringBuilder();
-        if (extContactId != null) {
-            unspecValue.append(" extContact=" + extContactId);
-        }
-        if (whoisType != null) {
-            unspecValue.append(" WhoisType=" + whoisType.getValue());
-        }
-        if (publish != null) {
-            unspecValue.append(" Publish=" + (publish ? "Y" : "N"));
-        }
-        if (reservationDomain != null && reservationDomain) {
-            unspecValue.append(" ReservationDomain=Yes");
-        }
-
-        if (resellerName != null) {
-            unspecValue.append(" ResellerName=").append(resellerName.replaceAll("\\s", "+"));
-        }
-
-        if (resellerUrl != null) {
-            unspecValue.append(" ResellerUrl=").append(resellerUrl);
-        }
-
-        if (resellerPhone != null) {
-            unspecValue.append(" ResellerPhone=").append(resellerPhone);
-        }
-
-        if (uin != null) {
-            unspecValue.append(" UIN=").append(uin);
-        } else if (travelIndustryAcknowledgement != null) {
-            unspecValue.append(" TravelIndustry=").append(travelIndustryAcknowledgement ? "Y" : "N");
-        }
+        addExtContact(unspecValue);
+        addDomainManager(unspecValue);
+        addWhoisType(unspecValue);
+        addWhoisPublish(unspecValue);
+        addReserveDomain(unspecValue);
+        addReseller(unspecValue);
+        addResellerUrl(unspecValue);
+        addResellerPhone(unspecValue);
+        addTravelSpecificValues(unspecValue);
 
         xmlWriter.appendChild(unspecElement, "unspec", ExtendedObjectType.UNSPEC.getURI())
                 .setTextContent(unspecValue.toString().trim());
@@ -120,5 +101,66 @@ public class DomainCreateCommandUnspecExtension implements CommandExtension {
 
     public void setTravelIndustryAcknowledgement(boolean travelIndustryAcknowledgement) {
         this.travelIndustryAcknowledgement = travelIndustryAcknowledgement;
+    }
+
+    public void setDomainManagerId(String domainManagerId) {
+        this.domainManagerId = domainManagerId;
+    }
+
+
+    private void addTravelSpecificValues(StringBuilder unspecValue) {
+        if (uin != null) {
+            unspecValue.append(" UIN=").append(uin);
+        } else if (travelIndustryAcknowledgement != null) {
+            unspecValue.append(" TravelIndustry=").append(travelIndustryAcknowledgement ? "Y" : "N");
+        }
+    }
+
+    private void addResellerPhone(StringBuilder unspecValue) {
+        if (resellerPhone != null) {
+            unspecValue.append(" ResellerPhone=").append(resellerPhone);
+        }
+    }
+
+    private void addResellerUrl(StringBuilder unspecValue) {
+        if (resellerUrl != null) {
+            unspecValue.append(" ResellerUrl=").append(resellerUrl);
+        }
+    }
+
+    private void addReseller(StringBuilder unspecValue) {
+        if (resellerName != null) {
+            unspecValue.append(" ResellerName=").append(resellerName.replaceAll("\\s", "+"));
+        }
+    }
+
+    private void addReserveDomain(StringBuilder unspecValue) {
+        if (reservationDomain != null && reservationDomain) {
+            unspecValue.append(" ReservationDomain=Yes");
+        }
+    }
+
+    private void addWhoisPublish(StringBuilder unspecValue) {
+        if (publish != null) {
+            unspecValue.append(" Publish=").append(publish ? "Y" : "N");
+        }
+    }
+
+    private void addWhoisType(StringBuilder unspecValue) {
+        if (whoisType != null) {
+            unspecValue.append(" WhoisType=").append(whoisType.getValue());
+        }
+    }
+
+    private void addExtContact(StringBuilder unspecValue) {
+        if (extContactId != null) {
+            unspecValue.append(" extContact=").append(extContactId);
+        }
+    }
+
+    private void addDomainManager(StringBuilder unspecValue) {
+        if (domainManagerId != null) {
+            unspecValue.append(" domainManager=").append(domainManagerId);
+        }
     }
 }

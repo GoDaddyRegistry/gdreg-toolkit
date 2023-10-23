@@ -2,7 +2,7 @@
 
 ## Downloads
 
-The latest gdreg-toolkit is available for download: [gdreg-toolkit v5.4.0](https://github.com/GoDaddyRegistry/registrar-toolkit/packages/1203889?version=5.4.0)
+The latest gdreg-toolkit is available for download: [gdreg-toolkit v5.5.0](https://github.com/GoDaddyRegistry/registrar-toolkit/packages/1203889?version=5.5.0)
 
 The download URLs for sources and javadoc can also be found in this page.
 
@@ -48,7 +48,7 @@ This toolkit also provides a mechanism to perform the following Trademark Cleari
 
 #### Direct download
 
-Obtain the latest toolkit here: [Toolkit release v5.4.0](https://github.com/GoDaddyRegistry/registrar-toolkit/releases/tag/5.4.0)
+Obtain the latest toolkit here: [Toolkit release v5.5.0](https://github.com/GoDaddyRegistry/registrar-toolkit/releases/tag/5.5.0)
 
 #### Dependency Management
 
@@ -57,7 +57,7 @@ Use your build's dependency management tool to automatically download the toolki
 * Repository: `https://maven.pkg.github.com/GoDaddyRegistry/registrar-toolkit`
 * groupId: `godaddy.registry`
 * artifactId: `gdrjtk`
-* version: `5.4.0`
+* version: `5.5.0`
 
 For example (using Maven):
 
@@ -72,7 +72,7 @@ For example (using Maven):
        <dependency>
           <groupId>godaddy.registry</groupId>
           <artifactId>gdrjtk</artifactId>
-          <version>5.4.0</version>
+          <version>5.5.0</version>
        </dependency>
     </dependencies>
 
@@ -102,15 +102,10 @@ The tooling and relevant files, which are already in the cloned repository, incl
     Once Pipenv is installed, please run `pipenv install` in the toolkit folder. It shall download all the required packages for you, based on the dependencies specified in `Pipfile.lock`, and configure a virutal environment correspondingly.
     More details about Pipenv can be found [here](https://pipenv-fork.readthedocs.io/en/latest/basics.html).
 
-2. `.pre-commit-config.yaml` and `.pre-commit-hook.yaml`
+2. `.pre-commit-config.yaml`
 
     The [pre-commit tool](https://pre-commit.com/#usage) is a multi-language package manager for git pre-commit hooks. A list of desired hooks have been specified in `.pre-commit-config.yaml`. The pre-commit tool manages the installation and execution of the specified hooks before every commit.
     To setup pre-commit hooks, please run `pipenv run pre-commit install --install-hooks` once Pipenv is configured.
-
-3. `tartofu.toml`
-
-    Once pre-commit tool is installed and configured, every time before a new git commit can be made, the pre-commit tool will execute various checks based on its configuration. One of the checks is to run [tartufo](https://tartufo.readthedocs.io/en/stable/index.html) to make sure there is no secrets accidentally committed in the staged, uncommitted changes in your local repository.
-    The tool will scan the changes by both regex and by entropy. Sometime you may have to update `tartufo.toml` to exclude [certain entropy patterns](https://tartufo.readthedocs.io/en/stable/features.html#entropy-limiting) or [signature](https://tartufo.readthedocs.io/en/stable/features.html#limiting-by-signature), as there may be some false positives being reported by tartufo.
 
 #### Java Support
 

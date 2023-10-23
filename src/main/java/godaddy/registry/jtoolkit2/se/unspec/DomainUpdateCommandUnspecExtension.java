@@ -1,10 +1,11 @@
 package godaddy.registry.jtoolkit2.se.unspec;
 
+import org.w3c.dom.Element;
+
 import godaddy.registry.jtoolkit2.se.Command;
 import godaddy.registry.jtoolkit2.se.CommandExtension;
 import godaddy.registry.jtoolkit2.se.ExtendedObjectType;
 import godaddy.registry.jtoolkit2.xml.XMLWriter;
-import org.w3c.dom.Element;
 
 
 /**
@@ -23,6 +24,7 @@ public class DomainUpdateCommandUnspecExtension implements CommandExtension {
 
     private static final long serialVersionUID = 5982521830455586062L;
 
+    private String domainManagerId;
     private String extContactId;
     private WhoisType whoisType;
     private Boolean publish;
@@ -48,14 +50,17 @@ public class DomainUpdateCommandUnspecExtension implements CommandExtension {
                 ExtendedObjectType.UNSPEC.getURI());
 
         StringBuilder unspecValue = new StringBuilder();
+        if (domainManagerId != null) {
+            unspecValue.append(" domainManager=").append(domainManagerId);
+        }
         if (extContactId != null) {
-            unspecValue.append(" extContact=" + extContactId);
+            unspecValue.append(" extContact=").append(extContactId);
         }
         if (whoisType != null) {
-            unspecValue.append(" WhoisType=" + whoisType.getValue());
+            unspecValue.append(" WhoisType=").append(whoisType.getValue());
         }
         if (publish != null) {
-            unspecValue.append(" Publish=" + (publish ? "Y" : "N"));
+            unspecValue.append(" Publish=").append(publish ? "Y" : "N");
         }
         if (resellerName != null) {
             unspecValue.append(" ResellerName=").append(resellerName.replaceAll("\\s", "+"));
@@ -99,5 +104,9 @@ public class DomainUpdateCommandUnspecExtension implements CommandExtension {
 
     public void setUin(String uin) {
         this.uin = uin;
+    }
+
+    public void setDomainManagerId(String domainManagerId) {
+        this.domainManagerId = domainManagerId;
     }
 }

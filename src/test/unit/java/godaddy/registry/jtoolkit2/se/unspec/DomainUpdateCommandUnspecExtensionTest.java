@@ -3,15 +3,16 @@ package godaddy.registry.jtoolkit2.se.unspec;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import godaddy.registry.jtoolkit2.Timer;
-import godaddy.registry.jtoolkit2.se.CLTRID;
-import godaddy.registry.jtoolkit2.se.Command;
-import godaddy.registry.jtoolkit2.se.DomainUpdateCommand;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.xml.sax.SAXException;
+
+import godaddy.registry.jtoolkit2.Timer;
+import godaddy.registry.jtoolkit2.se.CLTRID;
+import godaddy.registry.jtoolkit2.se.Command;
+import godaddy.registry.jtoolkit2.se.DomainUpdateCommand;
 
 
 public class DomainUpdateCommandUnspecExtensionTest {
@@ -204,8 +205,22 @@ public class DomainUpdateCommandUnspecExtensionTest {
         ext.setUin("0000");
         try {
             cmd.appendExtension(ext);
-            String expectedXml = getCommandXmlWithUnspec(
-                    "UIN=0000");
+            String expectedXml = getCommandXmlWithUnspec("UIN=0000");
+            assertEquals(expectedXml, cmd.toXML());
+
+        } catch (SAXException saxe) {
+            fail(saxe.getMessage());
+        }
+    }
+
+    @Test
+    public void shouldAddDomainManagerToXml() {
+        final Command cmd = new DomainUpdateCommand("jtkutest.com.au");
+        final DomainUpdateCommandUnspecExtension ext = new DomainUpdateCommandUnspecExtension();
+        ext.setDomainManagerId("DMID");
+        try {
+            cmd.appendExtension(ext);
+            String expectedXml = getCommandXmlWithUnspec("domainManager=DMID");
             assertEquals(expectedXml, cmd.toXML());
 
         } catch (SAXException saxe) {

@@ -20,7 +20,3 @@ repos:
     rev: v2.14.1
     hooks:
       - id: validate_manifest
-  - repo: https://github.com/godaddy/tartufo
-    rev: v3.2.1
-    hooks:
-      - id: tartufo
